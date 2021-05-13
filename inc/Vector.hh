@@ -54,6 +54,8 @@ public:
 
     double lenght() const;
 
+    void scale(const Vector &v);
+
 };    
 
 
@@ -281,6 +283,12 @@ std::istream &operator >> (std::istream &in, Vector<Templ_Typ,Templ_Size> &tmp){
     std::cout << std::endl;
     return in;
 }
+
+
+
+
+
+
 
 
 

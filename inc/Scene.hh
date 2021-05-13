@@ -1,13 +1,13 @@
 #pragma once
 
-#include "Dron.hh"
+#include "Drone.hh"
 
 
 class Scene{
 
     private:
 
-        Dron DronTab[2];
+        Drone DroneTab[2];
 
         std::string Filename_Surface;
 
@@ -16,9 +16,9 @@ class Scene{
 
     public:
 
-        const Dron& TakeActiveDron() const;
+        const Drone& TakeActiveDron() const;
 
-        Dron& UseActiveDron();
+        Drone& UseActiveDron();
 
         const std::string& TakeFilename_Surface() const { return Filename_Surface; };
     

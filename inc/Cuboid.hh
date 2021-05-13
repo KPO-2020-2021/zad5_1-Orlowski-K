@@ -12,6 +12,6 @@ class Cuboid: public Solid{
 
     public:
 
-         Vector3D TranformToParentialCoordinate(const Vector3D& Vertex) const;
+        Vector3D TranformToParentialCoordinate(const Vector3D& Vertex) const;
 
 };

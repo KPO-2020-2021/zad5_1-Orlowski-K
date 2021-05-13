@@ -4,8 +4,10 @@
 #include "Cuboid.hh"
 #include "lacze_do_gnuplota.hh"
 #include <vector>
+#include <fstream>
+#include <iostream>
 
-class Dron{
+class Drone{
 
     private:
 
@@ -15,7 +17,7 @@ class Dron{
 
         Cuboid   Body;
 
-        Prism    Rotor;
+        Prism    Rotor[4];
 
         bool  Count_Save_BodyGlCoor() const;
 
