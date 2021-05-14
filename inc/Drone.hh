@@ -6,6 +6,7 @@
 #include <vector>
 #include <fstream>
 #include <iostream>
+#include <unistd.h>
 
 class Drone{
 
@@ -29,13 +30,19 @@ class Drone{
 
     public:
 
-        void MakeTrack(double rotation_angle, double FlightLen, std::vector<Vector3D>& TracePoints);
+        Drone();
+
+        void MakeDrone(Vector3D V_l, double angle);
+
+        void MakeTrack(/*double rotation_angle,*/ double FlightLen, std::vector<Vector3D>& TracePoints)const ;
 
         bool MakeVerticalFlight(double FlightLen, PzG::LaczeDoGNUPlota& Link) ;
 
         bool MakeHorizontalFlight(double FlightLen, PzG::LaczeDoGNUPlota& Link) ;
 
-        bool Count_Save_GlobalCoor() const;
+        bool Change_Orientation(double rotation_angle, PzG::LaczeDoGNUPlota& Link);
+
+        bool Count_Save_GlobalCoor();
 
 
 };

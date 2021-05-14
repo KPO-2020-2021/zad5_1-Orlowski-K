@@ -13,6 +13,13 @@ class Prism: public Solid{
 
     public:
 
-         Vector3D TranformToParentialCoordinate(const Vector3D& Vertex) const;
+        Prism();
+
+        Prism(std::string File1, std::string File2, Vector3D V_scale, Vector3D V, double angle );
+
+        Vector3D TranformToParentialCoordinate(const Vector3D& Vertex) const;
+
+        void Rotate(double angle);
+
 
 };

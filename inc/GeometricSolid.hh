@@ -13,6 +13,10 @@ class Solid{
 
     public:
 
+        Solid();
+
+        Solid(std::string FirstFile,std::string SecFile, Vector3D V_scale);
+
         const std::string& TakeFilename_TemplateSolid() const { return Filename_TemplateSolid; };
 
         const std::string& TakeFilename_FinalSolid() const {return Filename_FinalSolid;};
