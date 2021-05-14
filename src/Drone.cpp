@@ -6,23 +6,38 @@ Drone::Drone(){
 }
 
 
-void Drone::MakeDrone(const Vector3D V_l, double angle){
+void Drone::MakeDrone(const Vector3D V_l, double angle, unsigned int &number_of_drones){
     Vector3D Scale_body = {10,8,4},Scale_rotor = {8,8,2} ,V ={0,0,2};
-    Cuboid tmp_body("../datasets/templates/cuboid.dat","../datasets/dat/body.dat",Scale_body,V,0);
     Vector3D Rotor_Trans[4] = {{5,4,5},{5,-4,5},{-5,4,5},{-5,-4,5}};
+    unsigned int number_of_rotors = number_of_drones * 4;
+    std::string File_rotor;
+    std::string File_body;
 
-    Prism LFront("../datasets/templates/prism6.dat","../datasets/dat/rotor_1.dat",Scale_rotor,Rotor_Trans[0],0);
-    Prism RFront("../datasets/templates/prism6.dat","../datasets/dat/rotor_2.dat",Scale_rotor,Rotor_Trans[1],0);
-    Prism LBack("../datasets/templates/prism6.dat","../datasets/dat/rotor_3.dat",Scale_rotor,Rotor_Trans[2],0);
-    Prism RBack("../datasets/templates/prism6.dat","../datasets/dat/rotor_4.dat",Scale_rotor,Rotor_Trans[3],0);
+    File_body = BASIC_BODY_FILE + std::to_string(number_of_drones + 1)  + ".dat";
 
+    Cuboid tmp_body(CUBOID_TEMPLETE,File_body,Scale_body,V,0);
+  
+    File_rotor = BASIC_ROTOR_FILE + std::to_string(number_of_rotors + 1)  + ".dat";
+    Prism LFront(PRISM_TEMPLETE,File_rotor,Scale_rotor,Rotor_Trans[0],0);
+    ++number_of_rotors;
+    File_rotor = BASIC_ROTOR_FILE + std::to_string(number_of_rotors + 1)  + ".dat";
+    Prism RFront(PRISM_TEMPLETE,File_rotor,Scale_rotor,Rotor_Trans[1],0);
+    ++number_of_rotors;
+    File_rotor = BASIC_ROTOR_FILE + std::to_string(number_of_rotors + 1)  + ".dat";
+    Prism LBack(PRISM_TEMPLETE,File_rotor,Scale_rotor,Rotor_Trans[2],0);
+    ++number_of_rotors;
+    File_rotor = BASIC_ROTOR_FILE + std::to_string(number_of_rotors + 1)  + ".dat";
+    Prism RBack(PRISM_TEMPLETE,File_rotor,Scale_rotor,Rotor_Trans[3],0);
+    ++number_of_rotors;
     Prism tmp_rotor[4] = {LFront,RFront,LBack,RBack};
 
     Layout = V_l;
     OrientAngle = angle;
     Body = tmp_body;
+    Series = number_of_drones;
     for(unsigned int Ind = 0; Ind < 4; ++Ind) Rotor[Ind] = tmp_rotor[Ind];
 
+    ++number_of_drones;
   
 }
 
@@ -88,7 +103,6 @@ bool  Drone::Count_Save_RotorGlCoor(const Prism& Rotor ) const{
     return false;
   }
 
-  std::cout << "Tutaj jestem" << std::endl;
   Vector3D tmp;
   File_PrismTempl >> tmp;
   while(!File_PrismTempl.fail()){
@@ -195,13 +209,13 @@ bool Drone::Change_Orientation(double rotation_angle, PzG::LaczeDoGNUPlota& Link
 
 
 void Drone::MakeTrack(double FlightLen, std::vector<Vector3D>& TracePoints)const {
-  std::ofstream OutFile("../datasets/dat/flight_track.dat");
+  std::ofstream OutFile(FLIGHT_TRACK);
   double FlightHeight = 80;
   Vector3D tmp = {Layout[0],Layout[1],Layout[2]};
 
   if(!OutFile.is_open()){
   std::cerr << std::endl
-	 << " Nie mozna otworzyc do zapisu pliku: ../datasets/dat/flight_track.dat" << std::endl
+	 << " Nie mozna otworzyc do zapisu pliku:" << FLIGHT_TRACK << std::endl
 	 << std::endl;
   }
 
@@ -224,7 +238,23 @@ void Drone::MakeTrack(double FlightLen, std::vector<Vector3D>& TracePoints)const
 
 
 
+const std::string& Drone::TakeFilename_Body() const{
+    return Body.TakeFilename_FinalSolid();
+}
 
+
+
+
+const std::string& Drone::TakeFilename_Rotor(const Prism& Rotor) const{
+    return Rotor.TakeFilename_FinalSolid();
+}
+
+
+
+
+const Prism&  Drone::operator [] (unsigned int Ind) const{
+  return Rotor[Ind];
+}
 
 
 

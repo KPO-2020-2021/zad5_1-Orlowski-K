@@ -17,26 +17,35 @@
 #include "Vector3D.hh"
 #include "Matrix3x3.hh"
 #include "Drone.hh"
+#include "Scene.hh"
 #include "../inc/lacze_do_gnuplota.hh"
+
+#define SURFACE "../datasets/templates/surface.dat"
 
 
 int main() {
     PzG::LaczeDoGNUPlota Link;
-    Vector3D Layout = {20,20,0};
-    double   Orient = 0;
-    Drone FirstDrone;
+    unsigned int number_of_drones = 0;
+    Vector3D Layout1 = {20,20,0}, Layout2 = {130,130,0}, Layout3 = {90,180,0};
+    double   Orient1 = 0, Orient2 = 25, Orient3 = 90;
+    Drone FirstDrone, SecondDrone, ThirdDrone;
     std::vector<Vector3D> TracePoints;
+    std::vector<Drone>    Drones;
+    Scene Scene(Drones,SURFACE,Link);
 
-    FirstDrone.MakeDrone(Layout,Orient);
+    FirstDrone.MakeDrone(Layout1,Orient1,number_of_drones);
     FirstDrone.Count_Save_GlobalCoor();
 
-    Link.DodajNazwePliku("../datasets/templates/surface.dat");
-    Link.DodajNazwePliku("../datasets/dat/body.dat");
-    Link.DodajNazwePliku("../datasets/dat/rotor_1.dat");
-    Link.DodajNazwePliku("../datasets/dat/rotor_2.dat");
-    Link.DodajNazwePliku("../datasets/dat/rotor_3.dat");
-    Link.DodajNazwePliku("../datasets/dat/rotor_4.dat");
-    
+    SecondDrone.MakeDrone(Layout2,Orient2,number_of_drones);
+    SecondDrone.Count_Save_GlobalCoor();
+
+    ThirdDrone.MakeDrone(Layout3,Orient3,number_of_drones);
+    ThirdDrone.Count_Save_GlobalCoor();
+
+    Scene.CreateSurface();
+    Scene.AddDrone(FirstDrone);
+    Scene.AddDrone(SecondDrone);
+    Scene.AddDrone(ThirdDrone);
 
     Link.ZmienTrybRys(PzG::TR_3D);
     Link.Inicjalizuj();
@@ -53,7 +62,7 @@ int main() {
     std::cin.ignore(10000,'\n');
 
     FirstDrone.MakeTrack(130,TracePoints);
-    Link.DodajNazwePliku("../datasets/dat/flight_track.dat");
+    Link.DodajNazwePliku(FLIGHT_TRACK);
     Link.Rysuj();
     
     std::cout << "Nacisnij ENTER, aby wykonac animacje lotu drona " << std::flush;

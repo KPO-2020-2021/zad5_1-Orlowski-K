@@ -1,3 +1,19 @@
+## Wsepna faza ( Przygotowanie tydz 1)
+
+Program poprawnie rysuje scene i drony.
+Mozna dodawac dowolna ilosc dronow do sceny (w miare rozsadku).
+
+Wykonanie w pelni obiektowe.
+
+Czesc danych jest nadal wpisywana "na sztywno" w celach testowych. Finalna wersja
+bedzie bardziej zautomatyzowana.
+
+Animacja lotu jednego z dronow.
+
+Wybieranie drona do uzycia jeszcze nie zaimplementowane.
+
+Dokumentacja w trakcie tworzenia.
+
 
 ## Building
 

@@ -46,6 +46,7 @@ set(SOURCES          # All .cpp files in src/
     src/Vector3D.cpp
     src/Prism6.cpp
     src/Drone.cpp
+    src/Scene.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/main.cpp
