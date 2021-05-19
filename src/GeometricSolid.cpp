@@ -5,6 +5,13 @@ Solid::Solid(){
 }
 
 
+/*!
+ *   \brief Metoda skalujaca wektor
+ *    Mnozy odpowiadajace sobie wartosci wektorow 
+ *
+ *   \param [in]  Vertex - wektor 3D stanowiacy podstawe skalowania
+ *   \retval tmp    - wynikowy wektor
+ */
 Vector3D Solid::Scale(const Vector3D& Vertex) const{
     Vector3D tmp;
     for(unsigned int i = 0; i < 3; ++i){
@@ -14,6 +21,14 @@ Vector3D Solid::Scale(const Vector3D& Vertex) const{
 }
 
 
+/*!
+ *   \brief Konstruktor parametryczny klasy Solid
+ *
+ *   \param [in]  FirtsFile - sciezka do pliku ze wzorcowymi brylami
+ *   \param [in]  SecFile   - sciezka do pliku z docelowymi brylami
+ *   \param [in]  V_scale   - wektor skalujacy
+ *   \retval    Obiekt klasy Solid z zainicjowanymi polami
+ */
 Solid::Solid(std::string FirstFile,std::string SecFile, Vector3D V_scale){
     Filename_TemplateSolid = FirstFile;
     Filename_FinalSolid = SecFile;

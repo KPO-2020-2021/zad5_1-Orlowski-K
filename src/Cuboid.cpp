@@ -6,6 +6,14 @@ Cuboid::Cuboid(){
 }
 
 
+
+/*!
+ *   \brief Metoda zmieniajaca uklad
+ *    Transformuje wektory do ukladu wyzszego 
+ *
+ *   \param [in]  Vertex - wektor 3D odpowiadajacy wierzcholkowi w przestrzeni
+ *   \retval tmp    - wektor przedstawiony w ukladzie lokalnym zespolu
+ */
 Vector3D Cuboid::TranformToParentialCoordinate(const Vector3D& Vertex) const{
     Matrix3x3 tmp;
     tmp = create_rotation('z',OrientAngle);
@@ -14,6 +22,20 @@ Vector3D Cuboid::TranformToParentialCoordinate(const Vector3D& Vertex) const{
 }
 
 
+
+
+/*!
+ *   \brief Konstruktor parametryczny klasy Cuboid
+ *
+ *   Wykorzystuje wywolanie konstruktora klasy Solid
+ * 
+ *   \param [in]  File1     - sciezka do pliku ze wzorcowymi brylami
+ *   \param [in]  File2     - sciezka do pliku z docelowymi brylami
+ *   \param [in]  V_scale   - wektor skalujacy
+ *   \param [in]  V         - wektor opisujacy polozenie w przestrzeni
+ *   \param [in]  angle     - kat orientacji bryly w przestrzeni
+ *   \retval    Obiekt klasy Cuboid z zainicjowanymi polami
+ */
 Cuboid::Cuboid(std::string File1, std::string File2, Vector3D V_scale, Vector3D V, double angle ):
     Solid(File1,File2,V_scale){
         Layout = V;

@@ -13,6 +13,7 @@ class Scene{
 
         PzG::LaczeDoGNUPlota Link;
 
+        unsigned int Active;
 
     public:
         Scene();
@@ -21,9 +22,11 @@ class Scene{
 
         void AddDrone(const Drone &NewDrone);
 
-        const Drone& TakeActiveDron() const;
+        void SwitchActiveDrone();
 
-        Drone& UseActiveDron();
+        const Drone& TakeActiveDrone() const;
+
+        Drone& UseActiveDrone();
 
         void CreateSurface();
 
