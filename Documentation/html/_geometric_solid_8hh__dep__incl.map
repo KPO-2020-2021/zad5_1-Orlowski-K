@@ -1,0 +1,13 @@
+<map id="GeometricSolid.hh" name="GeometricSolid.hh">
+<area shape="rect" id="node1" title="Klasa opisujaca bryle geometryczna." alt="" coords="148,5,291,32"/>
+<area shape="rect" id="node2" href="$_cuboid_8hh.html" title="Klasa opisujaca prostopadloscian." alt="" coords="65,80,152,107"/>
+<area shape="rect" id="node9" href="$_prism6_8hh.html" title="Klasa opisujaca graniastoslup o podstawie szesciokatnej." alt="" coords="176,80,263,107"/>
+<area shape="rect" id="node11" href="$_geometric_solid_8cpp.html" title=" " alt="" coords="287,80,437,107"/>
+<area shape="rect" id="node3" href="$_drone_8hh.html" title="Klasa opisujaca drona." alt="" coords="124,155,205,181"/>
+<area shape="rect" id="node8" href="$_cuboid_8cpp.html" title=" " alt="" coords="5,155,100,181"/>
+<area shape="rect" id="node4" href="$app_2main_8cpp.html" title=" " alt="" coords="45,304,127,331"/>
+<area shape="rect" id="node5" href="$_scene_8hh.html" title="Klasa opisujaca scene." alt="" coords="124,229,205,256"/>
+<area shape="rect" id="node7" href="$_drone_8cpp.html" title=" " alt="" coords="230,229,318,256"/>
+<area shape="rect" id="node6" href="$_scene_8cpp.html" title=" " alt="" coords="151,304,239,331"/>
+<area shape="rect" id="node10" href="$_prism6_8cpp.html" title=" " alt="" coords="229,155,324,181"/>
+</map>

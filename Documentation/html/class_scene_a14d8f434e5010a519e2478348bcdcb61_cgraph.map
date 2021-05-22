@@ -1,0 +1,8 @@
+<map id="Scene::AddDrone" name="Scene::AddDrone">
+<area shape="rect" id="node1" title="Metoda dodajaca drona do sceny." alt="" coords="5,71,139,98"/>
+<area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku." alt="" coords="199,5,373,47"/>
+<area shape="rect" id="node4" href="$class_drone.html#af3224e3b7b4884460738fe192f2dac32" title="Metoda udostepniajaca sciezke do pliku prostopadlosianu." alt="" coords="187,71,385,98"/>
+<area shape="rect" id="node6" href="$class_drone.html#ae3a363fd39a546dda3742b28427565cd" title="Metoda udostepniajaca sciezke do pliku graniastoslupa." alt="" coords="207,123,365,164"/>
+<area shape="rect" id="node3" href="$namespace_pz_g.html#ae1ae4d36f66c77879380ba73da8e20e3" title=" " alt="" coords="445,13,572,39"/>
+<area shape="rect" id="node5" href="$class_solid.html#af82e9a14c3ac06eec6bf717a6777cda2" title="Metoda zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="433,93,584,135"/>
+</map>

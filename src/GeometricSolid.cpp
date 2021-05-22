@@ -24,7 +24,7 @@ Vector3D Solid::Scale(const Vector3D& Vertex) const{
 /*!
  *   \brief Konstruktor parametryczny klasy Solid
  *
- *   \param [in]  FirtsFile - sciezka do pliku ze wzorcowymi brylami
+ *   \param [in]  FirstFile - sciezka do pliku ze wzorcowymi brylami
  *   \param [in]  SecFile   - sciezka do pliku z docelowymi brylami
  *   \param [in]  V_scale   - wektor skalujacy
  *   \retval    Obiekt klasy Solid z zainicjowanymi polami

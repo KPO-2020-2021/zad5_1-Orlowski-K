@@ -1,0 +1,200 @@
+\hypertarget{class_solid}{}\doxysection{Dokumentacja klasy Solid}
+\label{class_solid}\index{Solid@{Solid}}
+
+
+Klasa opisujaca bryle geometryczna.  
+
+
+
+
+{\ttfamily \#include $<$Geometric\+Solid.\+hh$>$}
+
+
+
+Diagram dziedziczenia dla Solid\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_solid__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Solid\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_solid__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_solid_a2cf157c87df66dc3eb8722f9b3ee8f66}{Solid}} ()
+\item 
+\mbox{\hyperlink{class_solid_acee9be684c5805b5b007b25ba071be40}{Solid}} (std\+::string First\+File, std\+::string Sec\+File, \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} V\+\_\+scale)
+\begin{DoxyCompactList}\small\item\em Konstruktor parametryczny klasy \mbox{\hyperlink{class_solid}{Solid}}. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_solid_a845f3e314cf6ed5f9125cac11382a43e}{Take\+Filename\+\_\+\+Template\+Solid}} () const
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca sciezke do pliku wzorcowego. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_solid_af82e9a14c3ac06eec6bf717a6777cda2}{Take\+Filename\+\_\+\+Final\+Solid}} () const
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca sciezke do pliku z docelowa bryla. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \mbox{\hyperlink{class_solid_a76b8df098d571113383b1a6fcc12b44b}{Scale}} (const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&Vertex) const
+\begin{DoxyCompactList}\small\item\em Metoda skalujaca wektor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_solid_a307a4cbf475f3195aef2cc81d7f6c285}{Filename\+\_\+\+Template\+Solid}}
+\begin{DoxyCompactList}\small\item\em Sciezka do pliku z bryla wzorcowa. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_solid_a39049170d0d572c8a4e348e062c33aba}{Filename\+\_\+\+Final\+Solid}}
+\begin{DoxyCompactList}\small\item\em Sciezka do pliku przechowywania finalnych bryl. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \mbox{\hyperlink{class_solid_ab729ee1d9555c810aaf5d8893f7e4ee1}{scale}}
+\begin{DoxyCompactList}\small\item\em Wektor skalujacy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa opisuje pojecie bryly geometrycznej w przestrzeni. Sklada sie z pol przechowujacych sciezki do plikow z wzorcowymi brylami oraz docelowym miejscem skladowania bryl. Wektor jest uzywany do slkalowania bryl. 
+
+Definicja w linii 24 pliku Geometric\+Solid.\+hh.
+
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_solid_a2cf157c87df66dc3eb8722f9b3ee8f66}\label{class_solid_a2cf157c87df66dc3eb8722f9b3ee8f66}} 
+\index{Solid@{Solid}!Solid@{Solid}}
+\index{Solid@{Solid}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{Solid()}{Solid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Solid\+::\+Solid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 4 pliku Geometric\+Solid.\+cpp.
+
+\mbox{\Hypertarget{class_solid_acee9be684c5805b5b007b25ba071be40}\label{class_solid_acee9be684c5805b5b007b25ba071be40}} 
+\index{Solid@{Solid}!Solid@{Solid}}
+\index{Solid@{Solid}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{Solid()}{Solid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Solid\+::\+Solid (\begin{DoxyParamCaption}\item[{std\+::string}]{First\+File,  }\item[{std\+::string}]{Sec\+File,  }\item[{\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}}}]{V\+\_\+scale }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em First\+File} & -\/ sciezka do pliku ze wzorcowymi brylami \\
+\hline
+\mbox{\texttt{ in}}  & {\em Sec\+File} & -\/ sciezka do pliku z docelowymi brylami \\
+\hline
+\mbox{\texttt{ in}}  & {\em V\+\_\+scale} & -\/ wektor skalujacy \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Obiekt} & klasy \mbox{\hyperlink{class_solid}{Solid}} z zainicjowanymi polami \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 32 pliku Geometric\+Solid.\+cpp.
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_solid_a76b8df098d571113383b1a6fcc12b44b}\label{class_solid_a76b8df098d571113383b1a6fcc12b44b}} 
+\index{Solid@{Solid}!Scale@{Scale}}
+\index{Scale@{Scale}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{Scale()}{Scale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} Solid\+::\+Scale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&}]{Vertex }\end{DoxyParamCaption}) const}
+
+Metoda skalujaca wektor Mnozy odpowiadajace sobie wartosci wektorow.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em Vertex} & -\/ wektor 3D stanowiacy podstawe skalowania \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em tmp} & -\/ wynikowy wektor \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 15 pliku Geometric\+Solid.\+cpp.
+
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solid_a76b8df098d571113383b1a6fcc12b44b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solid_af82e9a14c3ac06eec6bf717a6777cda2}\label{class_solid_af82e9a14c3ac06eec6bf717a6777cda2}} 
+\index{Solid@{Solid}!TakeFilename\_FinalSolid@{TakeFilename\_FinalSolid}}
+\index{TakeFilename\_FinalSolid@{TakeFilename\_FinalSolid}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{TakeFilename\_FinalSolid()}{TakeFilename\_FinalSolid()}}
+{\footnotesize\ttfamily const std\+::string\& Solid\+::\+Take\+Filename\+\_\+\+Final\+Solid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definicja w linii 57 pliku Geometric\+Solid.\+hh.
+
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solid_af82e9a14c3ac06eec6bf717a6777cda2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_solid_a845f3e314cf6ed5f9125cac11382a43e}\label{class_solid_a845f3e314cf6ed5f9125cac11382a43e}} 
+\index{Solid@{Solid}!TakeFilename\_TemplateSolid@{TakeFilename\_TemplateSolid}}
+\index{TakeFilename\_TemplateSolid@{TakeFilename\_TemplateSolid}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{TakeFilename\_TemplateSolid()}{TakeFilename\_TemplateSolid()}}
+{\footnotesize\ttfamily const std\+::string\& Solid\+::\+Take\+Filename\+\_\+\+Template\+Solid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definicja w linii 52 pliku Geometric\+Solid.\+hh.
+
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_solid_a845f3e314cf6ed5f9125cac11382a43e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_solid_a39049170d0d572c8a4e348e062c33aba}\label{class_solid_a39049170d0d572c8a4e348e062c33aba}} 
+\index{Solid@{Solid}!Filename\_FinalSolid@{Filename\_FinalSolid}}
+\index{Filename\_FinalSolid@{Filename\_FinalSolid}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{Filename\_FinalSolid}{Filename\_FinalSolid}}
+{\footnotesize\ttfamily std\+::string Solid\+::\+Filename\+\_\+\+Final\+Solid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 34 pliku Geometric\+Solid.\+hh.
+
+\mbox{\Hypertarget{class_solid_a307a4cbf475f3195aef2cc81d7f6c285}\label{class_solid_a307a4cbf475f3195aef2cc81d7f6c285}} 
+\index{Solid@{Solid}!Filename\_TemplateSolid@{Filename\_TemplateSolid}}
+\index{Filename\_TemplateSolid@{Filename\_TemplateSolid}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{Filename\_TemplateSolid}{Filename\_TemplateSolid}}
+{\footnotesize\ttfamily std\+::string Solid\+::\+Filename\+\_\+\+Template\+Solid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 30 pliku Geometric\+Solid.\+hh.
+
+\mbox{\Hypertarget{class_solid_ab729ee1d9555c810aaf5d8893f7e4ee1}\label{class_solid_ab729ee1d9555c810aaf5d8893f7e4ee1}} 
+\index{Solid@{Solid}!scale@{scale}}
+\index{scale@{scale}!Solid@{Solid}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} Solid\+::scale\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 38 pliku Geometric\+Solid.\+hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_geometric_solid_8hh}{Geometric\+Solid.\+hh}}\item 
+\mbox{\hyperlink{_geometric_solid_8cpp}{Geometric\+Solid.\+cpp}}\end{DoxyCompactItemize}

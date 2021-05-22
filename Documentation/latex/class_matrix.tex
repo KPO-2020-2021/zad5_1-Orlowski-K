@@ -1,0 +1,160 @@
+\hypertarget{class_matrix}{}\doxysection{Dokumentacja szablonu klasy Matrix$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$}
+\label{class_matrix}\index{Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}}
+
+
+Szablon modeluje pojecie macierzy kwadratowej. Liczby macierzy sa przechowywane jako tablica wielowymiarowa wybranego typu. Przeciazenia operatorow pozwalaja na modyfikacje i dostep do danych macierzy.  
+
+
+
+
+{\ttfamily \#include $<$Matrix.\+hh$>$}
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_matrix_ad5aa0f2065bdb47a2711c74f2b0a8eb0}{Matrix}} (Templ\+\_\+\+Type tmp\mbox{[}Templ\+\_\+\+Size\mbox{]}\mbox{[}Templ\+\_\+\+Size\mbox{]})
+\item 
+\mbox{\hyperlink{class_matrix_af51139915bf93da697aca9bc33f2fd8d}{Matrix}} ()
+\item 
+\mbox{\hyperlink{class_matrix}{Matrix}} \mbox{\hyperlink{class_matrix_a326808fc0b240280c1402404eafff207}{operator$\ast$}} (\mbox{\hyperlink{class_matrix}{Matrix}} tmp)
+\item 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$ \mbox{\hyperlink{class_matrix_a455162a827408baeb2f97a17867cecfb}{operator$\ast$}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$ tmp)
+\item 
+\mbox{\hyperlink{class_matrix}{Matrix}} \mbox{\hyperlink{class_matrix_a2a191fb282b7caff12d733d0761485d8}{operator+}} (\mbox{\hyperlink{class_matrix}{Matrix}} tmp)
+\item 
+Templ\+\_\+\+Type \& \mbox{\hyperlink{class_matrix_ab689b8121d724d87ffc402a23244119a}{operator()}} (unsigned int row, unsigned int column)
+\item 
+const Templ\+\_\+\+Type \& \mbox{\hyperlink{class_matrix_adee7e2e70919b4c4670891e3a66db725}{operator()}} (unsigned int row, unsigned int column) const
+\item 
+double \mbox{\hyperlink{class_matrix_ab5bc0edc086915ecc822ea1ee1d1e33e}{det}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+Templ\+\_\+\+Type \mbox{\hyperlink{class_matrix_a9d5bed3eced0b789c43c95818b2450e8}{value}} \mbox{[}Templ\+\_\+\+Size\mbox{]}\mbox{[}Templ\+\_\+\+Size\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+\subsubsection*{template$<$typename Templ\+\_\+\+Type, unsigned int Templ\+\_\+\+Size$>$\newline
+class Matrix$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$}
+
+Szablon przyjmuje wartosci typu danych ich ilosci(wymiar macierzy).
+
+Metody pozwalaja na mnozenie macierzy z wektorem. 
+
+Definicja w linii 27 pliku Matrix.\+hh.
+
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_matrix_ad5aa0f2065bdb47a2711c74f2b0a8eb0}\label{class_matrix_ad5aa0f2065bdb47a2711c74f2b0a8eb0}} 
+\index{Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$\+::\mbox{\hyperlink{class_matrix}{Matrix}} (\begin{DoxyParamCaption}\item[{Templ\+\_\+\+Type}]{tmp\mbox{[}\+Templ\+\_\+\+Size\mbox{]}\mbox{[}\+Templ\+\_\+\+Size\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 80 pliku Matrix.\+hh.
+
+\mbox{\Hypertarget{class_matrix_af51139915bf93da697aca9bc33f2fd8d}\label{class_matrix_af51139915bf93da697aca9bc33f2fd8d}} 
+\index{Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$\+::\mbox{\hyperlink{class_matrix}{Matrix}}}
+
+
+
+Definicja w linii 59 pliku Matrix.\+hh.
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_matrix_ab5bc0edc086915ecc822ea1ee1d1e33e}\label{class_matrix_ab5bc0edc086915ecc822ea1ee1d1e33e}} 
+\index{Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}!det@{det}}
+\index{det@{det}!Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{det()}{det()}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+double \mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$\+::det}
+
+
+
+Definicja w linii 250 pliku Matrix.\+hh.
+
+\mbox{\Hypertarget{class_matrix_ab689b8121d724d87ffc402a23244119a}\label{class_matrix_ab689b8121d724d87ffc402a23244119a}} 
+\index{Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+Templ\+\_\+\+Type \& \mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$\+::operator() (\begin{DoxyParamCaption}\item[{unsigned int}]{row,  }\item[{unsigned int}]{column }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 121 pliku Matrix.\+hh.
+
+\mbox{\Hypertarget{class_matrix_adee7e2e70919b4c4670891e3a66db725}\label{class_matrix_adee7e2e70919b4c4670891e3a66db725}} 
+\index{Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+const Templ\+\_\+\+Type \& \mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$\+::operator() (\begin{DoxyParamCaption}\item[{unsigned int}]{row,  }\item[{unsigned int}]{column }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 144 pliku Matrix.\+hh.
+
+\mbox{\Hypertarget{class_matrix_a326808fc0b240280c1402404eafff207}\label{class_matrix_a326808fc0b240280c1402404eafff207}} 
+\index{Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$}]{tmp }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 187 pliku Matrix.\+hh.
+
+\mbox{\Hypertarget{class_matrix_a455162a827408baeb2f97a17867cecfb}\label{class_matrix_a455162a827408baeb2f97a17867cecfb}} 
+\index{Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$}]{tmp }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 98 pliku Matrix.\+hh.
+
+\mbox{\Hypertarget{class_matrix_a2a191fb282b7caff12d733d0761485d8}\label{class_matrix_a2a191fb282b7caff12d733d0761485d8}} 
+\index{Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$}]{tmp }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 166 pliku Matrix.\+hh.
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_matrix_a9d5bed3eced0b789c43c95818b2450e8}\label{class_matrix_a9d5bed3eced0b789c43c95818b2450e8}} 
+\index{Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}!value@{value}}
+\index{value@{value}!Matrix$<$ Templ\_Type, Templ\_Size $>$@{Matrix$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+Templ\+\_\+\+Type \mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$\+::value\mbox{[}Templ\+\_\+\+Size\mbox{]}\mbox{[}Templ\+\_\+\+Size\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 30 pliku Matrix.\+hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_matrix_8hh}{Matrix.\+hh}}\end{DoxyCompactItemize}

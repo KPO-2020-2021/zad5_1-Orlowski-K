@@ -1,0 +1,63 @@
+\hypertarget{_vector_8hh}{}\doxysection{Dokumentacja pliku Vector.\+hh}
+\label{_vector_8hh}\index{Vector.hh@{Vector.hh}}
+
+
+Ten plik zawiera definicję szablonu Vector$<$$>$  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+Wykres zależności załączania dla Vector.\+hh\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_vector_8hh__incl}
+\end{center}
+\end{figure}
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_vector_8hh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_vector}{Vector$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$}}
+\begin{DoxyCompactList}\small\item\em Szablon opisujacy wektor w przestrzeni. Za jego pomoca opisywane sa wierzcholki dowolnej figury jako wektory o poczatku w poczatku ukladu wspolrzednych. Wektory skladaja sie z tablicy typu double, w ktorej przechowywane sa kolejne skladowe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Templ\+\_\+\+Typ , unsigned int Templ\+\_\+\+Size$>$ }\\\mbox{\hyperlink{doctest__fwd_8h_a116af65cb5e924b33ad9d9ecd7a783f3}{std\+::ostream}} \& \mbox{\hyperlink{_vector_8hh_af6993729d9d66945cac2f7a1949a67f4}{operator$<$$<$}} (\mbox{\hyperlink{doctest__fwd_8h_a116af65cb5e924b33ad9d9ecd7a783f3}{std\+::ostream}} \&out, \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$ const \&tmp)
+\item 
+{\footnotesize template$<$typename Templ\+\_\+\+Typ , unsigned int Templ\+\_\+\+Size$>$ }\\std\+::istream \& \mbox{\hyperlink{_vector_8hh_ade479f20fe36e8a3b3f455e9584fea97}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$ \&tmp)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_vector_8hh_af6993729d9d66945cac2f7a1949a67f4}\label{_vector_8hh_af6993729d9d66945cac2f7a1949a67f4}} 
+\index{Vector.hh@{Vector.hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Vector.hh@{Vector.hh}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Typ , unsigned int Templ\+\_\+\+Size$>$ \\
+\mbox{\hyperlink{doctest__fwd_8h_a116af65cb5e924b33ad9d9ecd7a783f3}{std\+::ostream}}\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{doctest__fwd_8h_a116af65cb5e924b33ad9d9ecd7a783f3}{std\+::ostream}} \&}]{out,  }\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$ const \&}]{tmp }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 261 pliku Vector.\+hh.
+
+\mbox{\Hypertarget{_vector_8hh_ade479f20fe36e8a3b3f455e9584fea97}\label{_vector_8hh_ade479f20fe36e8a3b3f455e9584fea97}} 
+\index{Vector.hh@{Vector.hh}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Vector.hh@{Vector.hh}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Typ , unsigned int Templ\+\_\+\+Size$>$ \\
+std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$ \&}]{tmp }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 279 pliku Vector.\+hh.
+

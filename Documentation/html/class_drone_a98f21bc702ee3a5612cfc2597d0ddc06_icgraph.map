@@ -1,0 +1,10 @@
+<map id="Drone::TransformToParentialCoordinate" name="Drone::TransformToParentialCoordinate">
+<area shape="rect" id="node1" title="Metoda chroniona transformujaca wierzcholki do ukladu globalnego." alt="" coords="917,74,1123,115"/>
+<area shape="rect" id="node2" href="$class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="638,56,869,83"/>
+<area shape="rect" id="node8" href="$class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="637,107,869,133"/>
+<area shape="rect" id="node3" href="$class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="364,81,589,108"/>
+<area shape="rect" id="node4" href="$class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="113,5,311,32"/>
+<area shape="rect" id="node5" href="$app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,60,108"/>
+<area shape="rect" id="node6" href="$class_drone.html#a08c026ce13b2dc5bb785f0efff866646" title="Metoda animujaca lot poziomy." alt="" coords="108,107,316,133"/>
+<area shape="rect" id="node7" href="$class_drone.html#a08a5d096fd19e259c3094b15dab29de1" title="Metoda animujaca lot pionowy." alt="" coords="117,157,307,184"/>
+</map>

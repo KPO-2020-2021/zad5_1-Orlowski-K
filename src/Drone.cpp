@@ -304,6 +304,8 @@ void Drone::MakeTrack(double rotation_angle, double FlightLen, std::vector<Vecto
   std::ofstream OutFile;
   double FlightHeight = 80;
   Vector3D tmp = {Layout[0],Layout[1],Layout[2]};
+
+  TracePoints.clear();
   
   if(OutFile.is_open())
     OutFile.close();

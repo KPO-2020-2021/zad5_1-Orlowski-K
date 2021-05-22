@@ -1,7 +1,14 @@
 #include "Matrix3x3.hh"
 
 
-
+/*!
+ * \brief Funkcja tworzaca macierz obrotu
+ * \param axis - os obrotu
+ * \param angle - kat podany w stopniach
+ * 
+ * \retval Matrix3x3 tmp - maciez obrotu 
+ * 
+ */
 Matrix3x3 create_rotation(char axis, double angle){
     Matrix3x3 tmp;
     angle = angle * M_PI / 180;

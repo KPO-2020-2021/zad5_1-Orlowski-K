@@ -1,0 +1,5 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$class_solid.html" title="Klasa opisujaca bryle geometryczna." alt="" coords="5,31,60,57"/>
+<area shape="rect" id="node2" href="$class_cuboid.html" title="Klasa opisujaca prostopadloscian." alt="" coords="108,5,175,32"/>
+<area shape="rect" id="node3" href="$class_prism.html" title="Klasa opisujaca graniastoslup o podstawie szesciokatnej." alt="" coords="112,56,171,83"/>
+</map>

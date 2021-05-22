@@ -31,6 +31,7 @@ class Vector {
 private:
 
     Templ_Type size[Templ_Size];     //Tablica wektora
+    static unsigned int 
 
 public:
 

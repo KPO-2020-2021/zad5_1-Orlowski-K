@@ -1,0 +1,30 @@
+\begin{DoxyAuthor}{Autor}
+Jan Kowalski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+2021.\+05.\+04 
+\end{DoxyDate}
+\begin{DoxyVersion}{Wersja}
+0.\+1
+\end{DoxyVersion}
+\hypertarget{index_charakterystyka}{}\doxysection{Charakterystyka misji Dragonfly}\label{index_charakterystyka}
+W roku 2027 N\+A\+SA planuję rozpocząć realizację misji pod nazwą kodową {\itshape Dragonfly}. Jej celem jest wysłanie zrobotyzowanego drona na Tytana (księżyc Saturna).
+
+
+
+Lądowanie przewidziane jest na rok 2034 lub później. Tytan różni się od innych księżyców w Układzie Słonecznym tym, że ma stosunkowo gęstą atmosferę. Dlatego też do jego eksploracji przewidziany jest dron. Jak źródło energii będzie wykorzystywane ogniowo izotopowe (podobnie jak w przypadku misji Curiosity i Perseverance oraz wcześniejszych misji poza Układ Słoneczny, tzn. Pionieer 10 i 11 oraz Voyager 1 i 2). Dragonfly po Ingenuity będzie drugim latającym dronem na innym umieszczonym i wykorzystywanym na ciele niebieskim. W odróżnieniu od Ingenuity nie będzie jednak tylko demonstratorem technologii, a pełnoprawnym samodzielnym laboratorium badawczym, tak jak Curiosity, czy też Perseverance. Jednak podobnie jak w przypadku Ingenuity ze względu na duże opóźnienie w komunikacji (ponad godzinę), jego przelot będzie musiał być w pełni autonomiczny, w tym wyszukiwanie odpowiednich miejsc do lądowania.\hypertarget{index_usecase-diagram}{}\doxysection{Diagram przypadków użycia}\label{index_usecase-diagram}
+Diagram użycia w tym zadaniu obrazuje operacja jakie użytkownik może żądać od aplikacji. Może on też pokazywać jakie są niezbędne do realizacji danego żądania. Zestaw operacji, które może żądać użytkownik, w tym przypadku odpowiadają pozycjom menu aplikacji.
+
+\hypertarget{index_class-diagram}{}\doxysection{Diagram podstawowych klas}\label{index_class-diagram}
+Poniżej przedstawiony jest diagram klas, który traktowany jest jako punkt wyjścia dla tworzonej aplikacji. Interfejsy poszczególnych klas zostały ograniczone tylko do najważniejszego zestawu metod. Nie należy więc traktować jako kompletnego diagramu.
+
+\hypertarget{index_activity-diagram}{}\doxysection{Diagramy czynności dla wybranych metod}\label{index_activity-diagram}
+Obliczanie i zapis współrzędnych wierzchołków po zmianie położenia drona realizowane jest przez metodę {\ttfamily Dron\+::\+Oblicz\+\_\+i\+\_\+\+Zapisz\+\_\+\+Wsp\+Glb\+Drona()}. Wykorzystuje ona dwie inne metody, tzn. {\ttfamily Dron\+::\+Oblicz\+\_\+i\+\_\+\+Zapisz\+\_\+\+Wsp\+Glb\+Korpusu()} i {\ttfamily Dron\+::\+Oblicz\+\_\+i\+\_\+\+Zapisz\+\_\+\+Wsp\+Glb\+Rotora}(.), które odpowiedzialne są odpowiednio za obliczenie współrzędnych korpusu oraz czterech rotorów. Sposób użycia tych metod przedstawia diagramie poniżej.
+
+
+
+Ideę działania metody {\ttfamily Dron\+::\+Oblicz\+\_\+i\+\_\+\+Zapisz\+\_\+\+Wsp\+Glb\+Rotora}(.) prezentuje dalszy diagram czynności. Diagram ten pokazuje kolejne operacje związane z przeskalowaniem wierzchołków bryły geometrycznej. Następnie, przeliczenie i przejście do układu współrzędnych lokalnych drona. W dalszej kolejności ponowne przeliczenie i przejście do układu współrzędnych globalnych sceny.
+
+
+
+Analogiczną postać ma diagram czynności dla metody {\ttfamily Dron\+::\+Oblicz\+\_\+i\+\_\+\+Zapisz\+\_\+\+Wsp\+Glb\+Korpusu()}. 

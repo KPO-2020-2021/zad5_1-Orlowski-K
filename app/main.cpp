@@ -102,6 +102,9 @@ int main() {
                 
                 std::cout << "Nacisnij ENTER, aby zakonczyc ... " << std::flush;
                 std::cin.ignore(10000,'\n');
+
+                std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone().TakeLayout()[0]<< "  " << Scene.TakeActiveDrone().TakeLayout()[1] << std::endl;
+
                 break;
             case 'm':
                 std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone().TakeLayout()[0] << "  "<<Scene.TakeActiveDrone().TakeLayout()[1] << std::endl;

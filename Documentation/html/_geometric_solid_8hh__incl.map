@@ -1,0 +1,12 @@
+<map id="GeometricSolid.hh" name="GeometricSolid.hh">
+<area shape="rect" id="node1" title="Klasa opisujaca bryle geometryczna." alt="" coords="281,5,424,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="374,304,454,331"/>
+<area shape="rect" id="node3" href="$_vector3_d_8hh.html" title="Plik zawiera definicje klasy wektora 3D opartego na szablonie." alt="" coords="166,155,267,181"/>
+<area shape="rect" id="node9" href="$_matrix3x3_8hh.html" title="Plik zawiera definicje macierzy 3x3." alt="" coords="299,80,407,107"/>
+<area shape="rect" id="node4" href="$_vector_8hh.html" title="Ten plik zawiera definicję szablonu Vector&lt;&gt;" alt="" coords="178,229,261,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,304,71,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="95,304,157,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="182,304,257,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="281,304,350,331"/>
+<area shape="rect" id="node10" href="$_matrix_8hh.html" title="Plik zawierajacy definicje szablonu Matrix&lt;&gt;" alt="" coords="292,155,376,181"/>
+</map>

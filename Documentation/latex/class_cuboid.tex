@@ -1,0 +1,165 @@
+\hypertarget{class_cuboid}{}\doxysection{Dokumentacja klasy Cuboid}
+\label{class_cuboid}\index{Cuboid@{Cuboid}}
+
+
+Klasa opisujaca prostopadloscian.  
+
+
+
+
+{\ttfamily \#include $<$Cuboid.\+hh$>$}
+
+
+
+Diagram dziedziczenia dla Cuboid\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{class_cuboid__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Cuboid\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_cuboid__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cuboid_a1abf60e93d024b7a01ee5b1a48f1f08a}{Cuboid}} ()
+\item 
+\mbox{\hyperlink{class_cuboid_ad300b92d7d97503bbcf1f2aa96fa68e3}{Cuboid}} (std\+::string File1, std\+::string File2, \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} V\+\_\+scale, \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} V, double angle)
+\begin{DoxyCompactList}\small\item\em Konstruktor parametryczny klasy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \mbox{\hyperlink{class_cuboid_a08bc443badc04b38cb947ee573c534b9}{Tranform\+To\+Parential\+Coordinate}} (const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&Vertex) const
+\begin{DoxyCompactList}\small\item\em Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \mbox{\hyperlink{class_cuboid_af4ca0bbfc959d5ea86b240daa581b4b4}{Layout}}
+\begin{DoxyCompactList}\small\item\em Wektor polozenia. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_cuboid_a1fda740e4b52e9e0f3d0e2d9bbfb9e84}{Orient\+Angle}}
+\begin{DoxyCompactList}\small\item\em Kat orientacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa opisuje pojecie prostopadloscianu w przestrzeni. Jest to klasa dziedziczaca po klasie \mbox{\hyperlink{class_solid}{Solid}} w trybie publicznym. Zawiera pola opisujace polozenie bryly w ukladzie lokalnym zespolu (drona). 
+
+Definicja w linii 23 pliku Cuboid.\+hh.
+
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_cuboid_a1abf60e93d024b7a01ee5b1a48f1f08a}\label{class_cuboid_a1abf60e93d024b7a01ee5b1a48f1f08a}} 
+\index{Cuboid@{Cuboid}!Cuboid@{Cuboid}}
+\index{Cuboid@{Cuboid}!Cuboid@{Cuboid}}
+\doxysubsubsection{\texorpdfstring{Cuboid()}{Cuboid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cuboid\+::\+Cuboid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 5 pliku Cuboid.\+cpp.
+
+\mbox{\Hypertarget{class_cuboid_ad300b92d7d97503bbcf1f2aa96fa68e3}\label{class_cuboid_ad300b92d7d97503bbcf1f2aa96fa68e3}} 
+\index{Cuboid@{Cuboid}!Cuboid@{Cuboid}}
+\index{Cuboid@{Cuboid}!Cuboid@{Cuboid}}
+\doxysubsubsection{\texorpdfstring{Cuboid()}{Cuboid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cuboid\+::\+Cuboid (\begin{DoxyParamCaption}\item[{std\+::string}]{File1,  }\item[{std\+::string}]{File2,  }\item[{\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}}}]{V\+\_\+scale,  }\item[{\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}}}]{V,  }\item[{double}]{angle }\end{DoxyParamCaption})}
+
+Konstruktor parametryczny klasy \mbox{\hyperlink{class_cuboid}{Cuboid}}.
+
+Wykorzystuje wywolanie konstruktora klasy \mbox{\hyperlink{class_solid}{Solid}}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em File1} & -\/ sciezka do pliku ze wzorcowymi brylami \\
+\hline
+\mbox{\texttt{ in}}  & {\em File2} & -\/ sciezka do pliku z docelowymi brylami \\
+\hline
+\mbox{\texttt{ in}}  & {\em V\+\_\+scale} & -\/ wektor skalujacy \\
+\hline
+\mbox{\texttt{ in}}  & {\em V} & -\/ wektor opisujacy polozenie w przestrzeni \\
+\hline
+\mbox{\texttt{ in}}  & {\em angle} & -\/ kat orientacji bryly w przestrzeni \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Obiekt} & klasy \mbox{\hyperlink{class_cuboid}{Cuboid}} z zainicjowanymi polami \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 39 pliku Cuboid.\+cpp.
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_cuboid_a08bc443badc04b38cb947ee573c534b9}\label{class_cuboid_a08bc443badc04b38cb947ee573c534b9}} 
+\index{Cuboid@{Cuboid}!TranformToParentialCoordinate@{TranformToParentialCoordinate}}
+\index{TranformToParentialCoordinate@{TranformToParentialCoordinate}!Cuboid@{Cuboid}}
+\doxysubsubsection{\texorpdfstring{TranformToParentialCoordinate()}{TranformToParentialCoordinate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} Cuboid\+::\+Tranform\+To\+Parential\+Coordinate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&}]{Vertex }\end{DoxyParamCaption}) const}
+
+Metoda zmieniajaca uklad Transformuje wektory do ukladu wyzszego.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em Vertex} & -\/ wektor 3D odpowiadajacy wierzcholkowi w przestrzeni \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em tmp} & -\/ wektor przedstawiony w ukladzie lokalnym zespolu \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 17 pliku Cuboid.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cuboid_a08bc443badc04b38cb947ee573c534b9_cgraph}
+\end{center}
+\end{figure}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cuboid_a08bc443badc04b38cb947ee573c534b9_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_cuboid_af4ca0bbfc959d5ea86b240daa581b4b4}\label{class_cuboid_af4ca0bbfc959d5ea86b240daa581b4b4}} 
+\index{Cuboid@{Cuboid}!Layout@{Layout}}
+\index{Layout@{Layout}!Cuboid@{Cuboid}}
+\doxysubsubsection{\texorpdfstring{Layout}{Layout}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} Cuboid\+::\+Layout\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 29 pliku Cuboid.\+hh.
+
+\mbox{\Hypertarget{class_cuboid_a1fda740e4b52e9e0f3d0e2d9bbfb9e84}\label{class_cuboid_a1fda740e4b52e9e0f3d0e2d9bbfb9e84}} 
+\index{Cuboid@{Cuboid}!OrientAngle@{OrientAngle}}
+\index{OrientAngle@{OrientAngle}!Cuboid@{Cuboid}}
+\doxysubsubsection{\texorpdfstring{OrientAngle}{OrientAngle}}
+{\footnotesize\ttfamily double Cuboid\+::\+Orient\+Angle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 33 pliku Cuboid.\+hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cuboid_8hh}{Cuboid.\+hh}}\item 
+\mbox{\hyperlink{_cuboid_8cpp}{Cuboid.\+cpp}}\end{DoxyCompactItemize}

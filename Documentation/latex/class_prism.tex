@@ -1,0 +1,194 @@
+\hypertarget{class_prism}{}\doxysection{Dokumentacja klasy Prism}
+\label{class_prism}\index{Prism@{Prism}}
+
+
+Klasa opisujaca graniastoslup o podstawie szesciokatnej.  
+
+
+
+
+{\ttfamily \#include $<$Prism6.\+hh$>$}
+
+
+
+Diagram dziedziczenia dla Prism\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{class_prism__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Prism\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_prism__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_prism_aa84930a585c7817f74a14d95ea74cb5a}{Prism}} ()
+\item 
+\mbox{\hyperlink{class_prism_a52e5b582fa2ba17852892a5cf2f75bf9}{Prism}} (std\+::string File1, std\+::string File2, \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} V\+\_\+scale, \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} V, double angle)
+\begin{DoxyCompactList}\small\item\em Konstruktor parametryczny klasy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \mbox{\hyperlink{class_prism_a86fb5c667a39ad8f0321cfabf81cdb21}{Tranform\+To\+Parential\+Coordinate}} (const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&Vertex) const
+\begin{DoxyCompactList}\small\item\em Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_prism_a6d449146f3102b350c658e088ea8fe69}{Rotate}} (double angle)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadajaca za obracanie w ukladzie lokalnym bryly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \mbox{\hyperlink{class_prism_a97781aa40527a394c5ae1c429143b575}{Layout}}
+\begin{DoxyCompactList}\small\item\em Wektor polozenia. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_prism_a594e9d3e476ec941d46689a8c9d0c6ff}{Orient\+Angle}}
+\begin{DoxyCompactList}\small\item\em Kat orientacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa opisuje pojecie graniastoslupa w przestrzeni. Jest to klasa dziedziczaca po klasie \mbox{\hyperlink{class_solid}{Solid}} w trybie publicznym. Zawiera pola opisujace polozenie bryly w ukladzie lokalnym zespolu (drona). 
+
+Definicja w linii 21 pliku Prism6.\+hh.
+
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_prism_aa84930a585c7817f74a14d95ea74cb5a}\label{class_prism_aa84930a585c7817f74a14d95ea74cb5a}} 
+\index{Prism@{Prism}!Prism@{Prism}}
+\index{Prism@{Prism}!Prism@{Prism}}
+\doxysubsubsection{\texorpdfstring{Prism()}{Prism()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Prism\+::\+Prism (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 4 pliku Prism6.\+cpp.
+
+\mbox{\Hypertarget{class_prism_a52e5b582fa2ba17852892a5cf2f75bf9}\label{class_prism_a52e5b582fa2ba17852892a5cf2f75bf9}} 
+\index{Prism@{Prism}!Prism@{Prism}}
+\index{Prism@{Prism}!Prism@{Prism}}
+\doxysubsubsection{\texorpdfstring{Prism()}{Prism()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Prism\+::\+Prism (\begin{DoxyParamCaption}\item[{std\+::string}]{File1,  }\item[{std\+::string}]{File2,  }\item[{\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}}}]{V\+\_\+scale,  }\item[{\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}}}]{V,  }\item[{double}]{angle }\end{DoxyParamCaption})}
+
+Konstruktor parametryczny klasy \mbox{\hyperlink{class_cuboid}{Cuboid}}.
+
+Wykorzystuje wywolanie konstruktora klasy \mbox{\hyperlink{class_solid}{Solid}}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em File1} & -\/ sciezka do pliku ze wzorcowymi brylami \\
+\hline
+\mbox{\texttt{ in}}  & {\em File2} & -\/ sciezka do pliku z docelowymi brylami \\
+\hline
+\mbox{\texttt{ in}}  & {\em V\+\_\+scale} & -\/ wektor skalujacy \\
+\hline
+\mbox{\texttt{ in}}  & {\em V} & -\/ wektor opisujacy polozenie w przestrzeni \\
+\hline
+\mbox{\texttt{ in}}  & {\em angle} & -\/ kat orientacji bryly w przestrzeni \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Obiekt} & klasy \mbox{\hyperlink{class_cuboid}{Cuboid}} z zainicjowanymi polami \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 20 pliku Prism6.\+cpp.
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_prism_a6d449146f3102b350c658e088ea8fe69}\label{class_prism_a6d449146f3102b350c658e088ea8fe69}} 
+\index{Prism@{Prism}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Prism@{Prism}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void Prism\+::\+Rotate (\begin{DoxyParamCaption}\item[{double}]{angle }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em angle} & -\/ kat obrotu \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Zmiana} & orientacji o zadany kat \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 50 pliku Prism6.\+cpp.
+
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_prism_a6d449146f3102b350c658e088ea8fe69_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_prism_a86fb5c667a39ad8f0321cfabf81cdb21}\label{class_prism_a86fb5c667a39ad8f0321cfabf81cdb21}} 
+\index{Prism@{Prism}!TranformToParentialCoordinate@{TranformToParentialCoordinate}}
+\index{TranformToParentialCoordinate@{TranformToParentialCoordinate}!Prism@{Prism}}
+\doxysubsubsection{\texorpdfstring{TranformToParentialCoordinate()}{TranformToParentialCoordinate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} Prism\+::\+Tranform\+To\+Parential\+Coordinate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&}]{Vertex }\end{DoxyParamCaption}) const}
+
+Metoda zmieniajaca uklad Transformuje wektory do ukladu wyzszego.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em Vertex} & -\/ wektor 3D odpowiadajacy wierzcholkowi w przestrzeni \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em tmp} & -\/ wektor przedstawiony w ukladzie lokalnym zespolu \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 34 pliku Prism6.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_prism_a86fb5c667a39ad8f0321cfabf81cdb21_cgraph}
+\end{center}
+\end{figure}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_prism_a86fb5c667a39ad8f0321cfabf81cdb21_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_prism_a97781aa40527a394c5ae1c429143b575}\label{class_prism_a97781aa40527a394c5ae1c429143b575}} 
+\index{Prism@{Prism}!Layout@{Layout}}
+\index{Layout@{Layout}!Prism@{Prism}}
+\doxysubsubsection{\texorpdfstring{Layout}{Layout}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} Prism\+::\+Layout\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 27 pliku Prism6.\+hh.
+
+\mbox{\Hypertarget{class_prism_a594e9d3e476ec941d46689a8c9d0c6ff}\label{class_prism_a594e9d3e476ec941d46689a8c9d0c6ff}} 
+\index{Prism@{Prism}!OrientAngle@{OrientAngle}}
+\index{OrientAngle@{OrientAngle}!Prism@{Prism}}
+\doxysubsubsection{\texorpdfstring{OrientAngle}{OrientAngle}}
+{\footnotesize\ttfamily double Prism\+::\+Orient\+Angle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 31 pliku Prism6.\+hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_prism6_8hh}{Prism6.\+hh}}\item 
+\mbox{\hyperlink{_prism6_8cpp}{Prism6.\+cpp}}\end{DoxyCompactItemize}

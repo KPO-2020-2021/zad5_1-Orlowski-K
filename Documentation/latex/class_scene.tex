@@ -1,0 +1,295 @@
+\hypertarget{class_scene}{}\doxysection{Dokumentacja klasy Scene}
+\label{class_scene}\index{Scene@{Scene}}
+
+
+Klasa opisujaca scene.  
+
+
+
+
+{\ttfamily \#include $<$Scene.\+hh$>$}
+
+
+
+Diagram współpracy dla Scene\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{class_scene__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_ad10176d75a9cc0da56626f682d083507}{Scene}} ()
+\item 
+\mbox{\hyperlink{class_scene_a3ed2570c471f1f5378bf188a4f5cc809}{Scene}} (std\+::vector$<$ \mbox{\hyperlink{class_drone}{Drone}} $>$ \&Drone\+Contener, std\+::string Filename, \mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&Link\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Konstruktor parametryczny sceny. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a14d8f434e5010a519e2478348bcdcb61}{Add\+Drone}} (const \mbox{\hyperlink{class_drone}{Drone}} \&New\+Drone)
+\begin{DoxyCompactList}\small\item\em Metoda dodajaca drona do sceny. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a7e5cdf9909419118b88afa79996beeb5}{Switch\+Active\+Drone}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zmieniajaca aktualnie wybranego drona. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_drone}{Drone}} \& \mbox{\hyperlink{class_scene_a6d5abb73da5487e8aba9bd84826c5530}{Take\+Active\+Drone}} () const
+\begin{DoxyCompactList}\small\item\em Metoda pozwalajaca na dostep do aktywnego drona w trybie tylko do odczytu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_drone}{Drone}} \& \mbox{\hyperlink{class_scene_a87399b42f1e2dbc10c6421c090e23b9a}{Use\+Active\+Drone}} ()
+\begin{DoxyCompactList}\small\item\em Metoda pozwalajaca na dostep do aktywnego drona z mozliwoscia modyfikacji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_ab2e34ae305cb139aa38c804289d18383}{Create\+Surface}} ()
+\begin{DoxyCompactList}\small\item\em Metoda rysujaca plaszczyzne. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_scene_a19973b85b9f521211e7e4f549e88d239}{Take\+Filename\+\_\+\+Surface}} () const
+\begin{DoxyCompactList}\small\item\em Metoda pozwalajaca na dostep do sciezki do powierzchni w trybie tylko do odczytu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_drone}{Drone}} $>$ \mbox{\hyperlink{class_scene_a713dcc6ee3dcff883d3618677a13201b}{Drones}}
+\begin{DoxyCompactList}\small\item\em Kontener z dronami. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_scene_aa8a50f5cf3a97abcaf76fc21d411fe97}{Filename\+\_\+\+Surface}}
+\begin{DoxyCompactList}\small\item\em Sciezka do pliku z plaszczyzna. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \mbox{\hyperlink{class_scene_a996fcf89e0506b5c62ff70e5d0cbfbde}{Link}}
+\begin{DoxyCompactList}\small\item\em Lacze do G\+N\+U\+Plota. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_scene_acf984e93dde62f0a5998a754f1dc69cd}{Active}}
+\begin{DoxyCompactList}\small\item\em Numer aktywnego drona. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa opisuje pojecie sceny jako przestrzeni, w której znajduja sie zadane obiekty. Moze zawierac wiele obiektow typu \mbox{\hyperlink{class_drone}{Drone}}. Jako pola prywatne zzwiera kontener dronow, sciezke do pliku z plaszczyzna, Lacze do programu G\+N\+U\+Plot i numer aktywnego drona. 
+
+Definicja w linii 23 pliku Scene.\+hh.
+
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_scene_ad10176d75a9cc0da56626f682d083507}\label{class_scene_ad10176d75a9cc0da56626f682d083507}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 5 pliku Scene.\+cpp.
+
+\mbox{\Hypertarget{class_scene_a3ed2570c471f1f5378bf188a4f5cc809}\label{class_scene_a3ed2570c471f1f5378bf188a4f5cc809}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_drone}{Drone}} $>$ \&}]{Drone\+Contener,  }\item[{std\+::string}]{Filename,  }\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&}]{Link\+\_\+2 }\end{DoxyParamCaption})}
+
+Konstruktor parametryczny klasy Scena.
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em Drone\+Contener} & -\/ kontener zawierajacy drony \\
+\hline
+\mbox{\texttt{ in}}  & {\em Filename} & -\/ sciezka do pliku z powierzchnia \\
+\hline
+\mbox{\texttt{ in}}  & {\em Link\+\_\+2} & -\/ lacze do modulu z programem G\+N\+U\+Plot \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Tworzy} & obiekt klasy \mbox{\hyperlink{class_scene}{Scene}} z polami wypelnionymi przez podane wartosci \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 18 pliku Scene.\+cpp.
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_scene_a14d8f434e5010a519e2478348bcdcb61}\label{class_scene_a14d8f434e5010a519e2478348bcdcb61}} 
+\index{Scene@{Scene}!AddDrone@{AddDrone}}
+\index{AddDrone@{AddDrone}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{AddDrone()}{AddDrone()}}
+{\footnotesize\ttfamily void Scene\+::\+Add\+Drone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_drone}{Drone}} \&}]{New\+Drone }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ in}}  & {\em New\+Drone} & -\/ dodawnay dron \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Dodanie} & zadanego drona do pola konteneru w scenie \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 32 pliku Scene.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_a14d8f434e5010a519e2478348bcdcb61_cgraph}
+\end{center}
+\end{figure}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{class_scene_a14d8f434e5010a519e2478348bcdcb61_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_ab2e34ae305cb139aa38c804289d18383}\label{class_scene_ab2e34ae305cb139aa38c804289d18383}} 
+\index{Scene@{Scene}!CreateSurface@{CreateSurface}}
+\index{CreateSurface@{CreateSurface}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{CreateSurface()}{CreateSurface()}}
+{\footnotesize\ttfamily void Scene\+::\+Create\+Surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda tworzaca plaszczyzne do rysowania.
+
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Dodanie} & sciezki do plaszczyzny do lacza do rysowania \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 57 pliku Scene.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_ab2e34ae305cb139aa38c804289d18383_cgraph}
+\end{center}
+\end{figure}
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_scene_ab2e34ae305cb139aa38c804289d18383_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_a7e5cdf9909419118b88afa79996beeb5}\label{class_scene_a7e5cdf9909419118b88afa79996beeb5}} 
+\index{Scene@{Scene}!SwitchActiveDrone@{SwitchActiveDrone}}
+\index{SwitchActiveDrone@{SwitchActiveDrone}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SwitchActiveDrone()}{SwitchActiveDrone()}}
+{\footnotesize\ttfamily void Scene\+::\+Switch\+Active\+Drone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda zmieniajaca aktywnego drona. Wyswietla aktywne drony wraz z polozeniami i pozwala uzytkownikowi na wybor. Numery dronow sa odzwierciedlone w kolejnosci dodawania ich do kontenera. Drony sa numerowane od 0 kolejnymi liczbami naturalnymi.
+
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Zmiana} & wartosci pola Active sceny na podany przez uzytkownika. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 71 pliku Scene.\+cpp.
+
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_scene_a7e5cdf9909419118b88afa79996beeb5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_a6d5abb73da5487e8aba9bd84826c5530}\label{class_scene_a6d5abb73da5487e8aba9bd84826c5530}} 
+\index{Scene@{Scene}!TakeActiveDrone@{TakeActiveDrone}}
+\index{TakeActiveDrone@{TakeActiveDrone}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{TakeActiveDrone()}{TakeActiveDrone()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_drone}{Drone}} \& Scene\+::\+Take\+Active\+Drone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Metoda Metoda pozwalajaca na dostep do aktywnego drona w trybie tylko do odczytu.
+
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Dron} & z kontenera wskazywany przez parametr Actve \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 101 pliku Scene.\+cpp.
+
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{class_scene_a6d5abb73da5487e8aba9bd84826c5530_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_a19973b85b9f521211e7e4f549e88d239}\label{class_scene_a19973b85b9f521211e7e4f549e88d239}} 
+\index{Scene@{Scene}!TakeFilename\_Surface@{TakeFilename\_Surface}}
+\index{TakeFilename\_Surface@{TakeFilename\_Surface}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{TakeFilename\_Surface()}{TakeFilename\_Surface()}}
+{\footnotesize\ttfamily const std\+::string\& Scene\+::\+Take\+Filename\+\_\+\+Surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definicja w linii 72 pliku Scene.\+hh.
+
+\mbox{\Hypertarget{class_scene_a87399b42f1e2dbc10c6421c090e23b9a}\label{class_scene_a87399b42f1e2dbc10c6421c090e23b9a}} 
+\index{Scene@{Scene}!UseActiveDrone@{UseActiveDrone}}
+\index{UseActiveDrone@{UseActiveDrone}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{UseActiveDrone()}{UseActiveDrone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drone}{Drone}} \& Scene\+::\+Use\+Active\+Drone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda Metoda pozwalajaca na dostep do aktywnego drona z mozliwoscia modyfikacji.
+
+
+\begin{DoxyRetVals}{Zwracane wartości}
+{\em Dron} & z kontenera wskazywany przez parametr Actve \\
+\hline
+\end{DoxyRetVals}
+
+
+Definicja w linii 93 pliku Scene.\+cpp.
+
+Oto graf wywoływań tej funkcji\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_scene_a87399b42f1e2dbc10c6421c090e23b9a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_scene_acf984e93dde62f0a5998a754f1dc69cd}\label{class_scene_acf984e93dde62f0a5998a754f1dc69cd}} 
+\index{Scene@{Scene}!Active@{Active}}
+\index{Active@{Active}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Active}{Active}}
+{\footnotesize\ttfamily unsigned int Scene\+::\+Active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 41 pliku Scene.\+hh.
+
+\mbox{\Hypertarget{class_scene_a713dcc6ee3dcff883d3618677a13201b}\label{class_scene_a713dcc6ee3dcff883d3618677a13201b}} 
+\index{Scene@{Scene}!Drones@{Drones}}
+\index{Drones@{Drones}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Drones}{Drones}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_drone}{Drone}}$>$ Scene\+::\+Drones\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 29 pliku Scene.\+hh.
+
+\mbox{\Hypertarget{class_scene_aa8a50f5cf3a97abcaf76fc21d411fe97}\label{class_scene_aa8a50f5cf3a97abcaf76fc21d411fe97}} 
+\index{Scene@{Scene}!Filename\_Surface@{Filename\_Surface}}
+\index{Filename\_Surface@{Filename\_Surface}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Filename\_Surface}{Filename\_Surface}}
+{\footnotesize\ttfamily std\+::string Scene\+::\+Filename\+\_\+\+Surface\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 33 pliku Scene.\+hh.
+
+\mbox{\Hypertarget{class_scene_a996fcf89e0506b5c62ff70e5d0cbfbde}\label{class_scene_a996fcf89e0506b5c62ff70e5d0cbfbde}} 
+\index{Scene@{Scene}!Link@{Link}}
+\index{Link@{Link}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Link}{Link}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} Scene\+::\+Link\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 37 pliku Scene.\+hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_scene_8hh}{Scene.\+hh}}\item 
+\mbox{\hyperlink{_scene_8cpp}{Scene.\+cpp}}\end{DoxyCompactItemize}

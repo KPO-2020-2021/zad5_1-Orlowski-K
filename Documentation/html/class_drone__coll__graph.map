@@ -1,0 +1,8 @@
+<map id="Drone" name="Drone">
+<area shape="rect" id="node1" title="Klasa opisujaca drona." alt="" coords="33,377,94,404"/>
+<area shape="rect" id="node2" href="$class_vector.html" title=" " alt="" coords="15,109,168,136"/>
+<area shape="rect" id="node4" href="$class_cuboid.html" title="Klasa opisujaca prostopadloscian." alt="" coords="30,288,97,315"/>
+<area shape="rect" id="node5" href="$class_solid.html" title="Klasa opisujaca bryle geometryczna." alt="" coords="129,199,184,225"/>
+<area shape="rect" id="node6" href="$class_prism.html" title="Klasa opisujaca graniastoslup o podstawie szesciokatnej." alt="" coords="127,288,186,315"/>
+<area shape="rect" id="node3" href="$class_vector.html" title="Szablon opisujacy wektor w przestrzeni. Za jego pomoca opisywane sa wierzcholki dowolnej figury jako ..." alt="" coords="12,5,171,47"/>
+</map>

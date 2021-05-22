@@ -1,0 +1,1102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dragonfly: Dokumentacja klasy Drone</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dragonfly
+   &#160;<span id="projectnumber">5.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_drone.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pro-methods">Metody chronione</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_drone-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Drone</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa opisujaca drona.  
+ <a href="class_drone.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_drone_8hh_source.html">Drone.hh</a>&gt;</code></p>
+<div class="dynheader">
+Diagram współpracy dla Drone:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone__coll__graph.png" border="0" usemap="#_drone_coll__map" alt="Collaboration graph"/></div>
+<map name="_drone_coll__map" id="_drone_coll__map">
+<area shape="rect" title="Klasa opisujaca drona." alt="" coords="33,377,94,404"/>
+<area shape="rect" href="class_vector.html" title=" " alt="" coords="15,109,168,136"/>
+<area shape="rect" href="class_cuboid.html" title="Klasa opisujaca prostopadloscian." alt="" coords="30,288,97,315"/>
+<area shape="rect" href="class_solid.html" title="Klasa opisujaca bryle geometryczna." alt="" coords="129,199,184,225"/>
+<area shape="rect" href="class_prism.html" title="Klasa opisujaca graniastoslup o podstawie szesciokatnej." alt="" coords="127,288,186,315"/>
+<area shape="rect" href="class_vector.html" title="Szablon opisujacy wektor w przestrzeni. Za jego pomoca opisywane sa wierzcholki dowolnej figury jako ..." alt="" coords="12,5,171,47"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ab692baa4be5c43b72990ce1b01bdc805"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#ab692baa4be5c43b72990ce1b01bdc805">Drone</a> ()</td></tr>
+<tr class="separator:ab692baa4be5c43b72990ce1b01bdc805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae402639c0c483a5cce59b1f760026072"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#ae402639c0c483a5cce59b1f760026072">MakeDrone</a> (<a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a> V_l, double angle, unsigned int &amp;number_of_drones)</td></tr>
+<tr class="memdesc:ae402639c0c483a5cce59b1f760026072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda tworzaca drona.  <a href="class_drone.html#ae402639c0c483a5cce59b1f760026072">Więcej...</a><br /></td></tr>
+<tr class="separator:ae402639c0c483a5cce59b1f760026072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2019bec61b97f7a2af8399047c61511"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#ae2019bec61b97f7a2af8399047c61511">MakeTrack</a> (double rotation_angle, double FlightLen, std::vector&lt; <a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a> &gt; &amp;TracePoints) const</td></tr>
+<tr class="memdesc:ae2019bec61b97f7a2af8399047c61511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda tworzaca trase przelotu.  <a href="class_drone.html#ae2019bec61b97f7a2af8399047c61511">Więcej...</a><br /></td></tr>
+<tr class="separator:ae2019bec61b97f7a2af8399047c61511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a5d096fd19e259c3094b15dab29de1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1">MakeVerticalFlight</a> (double FlightLen, <a class="el" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a> &amp;Link)</td></tr>
+<tr class="memdesc:a08a5d096fd19e259c3094b15dab29de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda animujaca lot pionowy.  <a href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1">Więcej...</a><br /></td></tr>
+<tr class="separator:a08a5d096fd19e259c3094b15dab29de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c026ce13b2dc5bb785f0efff866646"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646">MakeHorizontalFlight</a> (double FlightLen, <a class="el" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a> &amp;Link)</td></tr>
+<tr class="memdesc:a08c026ce13b2dc5bb785f0efff866646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda animujaca lot poziomy.  <a href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646">Więcej...</a><br /></td></tr>
+<tr class="separator:a08c026ce13b2dc5bb785f0efff866646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c092a7a13bb3b7369b351c4b5389f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6">Change_Orientation</a> (double rotation_angle, <a class="el" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a> &amp;Link)</td></tr>
+<tr class="memdesc:a35c092a7a13bb3b7369b351c4b5389f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda animujaca obrot drona.  <a href="class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6">Więcej...</a><br /></td></tr>
+<tr class="separator:a35c092a7a13bb3b7369b351c4b5389f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d167f193ac2966cd640522a8357b53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53">Count_Save_GlobalCoor</a> ()</td></tr>
+<tr class="memdesc:ae6d167f193ac2966cd640522a8357b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda publiczna zapisujaca wspolrzedne drona.  <a href="class_drone.html#ae6d167f193ac2966cd640522a8357b53">Więcej...</a><br /></td></tr>
+<tr class="separator:ae6d167f193ac2966cd640522a8357b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3224e3b7b4884460738fe192f2dac32"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#af3224e3b7b4884460738fe192f2dac32">TakeFilename_Body</a> () const</td></tr>
+<tr class="memdesc:af3224e3b7b4884460738fe192f2dac32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda udostepniajaca sciezke do pliku prostopadlosianu.  <a href="class_drone.html#af3224e3b7b4884460738fe192f2dac32">Więcej...</a><br /></td></tr>
+<tr class="separator:af3224e3b7b4884460738fe192f2dac32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a363fd39a546dda3742b28427565cd"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#ae3a363fd39a546dda3742b28427565cd">TakeFilename_Rotor</a> (const <a class="el" href="class_prism.html">Prism</a> &amp;<a class="el" href="class_drone.html#ae650de6ac148a48210ad7dcdf2e74c10">Rotor</a>) const</td></tr>
+<tr class="memdesc:ae3a363fd39a546dda3742b28427565cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda udostepniajaca sciezke do pliku graniastoslupa.  <a href="class_drone.html#ae3a363fd39a546dda3742b28427565cd">Więcej...</a><br /></td></tr>
+<tr class="separator:ae3a363fd39a546dda3742b28427565cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab7730fbaa3885224e0989851a549cb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#a1ab7730fbaa3885224e0989851a549cb">TakeLayout</a> () const</td></tr>
+<tr class="memdesc:a1ab7730fbaa3885224e0989851a549cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda udostepniajaca wektor polozenia drona.  <a href="class_drone.html#a1ab7730fbaa3885224e0989851a549cb">Więcej...</a><br /></td></tr>
+<tr class="separator:a1ab7730fbaa3885224e0989851a549cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf7f25d579bbf007d2d54803881ed8ad"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_prism.html">Prism</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#acf7f25d579bbf007d2d54803881ed8ad">operator[]</a> (unsigned int Ind) const</td></tr>
+<tr class="memdesc:acf7f25d579bbf007d2d54803881ed8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator indeksujacy udostepniajaca wybrany rotor.  <a href="class_drone.html#acf7f25d579bbf007d2d54803881ed8ad">Więcej...</a><br /></td></tr>
+<tr class="separator:acf7f25d579bbf007d2d54803881ed8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Metody chronione</h2></td></tr>
+<tr class="memitem:a98f21bc702ee3a5612cfc2597d0ddc06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#a98f21bc702ee3a5612cfc2597d0ddc06">TransformToParentialCoordinate</a> (const <a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a> &amp;Vertex) const</td></tr>
+<tr class="memdesc:a98f21bc702ee3a5612cfc2597d0ddc06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda chroniona transformujaca wierzcholki do ukladu globalnego.  <a href="class_drone.html#a98f21bc702ee3a5612cfc2597d0ddc06">Więcej...</a><br /></td></tr>
+<tr class="separator:a98f21bc702ee3a5612cfc2597d0ddc06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a38f5a59e9a65ea51521ba0f4cf5d4ff8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8">Count_Save_BodyGlCoor</a> () const</td></tr>
+<tr class="memdesc:a38f5a59e9a65ea51521ba0f4cf5d4ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prywatna metoda zapisu wspolrzednych ciala.  <a href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8">Więcej...</a><br /></td></tr>
+<tr class="separator:a38f5a59e9a65ea51521ba0f4cf5d4ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a787e9a83676fe66dcaf5eab166dc4967"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967">Count_Save_RotorGlCoor</a> (const <a class="el" href="class_prism.html">Prism</a> &amp;<a class="el" href="class_drone.html#ae650de6ac148a48210ad7dcdf2e74c10">Rotor</a>) const</td></tr>
+<tr class="memdesc:a787e9a83676fe66dcaf5eab166dc4967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prywatna metoda zapisu wspolrzednych rotorow.  <a href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967">Więcej...</a><br /></td></tr>
+<tr class="separator:a787e9a83676fe66dcaf5eab166dc4967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a67635ab91c2b01d836a290f45873ee0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#a67635ab91c2b01d836a290f45873ee0f">Layout</a></td></tr>
+<tr class="memdesc:a67635ab91c2b01d836a290f45873ee0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor polozenia.  <a href="class_drone.html#a67635ab91c2b01d836a290f45873ee0f">Więcej...</a><br /></td></tr>
+<tr class="separator:a67635ab91c2b01d836a290f45873ee0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c6cbb730ff47044f303de717e3d05e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#a46c6cbb730ff47044f303de717e3d05e">OrientAngle</a></td></tr>
+<tr class="memdesc:a46c6cbb730ff47044f303de717e3d05e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kat orientacji.  <a href="class_drone.html#a46c6cbb730ff47044f303de717e3d05e">Więcej...</a><br /></td></tr>
+<tr class="separator:a46c6cbb730ff47044f303de717e3d05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c9de76c097f460d41a70ba8337081e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cuboid.html">Cuboid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#a39c9de76c097f460d41a70ba8337081e">Body</a></td></tr>
+<tr class="memdesc:a39c9de76c097f460d41a70ba8337081e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cialo drona jako prostopadloscian.  <a href="class_drone.html#a39c9de76c097f460d41a70ba8337081e">Więcej...</a><br /></td></tr>
+<tr class="separator:a39c9de76c097f460d41a70ba8337081e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae650de6ac148a48210ad7dcdf2e74c10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_prism.html">Prism</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#ae650de6ac148a48210ad7dcdf2e74c10">Rotor</a> [4]</td></tr>
+<tr class="memdesc:ae650de6ac148a48210ad7dcdf2e74c10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tablica rotorow drona jako graniastoslupow.  <a href="class_drone.html#ae650de6ac148a48210ad7dcdf2e74c10">Więcej...</a><br /></td></tr>
+<tr class="separator:ae650de6ac148a48210ad7dcdf2e74c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a24aab74b030c2fbc9d48d42c7767ce"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html#a4a24aab74b030c2fbc9d48d42c7767ce">Series</a></td></tr>
+<tr class="memdesc:a4a24aab74b030c2fbc9d48d42c7767ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Numer drona.  <a href="class_drone.html#a4a24aab74b030c2fbc9d48d42c7767ce">Więcej...</a><br /></td></tr>
+<tr class="separator:a4a24aab74b030c2fbc9d48d42c7767ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa opisuje pojecie drona w przestrzeni. Jest to klasa uzywajaca klasy bryly geometrycznej oraz dziedziczacych od niej. Cialo drona jest opisane przez prostopadloscian, a rotory przez graniastoslupy. Sklada sie z pol przechowujacych bryly oraz danych opisujacych polozenie calego drona w ukladzie globalnym. Przechowuje tez numer utworzonego drona. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8hh_source.html#l00038">38</a> pliku <a class="el" href="_drone_8hh_source.html">Drone.hh</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="ab692baa4be5c43b72990ce1b01bdc805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab692baa4be5c43b72990ce1b01bdc805">&#9670;&nbsp;</a></span>Drone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Drone::Drone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00005">5</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a35c092a7a13bb3b7369b351c4b5389f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35c092a7a13bb3b7369b351c4b5389f6">&#9670;&nbsp;</a></span>Change_Orientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Drone::Change_Orientation </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rotation_angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a> &amp;&#160;</td>
+          <td class="paramname"><em>Link</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Metoda obotu drona.</p>
+<p>Animuje obracanie sie drona</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rotation_angle</td><td>- kat obrotu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Link</td><td>- lacze do gnuplota</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- udalo sie wykonac obrot </td></tr>
+    <tr><td class="paramname">false</td><td>- w przeciwnym wypadku </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00267">267</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_a35c092a7a13bb3b7369b351c4b5389f6_cgraph.png" border="0" usemap="#class_drone_a35c092a7a13bb3b7369b351c4b5389f6_cgraph" alt=""/></div>
+<map name="class_drone_a35c092a7a13bb3b7369b351c4b5389f6_cgraph" id="class_drone_a35c092a7a13bb3b7369b351c4b5389f6_cgraph">
+<area shape="rect" title="Metoda animujaca obrot drona." alt="" coords="5,198,204,225"/>
+<area shape="rect" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="252,169,477,195"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title=" " alt="" coords="278,220,451,261"/>
+<area shape="rect" href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="526,169,757,195"/>
+<area shape="rect" href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="525,118,757,145"/>
+<area shape="rect" href="class_prism.html#a6d449146f3102b350c658e088ea8fe69" title="Metoda odpowiadajaca za obracanie w ukladzie lokalnym bryly." alt="" coords="586,219,697,246"/>
+<area shape="rect" href="class_solid.html#af82e9a14c3ac06eec6bf717a6777cda2" title="Metoda zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="833,201,983,243"/>
+<area shape="rect" href="class_solid.html#a845f3e314cf6ed5f9125cac11382a43e" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="833,136,983,177"/>
+<area shape="rect" href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="806,267,1010,308"/>
+<area shape="rect" href="class_drone.html#a98f21bc702ee3a5612cfc2597d0ddc06" title="Metoda chroniona transformujaca wierzcholki do ukladu globalnego." alt="" coords="805,71,1011,112"/>
+<area shape="rect" href="_matrix3x3_8hh.html#aeb565d68db2c7ec1fd693b1af088732b" title="Funkcja tworzaca macierz obrotu." alt="" coords="1059,78,1180,105"/>
+<area shape="rect" href="class_solid.html#a76b8df098d571113383b1a6fcc12b44b" title="Metoda skalujaca wektor." alt="" coords="1071,201,1168,227"/>
+<area shape="rect" href="class_prism.html#a86fb5c667a39ad8f0321cfabf81cdb21" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="810,5,1006,47"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_a35c092a7a13bb3b7369b351c4b5389f6_icgraph.png" border="0" usemap="#class_drone_a35c092a7a13bb3b7369b351c4b5389f6_icgraph" alt=""/></div>
+<map name="class_drone_a35c092a7a13bb3b7369b351c4b5389f6_icgraph" id="class_drone_a35c092a7a13bb3b7369b351c4b5389f6_icgraph">
+<area shape="rect" title="Metoda animujaca obrot drona." alt="" coords="108,5,307,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a38f5a59e9a65ea51521ba0f4cf5d4ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38f5a59e9a65ea51521ba0f4cf5d4ff8">&#9670;&nbsp;</a></span>Count_Save_BodyGlCoor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Drone::Count_Save_BodyGlCoor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda zmieniajaca dane ciala drona Przelicza opcjonalne zmiany w ukladzie drona i zapisuje je do plikow.</p>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- udalo sie zapisac zmiany do plikow </td></tr>
+    <tr><td class="paramname">false</td><td>- w przeciwnym wypadku </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00063">63</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_a38f5a59e9a65ea51521ba0f4cf5d4ff8_cgraph.png" border="0" usemap="#class_drone_a38f5a59e9a65ea51521ba0f4cf5d4ff8_cgraph" alt=""/></div>
+<map name="class_drone_a38f5a59e9a65ea51521ba0f4cf5d4ff8_cgraph" id="class_drone_a38f5a59e9a65ea51521ba0f4cf5d4ff8_cgraph">
+<area shape="rect" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="5,111,236,138"/>
+<area shape="rect" href="class_solid.html#af82e9a14c3ac06eec6bf717a6777cda2" title="Metoda zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="311,5,462,47"/>
+<area shape="rect" href="class_solid.html#a845f3e314cf6ed5f9125cac11382a43e" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="311,71,462,112"/>
+<area shape="rect" href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="285,201,489,243"/>
+<area shape="rect" href="class_drone.html#a98f21bc702ee3a5612cfc2597d0ddc06" title="Metoda chroniona transformujaca wierzcholki do ukladu globalnego." alt="" coords="284,136,489,177"/>
+<area shape="rect" href="_matrix3x3_8hh.html#aeb565d68db2c7ec1fd693b1af088732b" title="Funkcja tworzaca macierz obrotu." alt="" coords="537,151,659,178"/>
+<area shape="rect" href="class_solid.html#a76b8df098d571113383b1a6fcc12b44b" title="Metoda skalujaca wektor." alt="" coords="549,209,647,235"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_a38f5a59e9a65ea51521ba0f4cf5d4ff8_icgraph.png" border="0" usemap="#class_drone_a38f5a59e9a65ea51521ba0f4cf5d4ff8_icgraph" alt=""/></div>
+<map name="class_drone_a38f5a59e9a65ea51521ba0f4cf5d4ff8_icgraph" id="class_drone_a38f5a59e9a65ea51521ba0f4cf5d4ff8_icgraph">
+<area shape="rect" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="637,81,868,108"/>
+<area shape="rect" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="364,81,589,108"/>
+<area shape="rect" href="class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="113,5,311,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,60,108"/>
+<area shape="rect" href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646" title="Metoda animujaca lot poziomy." alt="" coords="108,107,316,133"/>
+<area shape="rect" href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1" title="Metoda animujaca lot pionowy." alt="" coords="117,157,307,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae6d167f193ac2966cd640522a8357b53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6d167f193ac2966cd640522a8357b53">&#9670;&nbsp;</a></span>Count_Save_GlobalCoor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Drone::Count_Save_GlobalCoor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Metoda zzapisujaca dane globalne drona Wykorzystuje transformacje lokalne bryl, pozniej transformacje do ukladu drona i ostatecznie do ukladu globalnego. Odpowiada za zmiane oboru rotorow (animacja obracania podczas lotu).</p>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- udalo sie zapisac zmiany do plikow </td></tr>
+    <tr><td class="paramname">false</td><td>- w przeciwnym wypadku </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00178">178</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_ae6d167f193ac2966cd640522a8357b53_cgraph.png" border="0" usemap="#class_drone_ae6d167f193ac2966cd640522a8357b53_cgraph" alt=""/></div>
+<map name="class_drone_ae6d167f193ac2966cd640522a8357b53_cgraph" id="class_drone_ae6d167f193ac2966cd640522a8357b53_cgraph">
+<area shape="rect" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="5,169,231,195"/>
+<area shape="rect" href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="279,169,510,195"/>
+<area shape="rect" href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="279,118,511,145"/>
+<area shape="rect" href="class_prism.html#a6d449146f3102b350c658e088ea8fe69" title="Metoda odpowiadajaca za obracanie w ukladzie lokalnym bryly." alt="" coords="339,219,450,246"/>
+<area shape="rect" href="class_solid.html#af82e9a14c3ac06eec6bf717a6777cda2" title="Metoda zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="586,201,737,243"/>
+<area shape="rect" href="class_solid.html#a845f3e314cf6ed5f9125cac11382a43e" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="586,136,737,177"/>
+<area shape="rect" href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="559,267,763,308"/>
+<area shape="rect" href="class_drone.html#a98f21bc702ee3a5612cfc2597d0ddc06" title="Metoda chroniona transformujaca wierzcholki do ukladu globalnego." alt="" coords="559,71,764,112"/>
+<area shape="rect" href="_matrix3x3_8hh.html#aeb565d68db2c7ec1fd693b1af088732b" title="Funkcja tworzaca macierz obrotu." alt="" coords="812,78,933,105"/>
+<area shape="rect" href="class_solid.html#a76b8df098d571113383b1a6fcc12b44b" title="Metoda skalujaca wektor." alt="" coords="824,201,921,227"/>
+<area shape="rect" href="class_prism.html#a86fb5c667a39ad8f0321cfabf81cdb21" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="563,5,759,47"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_ae6d167f193ac2966cd640522a8357b53_icgraph.png" border="0" usemap="#class_drone_ae6d167f193ac2966cd640522a8357b53_icgraph" alt=""/></div>
+<map name="class_drone_ae6d167f193ac2966cd640522a8357b53_icgraph" id="class_drone_ae6d167f193ac2966cd640522a8357b53_icgraph">
+<area shape="rect" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="364,81,589,108"/>
+<area shape="rect" href="class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="113,5,311,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,60,108"/>
+<area shape="rect" href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646" title="Metoda animujaca lot poziomy." alt="" coords="108,107,316,133"/>
+<area shape="rect" href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1" title="Metoda animujaca lot pionowy." alt="" coords="117,157,307,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a787e9a83676fe66dcaf5eab166dc4967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a787e9a83676fe66dcaf5eab166dc4967">&#9670;&nbsp;</a></span>Count_Save_RotorGlCoor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Drone::Count_Save_RotorGlCoor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_prism.html">Prism</a> &amp;&#160;</td>
+          <td class="paramname"><em>Rotor</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda zmieniajaca dane rotorow drona Przelicza opcjonalne zmiany w ukladzie drona i zapisuje je do plikow.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Rotor</td><td>- Rotor, ktorego dane maja byc zapisane </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- udalo sie zapisac zmiany do plikow </td></tr>
+    <tr><td class="paramname">false</td><td>- w przeciwnym wypadku </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00111">111</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_a787e9a83676fe66dcaf5eab166dc4967_cgraph.png" border="0" usemap="#class_drone_a787e9a83676fe66dcaf5eab166dc4967_cgraph" alt=""/></div>
+<map name="class_drone_a787e9a83676fe66dcaf5eab166dc4967_cgraph" id="class_drone_a787e9a83676fe66dcaf5eab166dc4967_cgraph">
+<area shape="rect" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="5,111,237,138"/>
+<area shape="rect" href="class_solid.html#af82e9a14c3ac06eec6bf717a6777cda2" title="Metoda zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="313,5,463,47"/>
+<area shape="rect" href="class_solid.html#a845f3e314cf6ed5f9125cac11382a43e" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="313,71,463,112"/>
+<area shape="rect" href="class_prism.html#a86fb5c667a39ad8f0321cfabf81cdb21" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="290,201,486,243"/>
+<area shape="rect" href="class_drone.html#a98f21bc702ee3a5612cfc2597d0ddc06" title="Metoda chroniona transformujaca wierzcholki do ukladu globalnego." alt="" coords="285,136,491,177"/>
+<area shape="rect" href="_matrix3x3_8hh.html#aeb565d68db2c7ec1fd693b1af088732b" title="Funkcja tworzaca macierz obrotu." alt="" coords="539,151,660,178"/>
+<area shape="rect" href="class_solid.html#a76b8df098d571113383b1a6fcc12b44b" title="Metoda skalujaca wektor." alt="" coords="551,209,648,235"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_a787e9a83676fe66dcaf5eab166dc4967_icgraph.png" border="0" usemap="#class_drone_a787e9a83676fe66dcaf5eab166dc4967_icgraph" alt=""/></div>
+<map name="class_drone_a787e9a83676fe66dcaf5eab166dc4967_icgraph" id="class_drone_a787e9a83676fe66dcaf5eab166dc4967_icgraph">
+<area shape="rect" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="637,81,869,108"/>
+<area shape="rect" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="364,81,589,108"/>
+<area shape="rect" href="class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="113,5,311,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,60,108"/>
+<area shape="rect" href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646" title="Metoda animujaca lot poziomy." alt="" coords="108,107,316,133"/>
+<area shape="rect" href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1" title="Metoda animujaca lot pionowy." alt="" coords="117,157,307,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae402639c0c483a5cce59b1f760026072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae402639c0c483a5cce59b1f760026072">&#9670;&nbsp;</a></span>MakeDrone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drone::MakeDrone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a>&#160;</td>
+          <td class="paramname"><em>V_l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int &amp;&#160;</td>
+          <td class="paramname"><em>number_of_drones</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">V_l</td><td>- wektor polozenia </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">angle</td><td>- kat orientacji </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">number_of_drones</td><td>- zmienna zliczajaca ilosc dronow w aktualnej sesji </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Tworzy</td><td>pliki tekstowe z zapisanymi wierzcholkami w formacie dla gnuplota, tworzy klase drona. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00019">19</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_ae402639c0c483a5cce59b1f760026072_icgraph.png" border="0" usemap="#class_drone_ae402639c0c483a5cce59b1f760026072_icgraph" alt=""/></div>
+<map name="class_drone_ae402639c0c483a5cce59b1f760026072_icgraph" id="class_drone_ae402639c0c483a5cce59b1f760026072_icgraph">
+<area shape="rect" title="Metoda tworzaca drona." alt="" coords="108,5,251,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a08c026ce13b2dc5bb785f0efff866646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08c026ce13b2dc5bb785f0efff866646">&#9670;&nbsp;</a></span>MakeHorizontalFlight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Drone::MakeHorizontalFlight </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>FlightLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a> &amp;&#160;</td>
+          <td class="paramname"><em>Link</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Metoda lotu poziomego.</p>
+<p>Animuje lot drona w kierunku poziomym</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">FlightLen</td><td>- dlugosc lotu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Link</td><td>- lacze do gnuplota</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- udalo sie wykonac lot </td></tr>
+    <tr><td class="paramname">false</td><td>- w przeciwnym wypadku </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00208">208</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_a08c026ce13b2dc5bb785f0efff866646_cgraph.png" border="0" usemap="#class_drone_a08c026ce13b2dc5bb785f0efff866646_cgraph" alt=""/></div>
+<map name="class_drone_a08c026ce13b2dc5bb785f0efff866646_cgraph" id="class_drone_a08c026ce13b2dc5bb785f0efff866646_cgraph">
+<area shape="rect" title="Metoda animujaca lot poziomy." alt="" coords="5,198,213,225"/>
+<area shape="rect" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="261,169,487,195"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title=" " alt="" coords="287,220,461,261"/>
+<area shape="rect" href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="535,169,766,195"/>
+<area shape="rect" href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="535,118,767,145"/>
+<area shape="rect" href="class_prism.html#a6d449146f3102b350c658e088ea8fe69" title="Metoda odpowiadajaca za obracanie w ukladzie lokalnym bryly." alt="" coords="595,219,706,246"/>
+<area shape="rect" href="class_solid.html#af82e9a14c3ac06eec6bf717a6777cda2" title="Metoda zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="842,201,993,243"/>
+<area shape="rect" href="class_solid.html#a845f3e314cf6ed5f9125cac11382a43e" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="842,136,993,177"/>
+<area shape="rect" href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="815,267,1019,308"/>
+<area shape="rect" href="class_drone.html#a98f21bc702ee3a5612cfc2597d0ddc06" title="Metoda chroniona transformujaca wierzcholki do ukladu globalnego." alt="" coords="815,71,1020,112"/>
+<area shape="rect" href="_matrix3x3_8hh.html#aeb565d68db2c7ec1fd693b1af088732b" title="Funkcja tworzaca macierz obrotu." alt="" coords="1068,78,1189,105"/>
+<area shape="rect" href="class_solid.html#a76b8df098d571113383b1a6fcc12b44b" title="Metoda skalujaca wektor." alt="" coords="1080,201,1177,227"/>
+<area shape="rect" href="class_prism.html#a86fb5c667a39ad8f0321cfabf81cdb21" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="819,5,1015,47"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_a08c026ce13b2dc5bb785f0efff866646_icgraph.png" border="0" usemap="#class_drone_a08c026ce13b2dc5bb785f0efff866646_icgraph" alt=""/></div>
+<map name="class_drone_a08c026ce13b2dc5bb785f0efff866646_icgraph" id="class_drone_a08c026ce13b2dc5bb785f0efff866646_icgraph">
+<area shape="rect" title="Metoda animujaca lot poziomy." alt="" coords="108,5,316,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae2019bec61b97f7a2af8399047c61511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2019bec61b97f7a2af8399047c61511">&#9670;&nbsp;</a></span>MakeTrack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drone::MakeTrack </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rotation_angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>FlightLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>TracePoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Metoda tworzenia trasy przelotu.</p>
+<p>Tworzy sciezke przelotu i zapisuje ja do pliku</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rotation_angle</td><td>- kat rotacji </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">FlightLen</td><td>- dlugosc lotu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">TracePoints</td><td>- kontener z wierzcholkami trasy</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Oblicza</td><td>i zapisuje trase do predefiniowanego pliku </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00303">303</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_ae2019bec61b97f7a2af8399047c61511_icgraph.png" border="0" usemap="#class_drone_ae2019bec61b97f7a2af8399047c61511_icgraph" alt=""/></div>
+<map name="class_drone_ae2019bec61b97f7a2af8399047c61511_icgraph" id="class_drone_ae2019bec61b97f7a2af8399047c61511_icgraph">
+<area shape="rect" title="Metoda tworzaca trase przelotu." alt="" coords="108,5,247,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a08a5d096fd19e259c3094b15dab29de1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a5d096fd19e259c3094b15dab29de1">&#9670;&nbsp;</a></span>MakeVerticalFlight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Drone::MakeVerticalFlight </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>FlightLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a> &amp;&#160;</td>
+          <td class="paramname"><em>Link</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Metoda lotu pionowego.</p>
+<p>Animuje lot drona w kierunku pionowym</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">FlightLen</td><td>- dlugosc lotu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Link</td><td>- lacze do gnuplota</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- udalo sie wykonac lot </td></tr>
+    <tr><td class="paramname">false</td><td>- w przeciwnym wypadku </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00233">233</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_a08a5d096fd19e259c3094b15dab29de1_cgraph.png" border="0" usemap="#class_drone_a08a5d096fd19e259c3094b15dab29de1_cgraph" alt=""/></div>
+<map name="class_drone_a08a5d096fd19e259c3094b15dab29de1_cgraph" id="class_drone_a08a5d096fd19e259c3094b15dab29de1_cgraph">
+<area shape="rect" title="Metoda animujaca lot pionowy." alt="" coords="5,198,196,225"/>
+<area shape="rect" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="244,169,469,195"/>
+<area shape="rect" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title=" " alt="" coords="270,220,443,261"/>
+<area shape="rect" href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="518,169,749,195"/>
+<area shape="rect" href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="517,118,749,145"/>
+<area shape="rect" href="class_prism.html#a6d449146f3102b350c658e088ea8fe69" title="Metoda odpowiadajaca za obracanie w ukladzie lokalnym bryly." alt="" coords="578,219,689,246"/>
+<area shape="rect" href="class_solid.html#af82e9a14c3ac06eec6bf717a6777cda2" title="Metoda zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="825,201,975,243"/>
+<area shape="rect" href="class_solid.html#a845f3e314cf6ed5f9125cac11382a43e" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="825,136,975,177"/>
+<area shape="rect" href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="798,267,1002,308"/>
+<area shape="rect" href="class_drone.html#a98f21bc702ee3a5612cfc2597d0ddc06" title="Metoda chroniona transformujaca wierzcholki do ukladu globalnego." alt="" coords="797,71,1003,112"/>
+<area shape="rect" href="_matrix3x3_8hh.html#aeb565d68db2c7ec1fd693b1af088732b" title="Funkcja tworzaca macierz obrotu." alt="" coords="1051,78,1172,105"/>
+<area shape="rect" href="class_solid.html#a76b8df098d571113383b1a6fcc12b44b" title="Metoda skalujaca wektor." alt="" coords="1063,201,1160,227"/>
+<area shape="rect" href="class_prism.html#a86fb5c667a39ad8f0321cfabf81cdb21" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="802,5,998,47"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_a08a5d096fd19e259c3094b15dab29de1_icgraph.png" border="0" usemap="#class_drone_a08a5d096fd19e259c3094b15dab29de1_icgraph" alt=""/></div>
+<map name="class_drone_a08a5d096fd19e259c3094b15dab29de1_icgraph" id="class_drone_a08a5d096fd19e259c3094b15dab29de1_icgraph">
+<area shape="rect" title="Metoda animujaca lot pionowy." alt="" coords="108,5,299,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acf7f25d579bbf007d2d54803881ed8ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf7f25d579bbf007d2d54803881ed8ad">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_prism.html">Prism</a> &amp; Drone::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>Ind</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Metoda zwracajaca rotor drona.</p>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Zadany</td><td>rotor drona </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00376">376</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af3224e3b7b4884460738fe192f2dac32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3224e3b7b4884460738fe192f2dac32">&#9670;&nbsp;</a></span>TakeFilename_Body()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; Drone::TakeFilename_Body </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Metoda zwracajaca sciezke do pliku koncowego ciala.</p>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Sciezka</td><td>do pliku z przeksztalconym prostopadloscianem </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00353">353</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_af3224e3b7b4884460738fe192f2dac32_cgraph.png" border="0" usemap="#class_drone_af3224e3b7b4884460738fe192f2dac32_cgraph" alt=""/></div>
+<map name="class_drone_af3224e3b7b4884460738fe192f2dac32_cgraph" id="class_drone_af3224e3b7b4884460738fe192f2dac32_cgraph">
+<area shape="rect" title="Metoda udostepniajaca sciezke do pliku prostopadlosianu." alt="" coords="5,13,204,39"/>
+<area shape="rect" href="class_solid.html#af82e9a14c3ac06eec6bf717a6777cda2" title="Metoda zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="252,5,403,47"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_af3224e3b7b4884460738fe192f2dac32_icgraph.png" border="0" usemap="#class_drone_af3224e3b7b4884460738fe192f2dac32_icgraph" alt=""/></div>
+<map name="class_drone_af3224e3b7b4884460738fe192f2dac32_icgraph" id="class_drone_af3224e3b7b4884460738fe192f2dac32_icgraph">
+<area shape="rect" title="Metoda udostepniajaca sciezke do pliku prostopadlosianu." alt="" coords="289,5,488,32"/>
+<area shape="rect" href="class_scene.html#a14d8f434e5010a519e2478348bcdcb61" title="Metoda dodajaca drona do sceny." alt="" coords="108,5,241,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae3a363fd39a546dda3742b28427565cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a363fd39a546dda3742b28427565cd">&#9670;&nbsp;</a></span>TakeFilename_Rotor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; Drone::TakeFilename_Rotor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_prism.html">Prism</a> &amp;&#160;</td>
+          <td class="paramname"><em>Rotor</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Metoda zwracajaca sciezke do pliku koncowego rotora.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Rotor</td><td>- rotor, ktorego sciezka ma byz zwrocona </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Sciezka</td><td>do pliku z przeksztalconym graniastoslupem </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00365">365</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_ae3a363fd39a546dda3742b28427565cd_cgraph.png" border="0" usemap="#class_drone_ae3a363fd39a546dda3742b28427565cd_cgraph" alt=""/></div>
+<map name="class_drone_ae3a363fd39a546dda3742b28427565cd_cgraph" id="class_drone_ae3a363fd39a546dda3742b28427565cd_cgraph">
+<area shape="rect" title="Metoda udostepniajaca sciezke do pliku graniastoslupa." alt="" coords="5,5,164,47"/>
+<area shape="rect" href="class_solid.html#af82e9a14c3ac06eec6bf717a6777cda2" title="Metoda zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="212,5,363,47"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_ae3a363fd39a546dda3742b28427565cd_icgraph.png" border="0" usemap="#class_drone_ae3a363fd39a546dda3742b28427565cd_icgraph" alt=""/></div>
+<map name="class_drone_ae3a363fd39a546dda3742b28427565cd_icgraph" id="class_drone_ae3a363fd39a546dda3742b28427565cd_icgraph">
+<area shape="rect" title="Metoda udostepniajaca sciezke do pliku graniastoslupa." alt="" coords="289,5,448,47"/>
+<area shape="rect" href="class_scene.html#a14d8f434e5010a519e2478348bcdcb61" title="Metoda dodajaca drona do sceny." alt="" coords="108,13,241,39"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,60,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1ab7730fbaa3885224e0989851a549cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab7730fbaa3885224e0989851a549cb">&#9670;&nbsp;</a></span>TakeLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a> Drone::TakeLayout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Metoda zwracajaca polozenie drona.</p>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Wektor</td><td>polozenia drona </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00385">385</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_a1ab7730fbaa3885224e0989851a549cb_icgraph.png" border="0" usemap="#class_drone_a1ab7730fbaa3885224e0989851a549cb_icgraph" alt=""/></div>
+<map name="class_drone_a1ab7730fbaa3885224e0989851a549cb_icgraph" id="class_drone_a1ab7730fbaa3885224e0989851a549cb_icgraph">
+<area shape="rect" title="Metoda udostepniajaca wektor polozenia drona." alt="" coords="108,5,251,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a98f21bc702ee3a5612cfc2597d0ddc06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f21bc702ee3a5612cfc2597d0ddc06">&#9670;&nbsp;</a></span>TransformToParentialCoordinate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a> Drone::TransformToParentialCoordinate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>Vertex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda transformujaca wierzcholki do ukladu globalnego Transformuje dane do ukladu globalnego przez wektor polozenia oraz kat orientacji.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Vertex</td><td>- wektor przeznaczony do translacji </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Wektor</td><td>przedstawiony w ukladzie globalnym </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8cpp_source.html#l00156">156</a> pliku <a class="el" href="_drone_8cpp_source.html">Drone.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_a98f21bc702ee3a5612cfc2597d0ddc06_cgraph.png" border="0" usemap="#class_drone_a98f21bc702ee3a5612cfc2597d0ddc06_cgraph" alt=""/></div>
+<map name="class_drone_a98f21bc702ee3a5612cfc2597d0ddc06_cgraph" id="class_drone_a98f21bc702ee3a5612cfc2597d0ddc06_cgraph">
+<area shape="rect" title="Metoda chroniona transformujaca wierzcholki do ukladu globalnego." alt="" coords="5,5,211,47"/>
+<area shape="rect" href="_matrix3x3_8hh.html#aeb565d68db2c7ec1fd693b1af088732b" title="Funkcja tworzaca macierz obrotu." alt="" coords="259,13,380,39"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_drone_a98f21bc702ee3a5612cfc2597d0ddc06_icgraph.png" border="0" usemap="#class_drone_a98f21bc702ee3a5612cfc2597d0ddc06_icgraph" alt=""/></div>
+<map name="class_drone_a98f21bc702ee3a5612cfc2597d0ddc06_icgraph" id="class_drone_a98f21bc702ee3a5612cfc2597d0ddc06_icgraph">
+<area shape="rect" title="Metoda chroniona transformujaca wierzcholki do ukladu globalnego." alt="" coords="917,74,1123,115"/>
+<area shape="rect" href="class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="638,56,869,83"/>
+<area shape="rect" href="class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="637,107,869,133"/>
+<area shape="rect" href="class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="364,81,589,108"/>
+<area shape="rect" href="class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="113,5,311,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,60,108"/>
+<area shape="rect" href="class_drone.html#a08c026ce13b2dc5bb785f0efff866646" title="Metoda animujaca lot poziomy." alt="" coords="108,107,316,133"/>
+<area shape="rect" href="class_drone.html#a08a5d096fd19e259c3094b15dab29de1" title="Metoda animujaca lot pionowy." alt="" coords="117,157,307,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a39c9de76c097f460d41a70ba8337081e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c9de76c097f460d41a70ba8337081e">&#9670;&nbsp;</a></span>Body</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_cuboid.html">Cuboid</a> Drone::Body</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8hh_source.html#l00052">52</a> pliku <a class="el" href="_drone_8hh_source.html">Drone.hh</a>.</p>
+
+</div>
+</div>
+<a id="a67635ab91c2b01d836a290f45873ee0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67635ab91c2b01d836a290f45873ee0f">&#9670;&nbsp;</a></span>Layout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8hh.html#a501c8db7ae46c0471ea825f0c8ed9698">Vector3D</a> Drone::Layout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8hh_source.html#l00044">44</a> pliku <a class="el" href="_drone_8hh_source.html">Drone.hh</a>.</p>
+
+</div>
+</div>
+<a id="a46c6cbb730ff47044f303de717e3d05e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46c6cbb730ff47044f303de717e3d05e">&#9670;&nbsp;</a></span>OrientAngle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Drone::OrientAngle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8hh_source.html#l00048">48</a> pliku <a class="el" href="_drone_8hh_source.html">Drone.hh</a>.</p>
+
+</div>
+</div>
+<a id="ae650de6ac148a48210ad7dcdf2e74c10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae650de6ac148a48210ad7dcdf2e74c10">&#9670;&nbsp;</a></span>Rotor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_prism.html">Prism</a> Drone::Rotor[4]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8hh_source.html#l00056">56</a> pliku <a class="el" href="_drone_8hh_source.html">Drone.hh</a>.</p>
+
+</div>
+</div>
+<a id="a4a24aab74b030c2fbc9d48d42c7767ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a24aab74b030c2fbc9d48d42c7767ce">&#9670;&nbsp;</a></span>Series</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Drone::Series</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8hh_source.html#l00068">68</a> pliku <a class="el" href="_drone_8hh_source.html">Drone.hh</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="_drone_8hh_source.html">Drone.hh</a></li>
+<li><a class="el" href="_drone_8cpp_source.html">Drone.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_drone.html">Drone</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

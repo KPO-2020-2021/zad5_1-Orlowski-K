@@ -1,0 +1,60 @@
+\hypertarget{_matrix_8hh}{}\doxysection{Dokumentacja pliku Matrix.\+hh}
+\label{_matrix_8hh}\index{Matrix.hh@{Matrix.hh}}
+
+
+Plik zawierajacy definicje szablonu Matrix$<$$>$  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}Vector.\+hh\char`\"{}}\newline
+Wykres zależności załączania dla Matrix.\+hh\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_matrix_8hh__incl}
+\end{center}
+\end{figure}
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_matrix_8hh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_matrix}{Matrix$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$}}
+\begin{DoxyCompactList}\small\item\em Szablon modeluje pojecie macierzy kwadratowej. Liczby macierzy sa przechowywane jako tablica wielowymiarowa wybranego typu. Przeciazenia operatorow pozwalaja na modyfikacje i dostep do danych macierzy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ }\\std\+::istream \& \mbox{\hyperlink{_matrix_8hh_a47529cb53b4acda869e5c1223e416917}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$ \&mat)
+\item 
+{\footnotesize template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ }\\\mbox{\hyperlink{doctest__fwd_8h_a116af65cb5e924b33ad9d9ecd7a783f3}{std\+::ostream}} \& \mbox{\hyperlink{_matrix_8hh_ae5be0f1177f6602154f1067c397f6523}{operator$<$$<$}} (\mbox{\hyperlink{doctest__fwd_8h_a116af65cb5e924b33ad9d9ecd7a783f3}{std\+::ostream}} \&out, const \mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$ \&mat)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_matrix_8hh_ae5be0f1177f6602154f1067c397f6523}\label{_matrix_8hh_ae5be0f1177f6602154f1067c397f6523}} 
+\index{Matrix.hh@{Matrix.hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Matrix.hh@{Matrix.hh}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+\mbox{\hyperlink{doctest__fwd_8h_a116af65cb5e924b33ad9d9ecd7a783f3}{std\+::ostream}}\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{doctest__fwd_8h_a116af65cb5e924b33ad9d9ecd7a783f3}{std\+::ostream}} \&}]{out,  }\item[{const \mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$ \&}]{mat }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 231 pliku Matrix.\+hh.
+
+\mbox{\Hypertarget{_matrix_8hh_a47529cb53b4acda869e5c1223e416917}\label{_matrix_8hh_a47529cb53b4acda869e5c1223e416917}} 
+\index{Matrix.hh@{Matrix.hh}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Matrix.hh@{Matrix.hh}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$ \&}]{mat }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 213 pliku Matrix.\+hh.
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dragonfly: Plik źródłowy Cuboid.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dragonfly
+   &#160;<span id="projectnumber">5.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_cuboid_8hh_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cuboid.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cuboid_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_geometric_solid_8hh.html">GeometricSolid.hh</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_cuboid.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cuboid.html">Cuboid</a>: <span class="keyword">public</span> <a class="code" href="class_solid.html">Solid</a>{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_cuboid.html#af4ca0bbfc959d5ea86b240daa581b4b4">   29</a></span>&#160;        <a class="code" href="class_vector.html">Vector3D</a> <a class="code" href="class_cuboid.html#af4ca0bbfc959d5ea86b240daa581b4b4">Layout</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_cuboid.html#a1fda740e4b52e9e0f3d0e2d9bbfb9e84">   33</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="class_cuboid.html#a1fda740e4b52e9e0f3d0e2d9bbfb9e84">OrientAngle</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_cuboid.html#a1abf60e93d024b7a01ee5b1a48f1f08a">Cuboid</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_cuboid.html#a1abf60e93d024b7a01ee5b1a48f1f08a">Cuboid</a>(std::string File1, std::string File2, <a class="code" href="class_vector.html">Vector3D</a> V_scale, <a class="code" href="class_vector.html">Vector3D</a> V, <span class="keywordtype">double</span> angle );</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_vector.html">Vector3D</a> <a class="code" href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9">TranformToParentialCoordinate</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector3D</a>&amp; Vertex) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_solid_html"><div class="ttname"><a href="class_solid.html">Solid</a></div><div class="ttdoc">Klasa opisujaca bryle geometryczna.</div><div class="ttdef"><b>Definition:</b> <a href="_geometric_solid_8hh_source.html#l00024">GeometricSolid.hh:24</a></div></div>
+<div class="ttc" id="aclass_cuboid_html_af4ca0bbfc959d5ea86b240daa581b4b4"><div class="ttname"><a href="class_cuboid.html#af4ca0bbfc959d5ea86b240daa581b4b4">Cuboid::Layout</a></div><div class="ttdeci">Vector3D Layout</div><div class="ttdoc">Wektor polozenia.</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8hh_source.html#l00029">Cuboid.hh:29</a></div></div>
+<div class="ttc" id="aclass_cuboid_html_a08bc443badc04b38cb947ee573c534b9"><div class="ttname"><a href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9">Cuboid::TranformToParentialCoordinate</a></div><div class="ttdeci">Vector3D TranformToParentialCoordinate(const Vector3D &amp;Vertex) const</div><div class="ttdoc">Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8cpp_source.html#l00017">Cuboid.cpp:17</a></div></div>
+<div class="ttc" id="aclass_cuboid_html_a1fda740e4b52e9e0f3d0e2d9bbfb9e84"><div class="ttname"><a href="class_cuboid.html#a1fda740e4b52e9e0f3d0e2d9bbfb9e84">Cuboid::OrientAngle</a></div><div class="ttdeci">double OrientAngle</div><div class="ttdoc">Kat orientacji.</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8hh_source.html#l00033">Cuboid.hh:33</a></div></div>
+<div class="ttc" id="a_geometric_solid_8hh_html"><div class="ttname"><a href="_geometric_solid_8hh.html">GeometricSolid.hh</a></div><div class="ttdoc">Klasa opisujaca bryle geometryczna.</div></div>
+<div class="ttc" id="aclass_vector_html"><div class="ttname"><a href="class_vector.html">Vector&lt; double, 3 &gt;</a></div></div>
+<div class="ttc" id="aclass_cuboid_html_a1abf60e93d024b7a01ee5b1a48f1f08a"><div class="ttname"><a href="class_cuboid.html#a1abf60e93d024b7a01ee5b1a48f1f08a">Cuboid::Cuboid</a></div><div class="ttdeci">Cuboid()</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8cpp_source.html#l00005">Cuboid.cpp:5</a></div></div>
+<div class="ttc" id="aclass_cuboid_html"><div class="ttname"><a href="class_cuboid.html">Cuboid</a></div><div class="ttdoc">Klasa opisujaca prostopadloscian.</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8hh_source.html#l00023">Cuboid.hh:23</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="_cuboid_8hh.html">Cuboid.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

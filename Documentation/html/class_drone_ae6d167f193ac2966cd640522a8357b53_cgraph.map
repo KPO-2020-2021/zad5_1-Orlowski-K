@@ -1,0 +1,13 @@
+<map id="Drone::Count_Save_GlobalCoor" name="Drone::Count_Save_GlobalCoor">
+<area shape="rect" id="node1" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="5,169,231,195"/>
+<area shape="rect" id="node2" href="$class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="279,169,510,195"/>
+<area shape="rect" id="node9" href="$class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="279,118,511,145"/>
+<area shape="rect" id="node11" href="$class_prism.html#a6d449146f3102b350c658e088ea8fe69" title="Metoda odpowiadajaca za obracanie w ukladzie lokalnym bryly." alt="" coords="339,219,450,246"/>
+<area shape="rect" id="node3" href="$class_solid.html#af82e9a14c3ac06eec6bf717a6777cda2" title="Metoda zwracajaca sciezke do pliku z docelowa bryla." alt="" coords="586,201,737,243"/>
+<area shape="rect" id="node4" href="$class_solid.html#a845f3e314cf6ed5f9125cac11382a43e" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="586,136,737,177"/>
+<area shape="rect" id="node5" href="$class_cuboid.html#a08bc443badc04b38cb947ee573c534b9" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="559,267,763,308"/>
+<area shape="rect" id="node8" href="$class_drone.html#a98f21bc702ee3a5612cfc2597d0ddc06" title="Metoda chroniona transformujaca wierzcholki do ukladu globalnego." alt="" coords="559,71,764,112"/>
+<area shape="rect" id="node6" href="$_matrix3x3_8hh.html#aeb565d68db2c7ec1fd693b1af088732b" title="Funkcja tworzaca macierz obrotu." alt="" coords="812,78,933,105"/>
+<area shape="rect" id="node7" href="$class_solid.html#a76b8df098d571113383b1a6fcc12b44b" title="Metoda skalujaca wektor." alt="" coords="824,201,921,227"/>
+<area shape="rect" id="node10" href="$class_prism.html#a86fb5c667a39ad8f0321cfabf81cdb21" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="563,5,759,47"/>
+</map>

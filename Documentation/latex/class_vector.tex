@@ -1,0 +1,198 @@
+\hypertarget{class_vector}{}\doxysection{Dokumentacja szablonu klasy Vector$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$}
+\label{class_vector}\index{Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}}
+
+
+Szablon opisujacy wektor w przestrzeni. Za jego pomoca opisywane sa wierzcholki dowolnej figury jako wektory o poczatku w poczatku ukladu wspolrzednych. Wektory skladaja sie z tablicy typu double, w ktorej przechowywane sa kolejne skladowe.  
+
+
+
+
+{\ttfamily \#include $<$Vector.\+hh$>$}
+
+
+
+Diagram dziedziczenia dla Vector$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_vector__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector_a5939cea69e177f01e6439d96f87d0ce9}{Vector}} ()
+\item 
+\mbox{\hyperlink{class_vector_addf2162241c80ce64d00700484346cb9}{Vector}} (const std\+::initializer\+\_\+list$<$ Templ\+\_\+\+Type $>$ \&Size\+List)
+\item 
+\mbox{\hyperlink{class_vector}{Vector}} \mbox{\hyperlink{class_vector_a96ffbb5d15dd6a72921eb76d2c520808}{operator+}} (const \mbox{\hyperlink{class_vector}{Vector}} \&v)
+\item 
+\mbox{\hyperlink{class_vector}{Vector}} \mbox{\hyperlink{class_vector_a7dcb88c25af3e50fbb82cf6e1c70f252}{operator-\/}} (const \mbox{\hyperlink{class_vector}{Vector}} \&v) const
+\item 
+\mbox{\hyperlink{class_vector}{Vector}} \mbox{\hyperlink{class_vector_a19bff7bc64c09edf8be1146587322158}{operator$\ast$}} (const Templ\+\_\+\+Type \&tmp)
+\item 
+\mbox{\hyperlink{class_vector}{Vector}} \mbox{\hyperlink{class_vector_acfd9d13339b0091a30626e5d981e7c18}{operator/}} (const Templ\+\_\+\+Type \&tmp)
+\item 
+bool \mbox{\hyperlink{class_vector_a4a4852ab8760f5910802d8d13260d6fe}{operator==}} (const \mbox{\hyperlink{class_vector}{Vector}} \&V2) const
+\item 
+const Templ\+\_\+\+Type \& \mbox{\hyperlink{class_vector_a7a0230ebd95b36286c5159edcf2542ad}{operator\mbox{[}$\,$\mbox{]}}} (unsigned int index) const
+\item 
+Templ\+\_\+\+Type \& \mbox{\hyperlink{class_vector_a6fdec52a7a8f04cbf2d395f63d48ff1c}{operator\mbox{[}$\,$\mbox{]}}} (unsigned int index)
+\item 
+double \mbox{\hyperlink{class_vector_a3ef189545c0a21ff24e32f011f9fb7fb}{lenght}} () const
+\item 
+void \mbox{\hyperlink{class_vector_a83c956ff3cdb61bc2012829c7f8ff875}{scale}} (const \mbox{\hyperlink{class_vector}{Vector}} \&v)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+Templ\+\_\+\+Type \mbox{\hyperlink{class_vector_abb61bafebedaa2772ea8104d3e8665bb}{size}} \mbox{[}Templ\+\_\+\+Size\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+\subsubsection*{template$<$typename Templ\+\_\+\+Type, unsigned int Templ\+\_\+\+Size$>$\newline
+class Vector$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$}
+
+Dla klasy zdefiniowano podstawowe przeciazenia operatorow pozwalajace na korzystanie z danych, ich modyfikacje oraz podstawowa arytmetyke wektorowa. 
+
+Definicja w linii 29 pliku Vector.\+hh.
+
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_vector_a5939cea69e177f01e6439d96f87d0ce9}\label{class_vector_a5939cea69e177f01e6439d96f87d0ce9}} 
+\index{Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Typ , unsigned int Templ\+\_\+\+Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$\+::\mbox{\hyperlink{class_vector}{Vector}}}
+
+
+
+Definicja w linii 70 pliku Vector.\+hh.
+
+\mbox{\Hypertarget{class_vector_addf2162241c80ce64d00700484346cb9}\label{class_vector_addf2162241c80ce64d00700484346cb9}} 
+\index{Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$\+::\mbox{\hyperlink{class_vector}{Vector}} (\begin{DoxyParamCaption}\item[{const std\+::initializer\+\_\+list$<$ Templ\+\_\+\+Type $>$ \&}]{Size\+List }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_vector_a3ef189545c0a21ff24e32f011f9fb7fb}\label{class_vector_a3ef189545c0a21ff24e32f011f9fb7fb}} 
+\index{Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}!lenght@{lenght}}
+\index{lenght@{lenght}!Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{lenght()}{lenght()}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Typ , unsigned int Templ\+\_\+\+Size$>$ \\
+double \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$\+::lenght}
+
+
+
+Definicja w linii 222 pliku Vector.\+hh.
+
+\mbox{\Hypertarget{class_vector_a19bff7bc64c09edf8be1146587322158}\label{class_vector_a19bff7bc64c09edf8be1146587322158}} 
+\index{Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$ \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const Templ\+\_\+\+Type \&}]{tmp }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 143 pliku Vector.\+hh.
+
+\mbox{\Hypertarget{class_vector_a96ffbb5d15dd6a72921eb76d2c520808}\label{class_vector_a96ffbb5d15dd6a72921eb76d2c520808}} 
+\index{Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$ \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 102 pliku Vector.\+hh.
+
+\mbox{\Hypertarget{class_vector_a7dcb88c25af3e50fbb82cf6e1c70f252}\label{class_vector_a7dcb88c25af3e50fbb82cf6e1c70f252}} 
+\index{Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$ \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$ \&}]{v }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 122 pliku Vector.\+hh.
+
+\mbox{\Hypertarget{class_vector_acfd9d13339b0091a30626e5d981e7c18}\label{class_vector_acfd9d13339b0091a30626e5d981e7c18}} 
+\index{Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$ \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$\+::operator/ (\begin{DoxyParamCaption}\item[{const Templ\+\_\+\+Type \&}]{tmp }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 163 pliku Vector.\+hh.
+
+\mbox{\Hypertarget{class_vector_a4a4852ab8760f5910802d8d13260d6fe}\label{class_vector_a4a4852ab8760f5910802d8d13260d6fe}} 
+\index{Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$ \&}]{V2 }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 241 pliku Vector.\+hh.
+
+\mbox{\Hypertarget{class_vector_a6fdec52a7a8f04cbf2d395f63d48ff1c}\label{class_vector_a6fdec52a7a8f04cbf2d395f63d48ff1c}} 
+\index{Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Typ , unsigned int Templ\+\_\+\+Size$>$ \\
+Templ\+\_\+\+Typ \& \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 203 pliku Vector.\+hh.
+
+\mbox{\Hypertarget{class_vector_a7a0230ebd95b36286c5159edcf2542ad}\label{class_vector_a7a0230ebd95b36286c5159edcf2542ad}} 
+\index{Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Typ , unsigned int Templ\+\_\+\+Size$>$ \\
+const Templ\+\_\+\+Typ \& \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Typ, Templ\+\_\+\+Size $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 185 pliku Vector.\+hh.
+
+\mbox{\Hypertarget{class_vector_a83c956ff3cdb61bc2012829c7f8ff875}\label{class_vector_a83c956ff3cdb61bc2012829c7f8ff875}} 
+\index{Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}!scale@{scale}}
+\index{scale@{scale}!Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+void \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$\+::scale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_vector_abb61bafebedaa2772ea8104d3e8665bb}\label{class_vector_abb61bafebedaa2772ea8104d3e8665bb}} 
+\index{Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}!size@{size}}
+\index{size@{size}!Vector$<$ Templ\_Type, Templ\_Size $>$@{Vector$<$ Templ\_Type, Templ\_Size $>$}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily template$<$typename Templ\+\_\+\+Type , unsigned int Templ\+\_\+\+Size$>$ \\
+Templ\+\_\+\+Type \mbox{\hyperlink{class_vector}{Vector}}$<$ Templ\+\_\+\+Type, Templ\+\_\+\+Size $>$\+::size\mbox{[}Templ\+\_\+\+Size\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 33 pliku Vector.\+hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_vector_8hh}{Vector.\+hh}}\end{DoxyCompactItemize}

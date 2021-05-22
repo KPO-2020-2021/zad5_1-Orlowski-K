@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dragonfly: Dokumentacja pliku Drone.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="dragonfly-icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dragonfly
+   &#160;<span id="projectnumber">5.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_drone_8hh.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#define-members">Definicje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Drone.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa opisujaca drona.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_prism6_8hh_source.html">Prism6.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_cuboid_8hh_source.html">Cuboid.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="lacze__do__gnuplota_8hh_source.html">lacze_do_gnuplota.hh</a>&quot;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla Drone.hh:</div>
+<div class="dyncontent">
+<div class="center"><img src="_drone_8hh__incl.png" border="0" usemap="#_drone_8hh" alt=""/></div>
+<map name="_drone_8hh" id="_drone_8hh">
+<area shape="rect" title="Klasa opisujaca drona." alt="" coords="560,5,641,32"/>
+<area shape="rect" href="_prism6_8hh.html" title="Klasa opisujaca graniastoslup o podstawie szesciokatnej." alt="" coords="247,80,333,107"/>
+<area shape="rect" title=" " alt="" coords="374,453,454,480"/>
+<area shape="rect" href="_cuboid_8hh.html" title="Klasa opisujaca prostopadloscian." alt="" coords="357,80,444,107"/>
+<area shape="rect" href="lacze__do__gnuplota_8hh.html" title=" " alt="" coords="519,80,682,107"/>
+<area shape="rect" title=" " alt="" coords="683,155,745,181"/>
+<area shape="rect" title=" " alt="" coords="757,80,831,107"/>
+<area shape="rect" title=" " alt="" coords="855,80,930,107"/>
+<area shape="rect" href="_geometric_solid_8hh.html" title="Klasa opisujaca bryle geometryczna." alt="" coords="252,155,395,181"/>
+<area shape="rect" href="_vector3_d_8hh.html" title="Plik zawiera definicje klasy wektora 3D opartego na szablonie." alt="" coords="133,304,234,331"/>
+<area shape="rect" href="_matrix3x3_8hh.html" title="Plik zawiera definicje macierzy 3x3." alt="" coords="269,229,377,256"/>
+<area shape="rect" href="_vector_8hh.html" title="Ten plik zawiera definicję szablonu Vector&lt;&gt;" alt="" coords="178,379,261,405"/>
+<area shape="rect" title=" " alt="" coords="5,453,71,480"/>
+<area shape="rect" title=" " alt="" coords="95,453,157,480"/>
+<area shape="rect" title=" " alt="" coords="182,453,257,480"/>
+<area shape="rect" title=" " alt="" coords="281,453,350,480"/>
+<area shape="rect" href="_matrix_8hh.html" title="Plik zawierajacy definicje szablonu Matrix&lt;&gt;" alt="" coords="259,304,343,331"/>
+<area shape="rect" title=" " alt="" coords="595,155,654,181"/>
+<area shape="rect" title=" " alt="" coords="529,155,571,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="_drone_8hh__dep__incl.png" border="0" usemap="#_drone_8hhdep" alt=""/></div>
+<map name="_drone_8hhdep" id="_drone_8hhdep">
+<area shape="rect" title="Klasa opisujaca drona." alt="" coords="85,5,166,32"/>
+<area shape="rect" href="app_2main_8cpp.html" title=" " alt="" coords="5,155,88,181"/>
+<area shape="rect" href="_scene_8hh.html" title="Klasa opisujaca scene." alt="" coords="85,80,166,107"/>
+<area shape="rect" href="_drone_8cpp.html" title=" " alt="" coords="191,80,279,107"/>
+<area shape="rect" href="_scene_8cpp.html" title=" " alt="" coords="112,155,200,181"/>
+</map>
+</div>
+</div>
+<p><a href="_drone_8hh_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drone.html">Drone</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Klasa opisujaca drona.  <a href="class_drone.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:af895e6a1fc7cad3761204524da27f178"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_drone_8hh.html#af895e6a1fc7cad3761204524da27f178">PRISM_TEMPLETE</a>&#160;&#160;&#160;&quot;../datasets/templates/prism6.dat&quot;</td></tr>
+<tr class="separator:af895e6a1fc7cad3761204524da27f178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06df277a4a31ea5d6fe93e5490e852f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_drone_8hh.html#a06df277a4a31ea5d6fe93e5490e852f3">CUBOID_TEMPLETE</a>&#160;&#160;&#160;&quot;../datasets/templates/cuboid.dat&quot;</td></tr>
+<tr class="separator:a06df277a4a31ea5d6fe93e5490e852f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e880b33988a66ff259d882fe492719c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_drone_8hh.html#a1e880b33988a66ff259d882fe492719c">BASIC_ROTOR_FILE</a>&#160;&#160;&#160;&quot;../datasets/dat/rotor_&quot;</td></tr>
+<tr class="separator:a1e880b33988a66ff259d882fe492719c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e17863ed02cfd774af2e354210963d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_drone_8hh.html#a17e17863ed02cfd774af2e354210963d">BASIC_BODY_FILE</a>&#160;&#160;&#160;&quot;../datasets/dat/body_&quot;</td></tr>
+<tr class="separator:a17e17863ed02cfd774af2e354210963d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b32aaf12cb40b6468c33da02200330a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_drone_8hh.html#a4b32aaf12cb40b6468c33da02200330a">FLIGHT_TRACK</a>&#160;&#160;&#160;&quot;../datasets/dat/flight_track.dat&quot;</td></tr>
+<tr class="separator:a4b32aaf12cb40b6468c33da02200330a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa opisujaca drona </p>
+
+<p class="definition">Definicja w pliku <a class="el" href="_drone_8hh_source.html">Drone.hh</a>.</p>
+</div><h2 class="groupheader">Dokumentacja definicji</h2>
+<a id="a17e17863ed02cfd774af2e354210963d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e17863ed02cfd774af2e354210963d">&#9670;&nbsp;</a></span>BASIC_BODY_FILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BASIC_BODY_FILE&#160;&#160;&#160;&quot;../datasets/dat/body_&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8hh_source.html#l00014">14</a> pliku <a class="el" href="_drone_8hh_source.html">Drone.hh</a>.</p>
+
+</div>
+</div>
+<a id="a1e880b33988a66ff259d882fe492719c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e880b33988a66ff259d882fe492719c">&#9670;&nbsp;</a></span>BASIC_ROTOR_FILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BASIC_ROTOR_FILE&#160;&#160;&#160;&quot;../datasets/dat/rotor_&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8hh_source.html#l00013">13</a> pliku <a class="el" href="_drone_8hh_source.html">Drone.hh</a>.</p>
+
+</div>
+</div>
+<a id="a06df277a4a31ea5d6fe93e5490e852f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06df277a4a31ea5d6fe93e5490e852f3">&#9670;&nbsp;</a></span>CUBOID_TEMPLETE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CUBOID_TEMPLETE&#160;&#160;&#160;&quot;../datasets/templates/cuboid.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8hh_source.html#l00012">12</a> pliku <a class="el" href="_drone_8hh_source.html">Drone.hh</a>.</p>
+
+</div>
+</div>
+<a id="a4b32aaf12cb40b6468c33da02200330a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b32aaf12cb40b6468c33da02200330a">&#9670;&nbsp;</a></span>FLIGHT_TRACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLIGHT_TRACK&#160;&#160;&#160;&quot;../datasets/dat/flight_track.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8hh_source.html#l00015">15</a> pliku <a class="el" href="_drone_8hh_source.html">Drone.hh</a>.</p>
+
+</div>
+</div>
+<a id="af895e6a1fc7cad3761204524da27f178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af895e6a1fc7cad3761204524da27f178">&#9670;&nbsp;</a></span>PRISM_TEMPLETE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PRISM_TEMPLETE&#160;&#160;&#160;&quot;../datasets/templates/prism6.dat&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_drone_8hh_source.html#l00011">11</a> pliku <a class="el" href="_drone_8hh_source.html">Drone.hh</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="_drone_8hh.html">Drone.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>
