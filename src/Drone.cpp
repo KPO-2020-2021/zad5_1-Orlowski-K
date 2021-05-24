@@ -16,7 +16,7 @@ Drone::Drone(){
  *   \param [in]  number_of_drones   - zmienna zliczajaca ilosc dronow w aktualnej sesji
  *   \retval  Tworzy pliki tekstowe z zapisanymi wierzcholkami w formacie dla gnuplota, tworzy klase drona.
  */
-void Drone::MakeDrone(const Vector3D V_l, double angle, unsigned int &number_of_drones){
+void Drone::MakeDrone(const Vector3D &V_l, double angle, unsigned int &number_of_drones){
     Vector3D Scale_body = {10,8,4},Scale_rotor = {8,8,2} ,V ={0,0,2};
     Vector3D Rotor_Trans[4] = {{5,4,5},{5,-4,5},{-5,4,5},{-5,-4,5}};
     unsigned int number_of_rotors = number_of_drones * 4;

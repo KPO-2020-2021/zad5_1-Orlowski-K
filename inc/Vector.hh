@@ -8,6 +8,8 @@
 #include <cassert>
 
 
+
+
 /*!
  * \file Vector.hh
  * \brief Ten plik zawiera definicję szablonu Vector<>
@@ -31,11 +33,14 @@ class Vector {
 private:
 
     Templ_Type size[Templ_Size];     //Tablica wektora
-    static unsigned int 
+    static unsigned int ActiveVectors;
+    static unsigned int AllVectors;
 
 public:
 
     Vector();
+
+   ~Vector() { ActiveVectors--;};
 
     Vector(const std::initializer_list<Templ_Type> &SizeList);
 
@@ -57,10 +62,16 @@ public:
 
     void scale(const Vector &v);
 
+    void show_vectors();
+
+    
+
 };    
 
-
-
+template <typename Templ_Typ, unsigned int Templ_Size>
+unsigned int Vector<Templ_Typ,Templ_Size>::ActiveVectors = 0;
+template <typename Templ_Typ, unsigned int Templ_Size>
+unsigned int Vector<Templ_Typ,Templ_Size>::AllVectors = 0;
 
 /******************************************************************************
  *! \brief  Konstruktor bezparametryczny klasy Vector.                        | 
@@ -70,6 +81,8 @@ public:
 template <typename Templ_Typ, unsigned int Templ_Size>
 Vector<Templ_Typ,Templ_Size>::Vector() {
     for( Templ_Typ &rSize_i : size) rSize_i = 0;
+    ++ActiveVectors;
+    ++AllVectors;
 }
 
 
@@ -286,8 +299,18 @@ std::istream &operator >> (std::istream &in, Vector<Templ_Typ,Templ_Size> &tmp){
 }
 
 
-
-
+/******************************************************************************
+ * ! \brief Metoda pokazujaca ilosc wektorow                                  |
+ |  Argumenty:                                                                |
+ |     brak                                                                   |
+ |  Wynik:                                                                    |
+ |     Wyswietlenie ilosci aktualnych oraz wszystkich wektorow                |  
+ */
+template< typename Templ_Typ, unsigned int Templ_Size>
+void Vector<Templ_Typ,Templ_Size>::show_vectors(){
+    std::cout << "Aktualna ilosc obiektow Vector: " << ActiveVectors << std::endl;
+    std::cout << "  Laczna ilosc obiektow Vector: " << AllVectors << std::endl;
+}
 
 
 

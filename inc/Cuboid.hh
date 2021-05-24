@@ -40,7 +40,7 @@ class Cuboid: public Solid{
         /*!
         *   \brief Konstruktor parametryczny klasy
         */
-        Cuboid(std::string File1, std::string File2, Vector3D V_scale, Vector3D V, double angle );
+        Cuboid(std::string File1, std::string File2,const Vector3D &V_scale,const Vector3D &V, double angle );
 
         /*!
         *   \brief Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)

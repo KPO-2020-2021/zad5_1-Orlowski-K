@@ -80,7 +80,7 @@ class Drone{
         /*!
         *   \brief Metoda tworzaca drona
         */
-        void MakeDrone(Vector3D V_l, double angle, unsigned int &number_of_drones);
+        void MakeDrone(const Vector3D &V_l, double angle, unsigned int &number_of_drones);
         /*!
         *   \brief Metoda tworzaca trase przelotu
         */

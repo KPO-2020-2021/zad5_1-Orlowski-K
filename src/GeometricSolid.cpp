@@ -29,7 +29,7 @@ Vector3D Solid::Scale(const Vector3D& Vertex) const{
  *   \param [in]  V_scale   - wektor skalujacy
  *   \retval    Obiekt klasy Solid z zainicjowanymi polami
  */
-Solid::Solid(std::string FirstFile,std::string SecFile, Vector3D V_scale){
+Solid::Solid(std::string FirstFile,std::string SecFile, const Vector3D &V_scale){
     Filename_TemplateSolid = FirstFile;
     Filename_FinalSolid = SecFile;
     scale = V_scale;

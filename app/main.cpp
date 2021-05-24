@@ -56,6 +56,7 @@ int main() {
             case 'a':
                 Scene.SwitchActiveDrone();
                 std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone().TakeLayout()[0]<< "  " << Scene.TakeActiveDrone().TakeLayout()[1] << std::endl;
+                Layout1.show_vectors();
                 break;
             case 'p':
                 std::cout << "Podaj kierunek lotu (kat w stopniach) > ";
@@ -102,8 +103,10 @@ int main() {
                 
                 std::cout << "Nacisnij ENTER, aby zakonczyc ... " << std::flush;
                 std::cin.ignore(10000,'\n');
-
-                std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone().TakeLayout()[0]<< "  " << Scene.TakeActiveDrone().TakeLayout()[1] << std::endl;
+                std::cout << std::endl;
+                
+                std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone().TakeLayout()[0]<< "  " << Scene.TakeActiveDrone().TakeLayout()[1] << std::endl <<std::endl;
+                Layout1.show_vectors();
 
                 break;
             case 'm':
@@ -112,6 +115,7 @@ int main() {
                 std::cout << "p - zadaj parametry przelotu\n";
                 std::cout << "m - wyswietl menu\n\n";
                 std::cout << "k - koniec dzialania programu\n";
+                Layout1.show_vectors();
                 break;
             default:
                 exit(1);

@@ -44,7 +44,7 @@ class Solid{
         /*!
         *   \brief Konstruktor parametryczny klasy Solid
         */
-        Solid(std::string FirstFile,std::string SecFile, Vector3D V_scale);
+        Solid(std::string FirstFile,std::string SecFile,const Vector3D &V_scale);
 
         /*!
         *   \brief Metoda zwracajaca sciezke do pliku wzorcowego
