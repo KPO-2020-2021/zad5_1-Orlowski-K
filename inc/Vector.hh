@@ -44,6 +44,8 @@ public:
 
     Vector(const std::initializer_list<Templ_Type> &SizeList);
 
+    Vector(const Vector &V);
+
     Vector operator + (const Vector &v);
 
     Vector operator - (const Vector &v) const;
@@ -51,6 +53,8 @@ public:
     Vector operator * (const Templ_Type &tmp);
 
     Vector operator / (const Templ_Type &tmp);
+
+    Vector& operator = (const Vector &v);
 
     bool   operator == (const Vector &V2) const;
 
@@ -62,7 +66,9 @@ public:
 
     void scale(const Vector &v);
 
-    void show_vectors();
+    unsigned int show_active_vectors(){return ActiveVectors;};
+
+    unsigned int show_all_vectors(){return AllVectors;};
 
     
 
@@ -103,6 +109,15 @@ Vector<Templ_Typ,Templ_Size>::Vector(const std::initializer_list<Templ_Typ> &Siz
     for (Templ_Typ Size_i : SizeList) size[++Ind] = Size_i;
 }
 
+template <typename Templ_Typ, unsigned int Templ_Size>
+Vector<Templ_Typ,Templ_Size>::Vector(const Vector &V){
+    ++ActiveVectors;
+    ++AllVectors;
+    for(unsigned int Ind = 0; Ind < Templ_Size; ++Ind){
+        size[Ind] = V[Ind];
+    }
+}
+
 
 /******************************************************************************
  *! \brief Realizuje dodawanie dwoch wektorow.                                |
@@ -141,6 +156,15 @@ Vector<Templ_Typ,Templ_Size> Vector<Templ_Typ,Templ_Size>::operator - (const Vec
     return result;
 }
 
+
+
+template <typename Templ_Typ, unsigned int Templ_Size>
+Vector<Templ_Typ,Templ_Size>& Vector<Templ_Typ,Templ_Size>::operator = (const Vector<Templ_Typ,Templ_Size> &v){
+    for(unsigned int Ind = 0; Ind < Templ_Size; ++Ind){
+        size[Ind] = v[Ind];
+    }
+    return *this;
+}
 
 
 
@@ -244,6 +268,7 @@ double Vector<Templ_Typ,Templ_Size>::lenght() const{
 }
 
 
+
 /******************************************************************************
  * ! \brief Przeciazenie operatora ==                                         |
  |  Argumenty:                                                                |
@@ -298,19 +323,6 @@ std::istream &operator >> (std::istream &in, Vector<Templ_Typ,Templ_Size> &tmp){
     return in;
 }
 
-
-/******************************************************************************
- * ! \brief Metoda pokazujaca ilosc wektorow                                  |
- |  Argumenty:                                                                |
- |     brak                                                                   |
- |  Wynik:                                                                    |
- |     Wyswietlenie ilosci aktualnych oraz wszystkich wektorow                |  
- */
-template< typename Templ_Typ, unsigned int Templ_Size>
-void Vector<Templ_Typ,Templ_Size>::show_vectors(){
-    std::cout << "Aktualna ilosc obiektow Vector: " << ActiveVectors << std::endl;
-    std::cout << "  Laczna ilosc obiektow Vector: " << AllVectors << std::endl;
-}
 
 
 

@@ -55,8 +55,9 @@ int main() {
         switch(option[0]){
             case 'a':
                 Scene.SwitchActiveDrone();
-                std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone().TakeLayout()[0]<< "  " << Scene.TakeActiveDrone().TakeLayout()[1] << std::endl;
-                Layout1.show_vectors();
+                std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone().TakeLayout()[0]<< "  " << Scene.TakeActiveDrone().TakeLayout()[1] << std::endl << std::endl;
+                std::cout << "Aktualna ilosc obiektow Vector: " << Layout1.show_active_vectors() << std::endl;
+                std::cout << "  Laczna ilosc obiektow Vector: " << Layout1.show_all_vectors() << std::endl << std::endl;
                 break;
             case 'p':
                 std::cout << "Podaj kierunek lotu (kat w stopniach) > ";
@@ -106,7 +107,8 @@ int main() {
                 std::cout << std::endl;
                 
                 std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone().TakeLayout()[0]<< "  " << Scene.TakeActiveDrone().TakeLayout()[1] << std::endl <<std::endl;
-                Layout1.show_vectors();
+                std::cout << "Aktualna ilosc obiektow Vector: " << Layout1.show_active_vectors() << std::endl;
+                std::cout << "  Laczna ilosc obiektow Vector: " << Layout1.show_all_vectors() << std::endl << std::endl;
 
                 break;
             case 'm':
@@ -114,8 +116,9 @@ int main() {
                 std::cout << "a - wybierz aktywnego drona\n";
                 std::cout << "p - zadaj parametry przelotu\n";
                 std::cout << "m - wyswietl menu\n\n";
-                std::cout << "k - koniec dzialania programu\n";
-                Layout1.show_vectors();
+                std::cout << "k - koniec dzialania programu\n\n";
+                std::cout << "Aktualna ilosc obiektow Vector: " << Layout1.show_active_vectors() << std::endl;
+                std::cout << "  Laczna ilosc obiektow Vector: " << Layout1.show_all_vectors() << std::endl << std::endl;
                 break;
             default:
                 exit(1);
