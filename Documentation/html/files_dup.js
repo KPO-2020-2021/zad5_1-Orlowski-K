@@ -8,9 +8,7 @@ var files_dup =
     [ "._mpi_reporter.h", "_8__mpi__reporter_8h.html", "_8__mpi__reporter_8h" ],
     [ "CMakeCXXCompilerId.cpp", "_c_make_c_x_x_compiler_id_8cpp.html", "_c_make_c_x_x_compiler_id_8cpp" ],
     [ "Cuboid.cpp", "_cuboid_8cpp.html", null ],
-    [ "Cuboid.hh", "_cuboid_8hh.html", [
-      [ "Cuboid", "class_cuboid.html", "class_cuboid" ]
-    ] ],
+    [ "Cuboid.hh", "_cuboid_8hh.html", "_cuboid_8hh" ],
     [ "DartConfiguration.tcl", "_dart_configuration_8tcl.html", null ],
     [ "doctest.cpp", "doctest_8cpp.html", "doctest_8cpp" ],
     [ "doctest.h", "doctest_8h.html", "doctest_8h" ],
@@ -40,9 +38,7 @@ var files_dup =
     [ "Matrix3x3.hh", "_matrix3x3_8hh.html", "_matrix3x3_8hh" ],
     [ "mpi_reporter.h", "mpi__reporter_8h.html", "mpi__reporter_8h" ],
     [ "Prism6.cpp", "_prism6_8cpp.html", null ],
-    [ "Prism6.hh", "_prism6_8hh.html", [
-      [ "Prism", "class_prism.html", "class_prism" ]
-    ] ],
+    [ "Prism6.hh", "_prism6_8hh.html", "_prism6_8hh" ],
     [ "Scene.cpp", "_scene_8cpp.html", null ],
     [ "Scene.hh", "_scene_8hh.html", [
       [ "Scene", "class_scene.html", "class_scene" ]

@@ -87,8 +87,8 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="title">Wizualizacja niektórych elementów misji Dragonfly </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="section author"><dt>Autor</dt><dd>Jan Kowalski </dd></dl>
-<dl class="section date"><dt>Data</dt><dd>2021.05.04 </dd></dl>
+<div class="textblock"><dl class="section author"><dt>Autor</dt><dd>Kamil Orłowski </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>2021.05.29 </dd></dl>
 <dl class="section version"><dt>Wersja</dt><dd>0.1</dd></dl>
 <h1><a class="anchor" id="charakterystyka"></a>
 Charakterystyka misji Dragonfly</h1>
@@ -114,17 +114,17 @@ Diagram podstawowych klas</h1>
 Diagram klas z ważniejszymi metodami</div></div>
 <h1><a class="anchor" id="activity-diagram"></a>
 Diagramy czynności dla wybranych metod</h1>
-<p>Obliczanie i zapis współrzędnych wierzchołków po zmianie położenia drona realizowane jest przez metodę <code>Dron::Oblicz_i_Zapisz_WspGlbDrona()</code>. Wykorzystuje ona dwie inne metody, tzn. <code>Dron::Oblicz_i_Zapisz_WspGlbKorpusu()</code> i <code>Dron::Oblicz_i_Zapisz_WspGlbRotora</code>(.), które odpowiedzialne są odpowiednio za obliczenie współrzędnych korpusu oraz czterech rotorów. Sposób użycia tych metod przedstawia diagramie poniżej.</p>
+<p>Obliczanie i zapis współrzędnych wierzchołków po zmianie położenia drona realizowane jest przez metodę <code>Dron::Count_Save_GlobalCoor()</code>(). Wykorzystuje ona dwie inne metody, tzn. <code>Dron::Count_Save_BodyGlCoor()</code> i <code>Dron::Count_Save_RotorGlCoor()</code>, które odpowiedzialne są odpowiednio za obliczenie współrzędnych korpusu oraz czterech rotorów. Sposób użycia tych metod przedstawia diagramie poniżej.</p>
 <div class="image">
 <object type="image/svg+xml" data="inkscape-dia-diagram_czynnosci-obliczanie_wierzcholkow_drona.svg" style="pointer-events: none;"></object>
 <div class="caption">
-Diagram czynności dla metody Dron::Oblicz_i_Zapisz_WspGlbDrona().</div></div>
-<p>Ideę działania metody <code>Dron::Oblicz_i_Zapisz_WspGlbRotora</code>(.) prezentuje dalszy diagram czynności. Diagram ten pokazuje kolejne operacje związane z przeskalowaniem wierzchołków bryły geometrycznej. Następnie, przeliczenie i przejście do układu współrzędnych lokalnych drona. W dalszej kolejności ponowne przeliczenie i przejście do układu współrzędnych globalnych sceny.</p>
+Diagram czynności dla metody Dron::Count_Save_GlobalCoor().</div></div>
+<p>Ideę działania metody <code>Dron::Count_Save_RotorGlCoor()</code> prezentuje dalszy diagram czynności. Diagram ten pokazuje kolejne operacje związane z przeskalowaniem wierzchołków bryły geometrycznej. Następnie, przeliczenie i przejście do układu współrzędnych lokalnych drona. W dalszej kolejności ponowne przeliczenie i przejście do układu współrzędnych globalnych sceny.</p>
 <div class="image">
 <object type="image/svg+xml" data="inkscape-dia-diagram_czynnosci-obliczanie_wierzcholkow_rotora.svg" style="pointer-events: none;"></object>
 <div class="caption">
-Diagram czynności dla metody Dron::Oblicz_i_Zapisz_WspGlRotorab(.).</div></div>
-<p>Analogiczną postać ma diagram czynności dla metody <code>Dron::Oblicz_i_Zapisz_WspGlbKorpusu()</code>. </p>
+Diagram czynności dla metody Dron::Count_Save_RotorGlCoor().</div></div>
+<p>Analogiczną postać ma diagram czynności dla metody <code>Dron::Count_Save_BodyGlCoor()</code>. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

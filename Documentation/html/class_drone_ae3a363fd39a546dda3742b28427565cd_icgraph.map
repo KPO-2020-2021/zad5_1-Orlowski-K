@@ -1,5 +1,5 @@
 <map id="Drone::TakeFilename_Rotor" name="Drone::TakeFilename_Rotor">
 <area shape="rect" id="node1" title="Metoda udostepniajaca sciezke do pliku graniastoslupa." alt="" coords="289,5,448,47"/>
-<area shape="rect" id="node2" href="$class_scene.html#a14d8f434e5010a519e2478348bcdcb61" title="Metoda dodajaca drona do sceny." alt="" coords="108,13,241,39"/>
+<area shape="rect" id="node2" href="$class_scene.html#aec66a39d95ea31d35ddd310d29390f01" title="Metoda dodajaca drona do sceny." alt="" coords="108,13,241,39"/>
 <area shape="rect" id="node3" href="$app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,60,39"/>
 </map>

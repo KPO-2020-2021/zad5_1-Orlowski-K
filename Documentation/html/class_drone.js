@@ -5,7 +5,7 @@ var class_drone =
     [ "Count_Save_BodyGlCoor", "class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8", null ],
     [ "Count_Save_GlobalCoor", "class_drone.html#ae6d167f193ac2966cd640522a8357b53", null ],
     [ "Count_Save_RotorGlCoor", "class_drone.html#a787e9a83676fe66dcaf5eab166dc4967", null ],
-    [ "MakeDrone", "class_drone.html#ae402639c0c483a5cce59b1f760026072", null ],
+    [ "MakeDrone", "class_drone.html#a19841dac503045c41403930c6b83f668", null ],
     [ "MakeHorizontalFlight", "class_drone.html#a08c026ce13b2dc5bb785f0efff866646", null ],
     [ "MakeTrack", "class_drone.html#ae2019bec61b97f7a2af8399047c61511", null ],
     [ "MakeVerticalFlight", "class_drone.html#a08a5d096fd19e259c3094b15dab29de1", null ],

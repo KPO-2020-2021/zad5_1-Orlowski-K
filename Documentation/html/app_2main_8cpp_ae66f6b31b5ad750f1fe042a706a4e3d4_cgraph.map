@@ -1,26 +1,28 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,528,60,555"/>
-<area shape="rect" id="node2" href="$class_scene.html#a14d8f434e5010a519e2478348bcdcb61" title="Metoda dodajaca drona do sceny." alt="" coords="145,107,279,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,587,60,613"/>
+<area shape="rect" id="node2" href="$class_scene.html#aec66a39d95ea31d35ddd310d29390f01" title="Metoda dodajaca drona do sceny." alt="" coords="145,107,279,133"/>
 <area shape="rect" id="node3" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku." alt="" coords="390,33,563,74"/>
 <area shape="rect" id="node8" href="$class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="113,208,311,235"/>
 <area shape="rect" id="node9" href="$class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="364,251,589,277"/>
 <area shape="rect" id="node19" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title=" " alt="" coords="390,302,563,343"/>
 <area shape="rect" id="node20" href="$class_scene.html#ab2e34ae305cb139aa38c804289d18383" title="Metoda rysujaca plaszczyzne." alt="" coords="131,5,293,32"/>
 <area shape="rect" id="node21" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e" title="Inicjalizuje połączenie z programem gnuplot." alt="" coords="125,411,299,453"/>
-<area shape="rect" id="node22" href="$class_drone.html#ae402639c0c483a5cce59b1f760026072" title="Metoda tworzaca drona." alt="" coords="141,477,283,504"/>
+<area shape="rect" id="node22" href="$class_drone.html#a19841dac503045c41403930c6b83f668" title="Metoda tworzaca drona." alt="" coords="141,477,283,504"/>
 <area shape="rect" id="node23" href="$class_drone.html#a08c026ce13b2dc5bb785f0efff866646" title="Metoda animujaca lot poziomy." alt="" coords="108,259,316,285"/>
 <area shape="rect" id="node24" href="$class_drone.html#ae2019bec61b97f7a2af8399047c61511" title="Metoda tworzaca trase przelotu." alt="" coords="143,528,281,555"/>
 <area shape="rect" id="node25" href="$class_drone.html#a08a5d096fd19e259c3094b15dab29de1" title="Metoda animujaca lot pionowy." alt="" coords="117,309,307,336"/>
-<area shape="rect" id="node26" href="$class_scene.html#a7e5cdf9909419118b88afa79996beeb5" title="Metoda zmieniajaca aktualnie wybranego drona." alt="" coords="116,579,308,605"/>
-<area shape="rect" id="node27" href="$class_scene.html#a6d5abb73da5487e8aba9bd84826c5530" title="Metoda pozwalajaca na dostep do aktywnego drona w trybie tylko do odczytu." alt="" coords="123,629,301,656"/>
-<area shape="rect" id="node28" href="$class_drone.html#a1ab7730fbaa3885224e0989851a549cb" title="Metoda udostepniajaca wektor polozenia drona." alt="" coords="141,680,283,707"/>
-<area shape="rect" id="node29" href="$class_scene.html#a87399b42f1e2dbc10c6421c090e23b9a" title="Metoda pozwalajaca na dostep do aktywnego drona z mozliwoscia modyfikacji." alt="" coords="125,731,299,757"/>
-<area shape="rect" id="node30" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a94d8527fd78048ed6cb32ffb29e5f903" title="Ustawia rotację wokół osi OX i OZ." alt="" coords="125,782,299,823"/>
-<area shape="rect" id="node33" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9c91987dfc869d6fcea96205c581daef" title="Ustawia zakres osi OX." alt="" coords="125,847,299,889"/>
-<area shape="rect" id="node34" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a54c6e9cf9ab2eae479451fd953c2717c" title="Ustawia zakres osi OY." alt="" coords="125,913,299,954"/>
-<area shape="rect" id="node35" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1dbbb2b86fb13b8632e6bad9df2a82e3" title="Ustawia zakres osi OZ." alt="" coords="125,978,299,1019"/>
-<area shape="rect" id="node36" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a75f599f17413ea8602c6dbba09f36407" title="Usuwa ostatnią nazwę pliku." alt="" coords="125,1043,299,1085"/>
-<area shape="rect" id="node37" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a10950349b348fd3a3d4143e95337527c" title="Zmienia tryb rysowania." alt="" coords="125,1109,299,1150"/>
+<area shape="rect" id="node26" href="$class_vector.html#a9a1423efba75a53a1fd4c60d91675aed" title=" " alt="" coords="136,579,288,621"/>
+<area shape="rect" id="node27" href="$class_vector.html#a6c353ceee6813ea6af1276c41a7e26d4" title=" " alt="" coords="121,645,303,672"/>
+<area shape="rect" id="node28" href="$class_scene.html#a7e5cdf9909419118b88afa79996beeb5" title="Metoda zmieniajaca aktualnie wybranego drona." alt="" coords="116,696,308,723"/>
+<area shape="rect" id="node29" href="$class_scene.html#a3372e8e86c294b54d1bafe804feff860" title="Metoda pozwalajaca na dostep do aktywnego drona w trybie tylko do odczytu." alt="" coords="123,747,301,773"/>
+<area shape="rect" id="node30" href="$class_drone.html#a1ab7730fbaa3885224e0989851a549cb" title="Metoda udostepniajaca wektor polozenia drona." alt="" coords="141,797,283,824"/>
+<area shape="rect" id="node31" href="$class_scene.html#a4e36128095df6535dc6f3ffa5e3413cd" title="Metoda pozwalajaca na dostep do aktywnego drona z mozliwoscia modyfikacji." alt="" coords="125,848,299,875"/>
+<area shape="rect" id="node32" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a94d8527fd78048ed6cb32ffb29e5f903" title="Ustawia rotację wokół osi OX i OZ." alt="" coords="125,899,299,941"/>
+<area shape="rect" id="node35" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9c91987dfc869d6fcea96205c581daef" title="Ustawia zakres osi OX." alt="" coords="125,965,299,1006"/>
+<area shape="rect" id="node36" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a54c6e9cf9ab2eae479451fd953c2717c" title="Ustawia zakres osi OY." alt="" coords="125,1030,299,1071"/>
+<area shape="rect" id="node37" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1dbbb2b86fb13b8632e6bad9df2a82e3" title="Ustawia zakres osi OZ." alt="" coords="125,1095,299,1137"/>
+<area shape="rect" id="node38" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a75f599f17413ea8602c6dbba09f36407" title="Usuwa ostatnią nazwę pliku." alt="" coords="125,1161,299,1202"/>
+<area shape="rect" id="node39" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a10950349b348fd3a3d4143e95337527c" title="Zmienia tryb rysowania." alt="" coords="125,1226,299,1267"/>
 <area shape="rect" id="node5" href="$class_drone.html#af3224e3b7b4884460738fe192f2dac32" title="Metoda udostepniajaca sciezke do pliku prostopadlosianu." alt="" coords="654,156,853,183"/>
 <area shape="rect" id="node7" href="$class_drone.html#ae3a363fd39a546dda3742b28427565cd" title="Metoda udostepniajaca sciezke do pliku graniastoslupa." alt="" coords="674,90,833,131"/>
 <area shape="rect" id="node4" href="$namespace_pz_g.html#ae1ae4d36f66c77879380ba73da8e20e3" title=" " alt="" coords="690,39,817,65"/>
@@ -34,6 +36,6 @@
 <area shape="rect" id="node13" href="$_matrix3x3_8hh.html#aeb565d68db2c7ec1fd693b1af088732b" title="Funkcja tworzaca macierz obrotu." alt="" coords="1171,243,1292,269"/>
 <area shape="rect" id="node14" href="$class_solid.html#a76b8df098d571113383b1a6fcc12b44b" title="Metoda skalujaca wektor." alt="" coords="1183,333,1280,360"/>
 <area shape="rect" id="node17" href="$class_prism.html#a86fb5c667a39ad8f0321cfabf81cdb21" title="Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)" alt="" coords="922,366,1118,407"/>
-<area shape="rect" id="node31" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a88324c53a70846fb6bc9d918ce21fd56" title="Ustawia rotację wokół osi OX." alt="" coords="390,815,563,857"/>
-<area shape="rect" id="node32" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a458399aa2a8f4b3f00ccd5b272857ea1" title="Ustawia rotację wokół osi OZ." alt="" coords="390,750,563,791"/>
+<area shape="rect" id="node33" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a88324c53a70846fb6bc9d918ce21fd56" title="Ustawia rotację wokół osi OX." alt="" coords="390,933,563,974"/>
+<area shape="rect" id="node34" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a458399aa2a8f4b3f00ccd5b272857ea1" title="Ustawia rotację wokół osi OZ." alt="" coords="390,867,563,909"/>
 </map>

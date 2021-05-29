@@ -91,35 +91,37 @@ $(document).ready(function(){initNavTree('_cuboid_8hh_source.html',''); initResi
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_geometric_solid_8hh.html">GeometricSolid.hh</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="_cuboid_8hh.html#a06df277a4a31ea5d6fe93e5490e852f3">    5</a></span>&#160;<span class="preprocessor">#define CUBOID_TEMPLETE     &quot;../datasets/templates/cuboid.dat&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_cuboid.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cuboid.html">Cuboid</a>: <span class="keyword">public</span> <a class="code" href="class_solid.html">Solid</a>{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_cuboid.html#af4ca0bbfc959d5ea86b240daa581b4b4">   29</a></span>&#160;        <a class="code" href="class_vector.html">Vector3D</a> <a class="code" href="class_cuboid.html#af4ca0bbfc959d5ea86b240daa581b4b4">Layout</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_cuboid.html#a1fda740e4b52e9e0f3d0e2d9bbfb9e84">   33</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="class_cuboid.html#a1fda740e4b52e9e0f3d0e2d9bbfb9e84">OrientAngle</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="_cuboid_8hh.html#a17e17863ed02cfd774af2e354210963d">    7</a></span>&#160;<span class="preprocessor">#define BASIC_BODY_FILE     &quot;../datasets/dat/body_&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_cuboid.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cuboid.html">Cuboid</a>: <span class="keyword">public</span> <a class="code" href="class_solid.html">Solid</a>{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_cuboid.html#af4ca0bbfc959d5ea86b240daa581b4b4">   31</a></span>&#160;        <a class="code" href="class_vector.html">Vector3D</a> <a class="code" href="class_cuboid.html#af4ca0bbfc959d5ea86b240daa581b4b4">Layout</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_cuboid.html#a1fda740e4b52e9e0f3d0e2d9bbfb9e84">   35</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="class_cuboid.html#a1fda740e4b52e9e0f3d0e2d9bbfb9e84">OrientAngle</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_cuboid.html#a1abf60e93d024b7a01ee5b1a48f1f08a">Cuboid</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_cuboid.html#a1abf60e93d024b7a01ee5b1a48f1f08a">Cuboid</a>(std::string File1, std::string File2, <a class="code" href="class_vector.html">Vector3D</a> V_scale, <a class="code" href="class_vector.html">Vector3D</a> V, <span class="keywordtype">double</span> angle );</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_vector.html">Vector3D</a> <a class="code" href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9">TranformToParentialCoordinate</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector3D</a>&amp; Vertex) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="class_cuboid.html#a1abf60e93d024b7a01ee5b1a48f1f08a">Cuboid</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_cuboid.html#a1abf60e93d024b7a01ee5b1a48f1f08a">Cuboid</a>(std::string File1, std::string File2,<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector3D</a> &amp;V_scale,<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector3D</a> &amp;V, <span class="keywordtype">double</span> angle );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_vector.html">Vector3D</a> <a class="code" href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9">TranformToParentialCoordinate</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector3D</a>&amp; Vertex) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_solid_html"><div class="ttname"><a href="class_solid.html">Solid</a></div><div class="ttdoc">Klasa opisujaca bryle geometryczna.</div><div class="ttdef"><b>Definition:</b> <a href="_geometric_solid_8hh_source.html#l00024">GeometricSolid.hh:24</a></div></div>
-<div class="ttc" id="aclass_cuboid_html_af4ca0bbfc959d5ea86b240daa581b4b4"><div class="ttname"><a href="class_cuboid.html#af4ca0bbfc959d5ea86b240daa581b4b4">Cuboid::Layout</a></div><div class="ttdeci">Vector3D Layout</div><div class="ttdoc">Wektor polozenia.</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8hh_source.html#l00029">Cuboid.hh:29</a></div></div>
+<div class="ttc" id="aclass_cuboid_html_af4ca0bbfc959d5ea86b240daa581b4b4"><div class="ttname"><a href="class_cuboid.html#af4ca0bbfc959d5ea86b240daa581b4b4">Cuboid::Layout</a></div><div class="ttdeci">Vector3D Layout</div><div class="ttdoc">Wektor polozenia.</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8hh_source.html#l00031">Cuboid.hh:31</a></div></div>
 <div class="ttc" id="aclass_cuboid_html_a08bc443badc04b38cb947ee573c534b9"><div class="ttname"><a href="class_cuboid.html#a08bc443badc04b38cb947ee573c534b9">Cuboid::TranformToParentialCoordinate</a></div><div class="ttdeci">Vector3D TranformToParentialCoordinate(const Vector3D &amp;Vertex) const</div><div class="ttdoc">Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona)</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8cpp_source.html#l00017">Cuboid.cpp:17</a></div></div>
-<div class="ttc" id="aclass_cuboid_html_a1fda740e4b52e9e0f3d0e2d9bbfb9e84"><div class="ttname"><a href="class_cuboid.html#a1fda740e4b52e9e0f3d0e2d9bbfb9e84">Cuboid::OrientAngle</a></div><div class="ttdeci">double OrientAngle</div><div class="ttdoc">Kat orientacji.</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8hh_source.html#l00033">Cuboid.hh:33</a></div></div>
+<div class="ttc" id="aclass_cuboid_html_a1fda740e4b52e9e0f3d0e2d9bbfb9e84"><div class="ttname"><a href="class_cuboid.html#a1fda740e4b52e9e0f3d0e2d9bbfb9e84">Cuboid::OrientAngle</a></div><div class="ttdeci">double OrientAngle</div><div class="ttdoc">Kat orientacji.</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8hh_source.html#l00035">Cuboid.hh:35</a></div></div>
 <div class="ttc" id="a_geometric_solid_8hh_html"><div class="ttname"><a href="_geometric_solid_8hh.html">GeometricSolid.hh</a></div><div class="ttdoc">Klasa opisujaca bryle geometryczna.</div></div>
 <div class="ttc" id="aclass_vector_html"><div class="ttname"><a href="class_vector.html">Vector&lt; double, 3 &gt;</a></div></div>
 <div class="ttc" id="aclass_cuboid_html_a1abf60e93d024b7a01ee5b1a48f1f08a"><div class="ttname"><a href="class_cuboid.html#a1abf60e93d024b7a01ee5b1a48f1f08a">Cuboid::Cuboid</a></div><div class="ttdeci">Cuboid()</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8cpp_source.html#l00005">Cuboid.cpp:5</a></div></div>
-<div class="ttc" id="aclass_cuboid_html"><div class="ttname"><a href="class_cuboid.html">Cuboid</a></div><div class="ttdoc">Klasa opisujaca prostopadloscian.</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8hh_source.html#l00023">Cuboid.hh:23</a></div></div>
+<div class="ttc" id="aclass_cuboid_html"><div class="ttname"><a href="class_cuboid.html">Cuboid</a></div><div class="ttdoc">Klasa opisujaca prostopadloscian.</div><div class="ttdef"><b>Definition:</b> <a href="_cuboid_8hh_source.html#l00025">Cuboid.hh:25</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -54,7 +54,7 @@ void Scene::AddDrone(Drone &NewDrone){
  *
  *   \retval  Dodanie sciezki do plaszczyzny do lacza do rysowania
  */
-void Scene::CreateSurface(){
+void Scene::CreateSurface() const {
     Link.DodajNazwePliku(Filename_Surface.c_str());
 }
 

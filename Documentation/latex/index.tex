@@ -1,8 +1,8 @@
 \begin{DoxyAuthor}{Autor}
-Jan Kowalski 
+Kamil Orłowski 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Data}
-2021.\+05.\+04 
+2021.\+05.\+29 
 \end{DoxyDate}
 \begin{DoxyVersion}{Wersja}
 0.\+1
@@ -19,12 +19,12 @@ Diagram użycia w tym zadaniu obrazuje operacja jakie użytkownik może żądać
 Poniżej przedstawiony jest diagram klas, który traktowany jest jako punkt wyjścia dla tworzonej aplikacji. Interfejsy poszczególnych klas zostały ograniczone tylko do najważniejszego zestawu metod. Nie należy więc traktować jako kompletnego diagramu.
 
 \hypertarget{index_activity-diagram}{}\doxysection{Diagramy czynności dla wybranych metod}\label{index_activity-diagram}
-Obliczanie i zapis współrzędnych wierzchołków po zmianie położenia drona realizowane jest przez metodę {\ttfamily Dron\+::\+Oblicz\+\_\+i\+\_\+\+Zapisz\+\_\+\+Wsp\+Glb\+Drona()}. Wykorzystuje ona dwie inne metody, tzn. {\ttfamily Dron\+::\+Oblicz\+\_\+i\+\_\+\+Zapisz\+\_\+\+Wsp\+Glb\+Korpusu()} i {\ttfamily Dron\+::\+Oblicz\+\_\+i\+\_\+\+Zapisz\+\_\+\+Wsp\+Glb\+Rotora}(.), które odpowiedzialne są odpowiednio za obliczenie współrzędnych korpusu oraz czterech rotorów. Sposób użycia tych metod przedstawia diagramie poniżej.
+Obliczanie i zapis współrzędnych wierzchołków po zmianie położenia drona realizowane jest przez metodę {\ttfamily Dron\+::\+Count\+\_\+\+Save\+\_\+\+Global\+Coor()}(). Wykorzystuje ona dwie inne metody, tzn. {\ttfamily Dron\+::\+Count\+\_\+\+Save\+\_\+\+Body\+Gl\+Coor()} i {\ttfamily Dron\+::\+Count\+\_\+\+Save\+\_\+\+Rotor\+Gl\+Coor()}, które odpowiedzialne są odpowiednio za obliczenie współrzędnych korpusu oraz czterech rotorów. Sposób użycia tych metod przedstawia diagramie poniżej.
 
 
 
-Ideę działania metody {\ttfamily Dron\+::\+Oblicz\+\_\+i\+\_\+\+Zapisz\+\_\+\+Wsp\+Glb\+Rotora}(.) prezentuje dalszy diagram czynności. Diagram ten pokazuje kolejne operacje związane z przeskalowaniem wierzchołków bryły geometrycznej. Następnie, przeliczenie i przejście do układu współrzędnych lokalnych drona. W dalszej kolejności ponowne przeliczenie i przejście do układu współrzędnych globalnych sceny.
+Ideę działania metody {\ttfamily Dron\+::\+Count\+\_\+\+Save\+\_\+\+Rotor\+Gl\+Coor()} prezentuje dalszy diagram czynności. Diagram ten pokazuje kolejne operacje związane z przeskalowaniem wierzchołków bryły geometrycznej. Następnie, przeliczenie i przejście do układu współrzędnych lokalnych drona. W dalszej kolejności ponowne przeliczenie i przejście do układu współrzędnych globalnych sceny.
 
 
 
-Analogiczną postać ma diagram czynności dla metody {\ttfamily Dron\+::\+Oblicz\+\_\+i\+\_\+\+Zapisz\+\_\+\+Wsp\+Glb\+Korpusu()}. 
+Analogiczną postać ma diagram czynności dla metody {\ttfamily Dron\+::\+Count\+\_\+\+Save\+\_\+\+Body\+Gl\+Coor()}. 

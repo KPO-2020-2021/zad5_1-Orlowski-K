@@ -23,7 +23,7 @@ Diagram współpracy dla Drone\+:\nopagebreak
 \item 
 \mbox{\hyperlink{class_drone_ab692baa4be5c43b72990ce1b01bdc805}{Drone}} ()
 \item 
-void \mbox{\hyperlink{class_drone_ae402639c0c483a5cce59b1f760026072}{Make\+Drone}} (\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} V\+\_\+l, double angle, unsigned int \&number\+\_\+of\+\_\+drones)
+void \mbox{\hyperlink{class_drone_a19841dac503045c41403930c6b83f668}{Make\+Drone}} (const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&V\+\_\+l, double angle, unsigned int \&number\+\_\+of\+\_\+drones)
 \begin{DoxyCompactList}\small\item\em Metoda tworzaca drona. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_drone_ae2019bec61b97f7a2af8399047c61511}{Make\+Track}} (double rotation\+\_\+angle, double Flight\+Len, std\+::vector$<$ \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} $>$ \&Trace\+Points) const
 \begin{DoxyCompactList}\small\item\em Metoda tworzaca trase przelotu. \end{DoxyCompactList}\item 
@@ -73,7 +73,7 @@ unsigned int \mbox{\hyperlink{class_drone_a4a24aab74b030c2fbc9d48d42c7767ce}{Ser
 \doxysubsection{Opis szczegółowy}
 Klasa opisuje pojecie drona w przestrzeni. Jest to klasa uzywajaca klasy bryly geometrycznej oraz dziedziczacych od niej. Cialo drona jest opisane przez prostopadloscian, a rotory przez graniastoslupy. Sklada sie z pol przechowujacych bryly oraz danych opisujacych polozenie calego drona w ukladzie globalnym. Przechowuje tez numer utworzonego drona. 
 
-Definicja w linii 38 pliku Drone.\+hh.
+Definicja w linii 36 pliku Drone.\+hh.
 
 
 
@@ -237,11 +237,11 @@ Oto graf wywoływań tej funkcji\+:\nopagebreak
 \includegraphics[width=350pt]{class_drone_a787e9a83676fe66dcaf5eab166dc4967_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_drone_ae402639c0c483a5cce59b1f760026072}\label{class_drone_ae402639c0c483a5cce59b1f760026072}} 
+\mbox{\Hypertarget{class_drone_a19841dac503045c41403930c6b83f668}\label{class_drone_a19841dac503045c41403930c6b83f668}} 
 \index{Drone@{Drone}!MakeDrone@{MakeDrone}}
 \index{MakeDrone@{MakeDrone}!Drone@{Drone}}
 \doxysubsubsection{\texorpdfstring{MakeDrone()}{MakeDrone()}}
-{\footnotesize\ttfamily void Drone\+::\+Make\+Drone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}}}]{V\+\_\+l,  }\item[{double}]{angle,  }\item[{unsigned int \&}]{number\+\_\+of\+\_\+drones }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Drone\+::\+Make\+Drone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&}]{V\+\_\+l,  }\item[{double}]{angle,  }\item[{unsigned int \&}]{number\+\_\+of\+\_\+drones }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}[1]{Parametry}
@@ -265,7 +265,7 @@ Oto graf wywoływań tej funkcji\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=264pt]{class_drone_ae402639c0c483a5cce59b1f760026072_icgraph}
+\includegraphics[width=264pt]{class_drone_a19841dac503045c41403930c6b83f668_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_drone_a08c026ce13b2dc5bb785f0efff866646}\label{class_drone_a08c026ce13b2dc5bb785f0efff866646}} 
@@ -402,7 +402,7 @@ Metoda zwracajaca rotor drona.
 \end{DoxyRetVals}
 
 
-Definicja w linii 376 pliku Drone.\+cpp.
+Definicja w linii 377 pliku Drone.\+cpp.
 
 \mbox{\Hypertarget{class_drone_af3224e3b7b4884460738fe192f2dac32}\label{class_drone_af3224e3b7b4884460738fe192f2dac32}} 
 \index{Drone@{Drone}!TakeFilename\_Body@{TakeFilename\_Body}}
@@ -419,7 +419,7 @@ Metoda zwracajaca sciezke do pliku koncowego ciala.
 \end{DoxyRetVals}
 
 
-Definicja w linii 353 pliku Drone.\+cpp.
+Definicja w linii 354 pliku Drone.\+cpp.
 
 Oto graf wywołań dla tej funkcji\+:\nopagebreak
 \begin{figure}[H]
@@ -455,7 +455,7 @@ Metoda zwracajaca sciezke do pliku koncowego rotora.
 \end{DoxyRetVals}
 
 
-Definicja w linii 365 pliku Drone.\+cpp.
+Definicja w linii 366 pliku Drone.\+cpp.
 
 Oto graf wywołań dla tej funkcji\+:\nopagebreak
 \begin{figure}[H]
@@ -486,7 +486,7 @@ Metoda zwracajaca polozenie drona.
 \end{DoxyRetVals}
 
 
-Definicja w linii 385 pliku Drone.\+cpp.
+Definicja w linii 386 pliku Drone.\+cpp.
 
 Oto graf wywoływań tej funkcji\+:\nopagebreak
 \begin{figure}[H]
@@ -542,7 +542,7 @@ Oto graf wywoływań tej funkcji\+:\nopagebreak
 
 
 
-Definicja w linii 52 pliku Drone.\+hh.
+Definicja w linii 50 pliku Drone.\+hh.
 
 \mbox{\Hypertarget{class_drone_a67635ab91c2b01d836a290f45873ee0f}\label{class_drone_a67635ab91c2b01d836a290f45873ee0f}} 
 \index{Drone@{Drone}!Layout@{Layout}}
@@ -552,7 +552,7 @@ Definicja w linii 52 pliku Drone.\+hh.
 
 
 
-Definicja w linii 44 pliku Drone.\+hh.
+Definicja w linii 42 pliku Drone.\+hh.
 
 \mbox{\Hypertarget{class_drone_a46c6cbb730ff47044f303de717e3d05e}\label{class_drone_a46c6cbb730ff47044f303de717e3d05e}} 
 \index{Drone@{Drone}!OrientAngle@{OrientAngle}}
@@ -562,7 +562,7 @@ Definicja w linii 44 pliku Drone.\+hh.
 
 
 
-Definicja w linii 48 pliku Drone.\+hh.
+Definicja w linii 46 pliku Drone.\+hh.
 
 \mbox{\Hypertarget{class_drone_ae650de6ac148a48210ad7dcdf2e74c10}\label{class_drone_ae650de6ac148a48210ad7dcdf2e74c10}} 
 \index{Drone@{Drone}!Rotor@{Rotor}}
@@ -572,7 +572,7 @@ Definicja w linii 48 pliku Drone.\+hh.
 
 
 
-Definicja w linii 56 pliku Drone.\+hh.
+Definicja w linii 54 pliku Drone.\+hh.
 
 \mbox{\Hypertarget{class_drone_a4a24aab74b030c2fbc9d48d42c7767ce}\label{class_drone_a4a24aab74b030c2fbc9d48d42c7767ce}} 
 \index{Drone@{Drone}!Series@{Series}}
@@ -582,7 +582,7 @@ Definicja w linii 56 pliku Drone.\+hh.
 
 
 
-Definicja w linii 68 pliku Drone.\+hh.
+Definicja w linii 66 pliku Drone.\+hh.
 
 
 

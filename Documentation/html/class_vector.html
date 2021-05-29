@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('class_vector.html',''); initResizable(
   <div class="summary">
 <a href="#pub-methods">Metody publiczne</a> &#124;
 <a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="#pri-static-attribs">Statyczne atrybuty prywatne</a> &#124;
 <a href="class_vector-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
 <div class="title">Dokumentacja szablonu klasy Vector&lt; Templ_Type, Templ_Size &gt;</div>  </div>
@@ -110,8 +111,12 @@ Diagram dziedziczenia dla Vector&lt; Templ_Type, Templ_Size &gt;</div>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:a5939cea69e177f01e6439d96f87d0ce9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a5939cea69e177f01e6439d96f87d0ce9">Vector</a> ()</td></tr>
 <tr class="separator:a5939cea69e177f01e6439d96f87d0ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bea7c4e86696bf5c7a819cbd63b807f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a7bea7c4e86696bf5c7a819cbd63b807f">~Vector</a> ()</td></tr>
+<tr class="separator:a7bea7c4e86696bf5c7a819cbd63b807f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addf2162241c80ce64d00700484346cb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#addf2162241c80ce64d00700484346cb9">Vector</a> (const std::initializer_list&lt; Templ_Type &gt; &amp;SizeList)</td></tr>
 <tr class="separator:addf2162241c80ce64d00700484346cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4340300ad5884fef18a7dd06737d93d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#ae4340300ad5884fef18a7dd06737d93d">Vector</a> (const <a class="el" href="class_vector.html">Vector</a> &amp;V)</td></tr>
+<tr class="separator:ae4340300ad5884fef18a7dd06737d93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96ffbb5d15dd6a72921eb76d2c520808"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a96ffbb5d15dd6a72921eb76d2c520808">operator+</a> (const <a class="el" href="class_vector.html">Vector</a> &amp;v)</td></tr>
 <tr class="separator:a96ffbb5d15dd6a72921eb76d2c520808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dcb88c25af3e50fbb82cf6e1c70f252"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a7dcb88c25af3e50fbb82cf6e1c70f252">operator-</a> (const <a class="el" href="class_vector.html">Vector</a> &amp;v) const</td></tr>
@@ -120,6 +125,8 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:a19bff7bc64c09edf8be1146587322158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfd9d13339b0091a30626e5d981e7c18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#acfd9d13339b0091a30626e5d981e7c18">operator/</a> (const Templ_Type &amp;tmp)</td></tr>
 <tr class="separator:acfd9d13339b0091a30626e5d981e7c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e531f86e3d0212eac6ce76f9e9dbabb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector.html">Vector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a8e531f86e3d0212eac6ce76f9e9dbabb">operator=</a> (const <a class="el" href="class_vector.html">Vector</a> &amp;v)</td></tr>
+<tr class="separator:a8e531f86e3d0212eac6ce76f9e9dbabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a4852ab8760f5910802d8d13260d6fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a4a4852ab8760f5910802d8d13260d6fe">operator==</a> (const <a class="el" href="class_vector.html">Vector</a> &amp;V2) const</td></tr>
 <tr class="separator:a4a4852ab8760f5910802d8d13260d6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a0230ebd95b36286c5159edcf2542ad"><td class="memItemLeft" align="right" valign="top">const Templ_Type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a7a0230ebd95b36286c5159edcf2542ad">operator[]</a> (unsigned int index) const</td></tr>
@@ -130,11 +137,22 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:a3ef189545c0a21ff24e32f011f9fb7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83c956ff3cdb61bc2012829c7f8ff875"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a83c956ff3cdb61bc2012829c7f8ff875">scale</a> (const <a class="el" href="class_vector.html">Vector</a> &amp;v)</td></tr>
 <tr class="separator:a83c956ff3cdb61bc2012829c7f8ff875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1423efba75a53a1fd4c60d91675aed"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a9a1423efba75a53a1fd4c60d91675aed">show_active_vectors</a> ()</td></tr>
+<tr class="separator:a9a1423efba75a53a1fd4c60d91675aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c353ceee6813ea6af1276c41a7e26d4"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a6c353ceee6813ea6af1276c41a7e26d4">show_all_vectors</a> ()</td></tr>
+<tr class="separator:a6c353ceee6813ea6af1276c41a7e26d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atrybuty prywatne</h2></td></tr>
 <tr class="memitem:abb61bafebedaa2772ea8104d3e8665bb"><td class="memItemLeft" align="right" valign="top">Templ_Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#abb61bafebedaa2772ea8104d3e8665bb">size</a> [Templ_Size]</td></tr>
 <tr class="separator:abb61bafebedaa2772ea8104d3e8665bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Statyczne atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a7859cc0e6f4309132ca86771a4803cab"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a7859cc0e6f4309132ca86771a4803cab">ActiveVectors</a> = 0</td></tr>
+<tr class="separator:a7859cc0e6f4309132ca86771a4803cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8551d0afe88e905f307abff7abeba9ae"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a8551d0afe88e905f307abff7abeba9ae">AllVectors</a> = 0</td></tr>
+<tr class="separator:a8551d0afe88e905f307abff7abeba9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><h3>template&lt;typename Templ_Type, unsigned int Templ_Size&gt;<br />
@@ -142,10 +160,10 @@ class Vector&lt; Templ_Type, Templ_Size &gt;</h3>
 
 <p>Dla klasy zdefiniowano podstawowe przeciazenia operatorow pozwalajace na korzystanie z danych, ich modyfikacje oraz podstawowa arytmetyke wektorowa. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00029">29</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00031">31</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a5939cea69e177f01e6439d96f87d0ce9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5939cea69e177f01e6439d96f87d0ce9">&#9670;&nbsp;</a></span>Vector() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5939cea69e177f01e6439d96f87d0ce9">&#9670;&nbsp;</a></span>Vector() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,12 +176,41 @@ template&lt;typename Templ_Typ , unsigned int Templ_Size&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00070">70</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00088">88</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+
+</div>
+</div>
+<a id="a7bea7c4e86696bf5c7a819cbd63b807f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bea7c4e86696bf5c7a819cbd63b807f">&#9670;&nbsp;</a></span>~Vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Templ_Type , unsigned int Templ_Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector.html">Vector</a>&lt; Templ_Type, Templ_Size &gt;::~<a class="el" href="class_vector.html">Vector</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00043">43</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
 
 </div>
 </div>
 <a id="addf2162241c80ce64d00700484346cb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addf2162241c80ce64d00700484346cb9">&#9670;&nbsp;</a></span>Vector() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#addf2162241c80ce64d00700484346cb9">&#9670;&nbsp;</a></span>Vector() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,6 +229,28 @@ template&lt;typename Templ_Type , unsigned int Templ_Size&gt; </div>
 
 </div>
 </div>
+<a id="ae4340300ad5884fef18a7dd06737d93d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4340300ad5884fef18a7dd06737d93d">&#9670;&nbsp;</a></span>Vector() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Templ_Typ , unsigned int Templ_Size&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector.html">Vector</a>&lt; Templ_Typ, Templ_Size &gt;::<a class="el" href="class_vector.html">Vector</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vector.html">Vector</a>&lt; Templ_Type, Templ_Size &gt; &amp;&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00113">113</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Dokumentacja funkcji składowych</h2>
 <a id="a3ef189545c0a21ff24e32f011f9fb7fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ef189545c0a21ff24e32f011f9fb7fb">&#9670;&nbsp;</a></span>lenght()</h2>
@@ -197,7 +266,7 @@ template&lt;typename Templ_Typ , unsigned int Templ_Size&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00222">222</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00260">260</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
 
 </div>
 </div>
@@ -219,7 +288,7 @@ template&lt;typename Templ_Type , unsigned int Templ_Size&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00143">143</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00181">181</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
 
 </div>
 </div>
@@ -241,7 +310,7 @@ template&lt;typename Templ_Type , unsigned int Templ_Size&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00102">102</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00131">131</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
 
 </div>
 </div>
@@ -263,7 +332,7 @@ template&lt;typename Templ_Type , unsigned int Templ_Size&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00122">122</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00151">151</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
 
 </div>
 </div>
@@ -285,7 +354,29 @@ template&lt;typename Templ_Type , unsigned int Templ_Size&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00163">163</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00201">201</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+
+</div>
+</div>
+<a id="a8e531f86e3d0212eac6ce76f9e9dbabb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e531f86e3d0212eac6ce76f9e9dbabb">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Templ_Type , unsigned int Templ_Size&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector.html">Vector</a>&lt; Templ_Typ, Templ_Size &gt; &amp; <a class="el" href="class_vector.html">Vector</a>&lt; Templ_Typ, Templ_Size &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vector.html">Vector</a>&lt; Templ_Type, Templ_Size &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00162">162</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
 
 </div>
 </div>
@@ -307,7 +398,7 @@ template&lt;typename Templ_Type , unsigned int Templ_Size&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00241">241</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00280">280</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
 
 </div>
 </div>
@@ -329,7 +420,7 @@ template&lt;typename Templ_Typ , unsigned int Templ_Size&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00203">203</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00241">241</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
 
 </div>
 </div>
@@ -351,7 +442,7 @@ template&lt;typename Templ_Typ , unsigned int Templ_Size&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00185">185</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00223">223</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
 
 </div>
 </div>
@@ -375,7 +466,135 @@ template&lt;typename Templ_Type , unsigned int Templ_Size&gt; </div>
 
 </div>
 </div>
+<a id="a9a1423efba75a53a1fd4c60d91675aed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1423efba75a53a1fd4c60d91675aed">&#9670;&nbsp;</a></span>show_active_vectors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Templ_Type , unsigned int Templ_Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_vector.html">Vector</a>&lt; Templ_Type, Templ_Size &gt;::show_active_vectors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00069">69</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_vector_a9a1423efba75a53a1fd4c60d91675aed_icgraph.png" border="0" usemap="#class_vector_a9a1423efba75a53a1fd4c60d91675aed_icgraph" alt=""/></div>
+<map name="class_vector_a9a1423efba75a53a1fd4c60d91675aed_icgraph" id="class_vector_a9a1423efba75a53a1fd4c60d91675aed_icgraph">
+<area shape="rect" title=" " alt="" coords="108,5,260,47"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,60,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6c353ceee6813ea6af1276c41a7e26d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c353ceee6813ea6af1276c41a7e26d4">&#9670;&nbsp;</a></span>show_all_vectors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Templ_Type , unsigned int Templ_Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_vector.html">Vector</a>&lt; Templ_Type, Templ_Size &gt;::show_all_vectors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00071">71</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_vector_a6c353ceee6813ea6af1276c41a7e26d4_icgraph.png" border="0" usemap="#class_vector_a6c353ceee6813ea6af1276c41a7e26d4_icgraph" alt=""/></div>
+<map name="class_vector_a6c353ceee6813ea6af1276c41a7e26d4_icgraph" id="class_vector_a6c353ceee6813ea6af1276c41a7e26d4_icgraph">
+<area shape="rect" title=" " alt="" coords="108,5,291,32"/>
+<area shape="rect" href="app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a7859cc0e6f4309132ca86771a4803cab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7859cc0e6f4309132ca86771a4803cab">&#9670;&nbsp;</a></span>ActiveVectors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Templ_Typ , unsigned int Templ_Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_vector.html">Vector</a>&lt; Templ_Typ, Templ_Size &gt;::ActiveVectors = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00036">36</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+
+</div>
+</div>
+<a id="a8551d0afe88e905f307abff7abeba9ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8551d0afe88e905f307abff7abeba9ae">&#9670;&nbsp;</a></span>AllVectors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Templ_Typ , unsigned int Templ_Size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_vector.html">Vector</a>&lt; Templ_Typ, Templ_Size &gt;::AllVectors = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00037">37</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+
+</div>
+</div>
 <a id="abb61bafebedaa2772ea8104d3e8665bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb61bafebedaa2772ea8104d3e8665bb">&#9670;&nbsp;</a></span>size</h2>
 
@@ -398,7 +617,7 @@ template&lt;typename Templ_Type , unsigned int Templ_Size&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00033">33</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_vector_8hh_source.html#l00035">35</a> pliku <a class="el" href="_vector_8hh_source.html">Vector.hh</a>.</p>
 
 </div>
 </div>

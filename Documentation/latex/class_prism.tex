@@ -32,7 +32,7 @@ Diagram współpracy dla Prism\+:\nopagebreak
 \item 
 \mbox{\hyperlink{class_prism_aa84930a585c7817f74a14d95ea74cb5a}{Prism}} ()
 \item 
-\mbox{\hyperlink{class_prism_a52e5b582fa2ba17852892a5cf2f75bf9}{Prism}} (std\+::string File1, std\+::string File2, \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} V\+\_\+scale, \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} V, double angle)
+\mbox{\hyperlink{class_prism_a35943661385e41d5ce8a256dc1de46a1}{Prism}} (std\+::string File1, std\+::string File2, const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&V\+\_\+scale, const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&V, double angle)
 \begin{DoxyCompactList}\small\item\em Konstruktor parametryczny klasy. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \mbox{\hyperlink{class_prism_a86fb5c667a39ad8f0321cfabf81cdb21}{Tranform\+To\+Parential\+Coordinate}} (const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&Vertex) const
 \begin{DoxyCompactList}\small\item\em Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona) \end{DoxyCompactList}\item 
@@ -50,7 +50,7 @@ double \mbox{\hyperlink{class_prism_a594e9d3e476ec941d46689a8c9d0c6ff}{Orient\+A
 \doxysubsection{Opis szczegółowy}
 Klasa opisuje pojecie graniastoslupa w przestrzeni. Jest to klasa dziedziczaca po klasie \mbox{\hyperlink{class_solid}{Solid}} w trybie publicznym. Zawiera pola opisujace polozenie bryly w ukladzie lokalnym zespolu (drona). 
 
-Definicja w linii 21 pliku Prism6.\+hh.
+Definicja w linii 24 pliku Prism6.\+hh.
 
 
 
@@ -65,11 +65,11 @@ Definicja w linii 21 pliku Prism6.\+hh.
 
 Definicja w linii 4 pliku Prism6.\+cpp.
 
-\mbox{\Hypertarget{class_prism_a52e5b582fa2ba17852892a5cf2f75bf9}\label{class_prism_a52e5b582fa2ba17852892a5cf2f75bf9}} 
+\mbox{\Hypertarget{class_prism_a35943661385e41d5ce8a256dc1de46a1}\label{class_prism_a35943661385e41d5ce8a256dc1de46a1}} 
 \index{Prism@{Prism}!Prism@{Prism}}
 \index{Prism@{Prism}!Prism@{Prism}}
 \doxysubsubsection{\texorpdfstring{Prism()}{Prism()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Prism\+::\+Prism (\begin{DoxyParamCaption}\item[{std\+::string}]{File1,  }\item[{std\+::string}]{File2,  }\item[{\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}}}]{V\+\_\+scale,  }\item[{\mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}}}]{V,  }\item[{double}]{angle }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Prism\+::\+Prism (\begin{DoxyParamCaption}\item[{std\+::string}]{File1,  }\item[{std\+::string}]{File2,  }\item[{const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&}]{V\+\_\+scale,  }\item[{const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&}]{V,  }\item[{double}]{angle }\end{DoxyParamCaption})}
 
 Konstruktor parametryczny klasy \mbox{\hyperlink{class_cuboid}{Cuboid}}.
 
@@ -174,7 +174,7 @@ Oto graf wywoływań tej funkcji\+:\nopagebreak
 
 
 
-Definicja w linii 27 pliku Prism6.\+hh.
+Definicja w linii 30 pliku Prism6.\+hh.
 
 \mbox{\Hypertarget{class_prism_a594e9d3e476ec941d46689a8c9d0c6ff}\label{class_prism_a594e9d3e476ec941d46689a8c9d0c6ff}} 
 \index{Prism@{Prism}!OrientAngle@{OrientAngle}}
@@ -184,7 +184,7 @@ Definicja w linii 27 pliku Prism6.\+hh.
 
 
 
-Definicja w linii 31 pliku Prism6.\+hh.
+Definicja w linii 34 pliku Prism6.\+hh.
 
 
 

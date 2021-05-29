@@ -65,7 +65,7 @@ class Scene{
         /*!
         *   \brief Metoda rysujaca plaszczyzne
         */
-        void CreateSurface();
+        void CreateSurface() const;
         /*!
         *   \brief Metoda pozwalajaca na dostep do sciezki do powierzchni w trybie tylko do odczytu
         */
