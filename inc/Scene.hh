@@ -26,7 +26,7 @@ class Scene{
         /*!
         *   \brief Kontener z dronami
         */
-        std::vector<Drone> Drones;
+        std::vector<Drone*> Drones;
         /*!
         *   \brief Sciezka do pliku z plaszczyzna
         */
@@ -45,11 +45,11 @@ class Scene{
         /*!
         *   \brief Konstruktor parametryczny sceny
         */
-        Scene(std::vector<Drone> &DroneContener,std::string Filename, PzG::LaczeDoGNUPlota &Link_2 );
+        Scene(std::vector<Drone*> &DroneContener,std::string Filename, PzG::LaczeDoGNUPlota &Link_2 );
         /*!
         *   \brief Metoda dodajaca drona do sceny
         */
-        void AddDrone(const Drone &NewDrone);
+        void AddDrone(Drone &NewDrone);
         /*!
         *   \brief Metoda zmieniajaca aktualnie wybranego drona
         */
@@ -57,11 +57,11 @@ class Scene{
         /*!
         *   \brief Metoda pozwalajaca na dostep do aktywnego drona w trybie tylko do odczytu
         */
-        const Drone& TakeActiveDrone() const;
+        const Drone* TakeActiveDrone() const;
         /*!
         *   \brief Metoda pozwalajaca na dostep do aktywnego drona z mozliwoscia modyfikacji
         */
-        Drone& UseActiveDrone();
+        Drone* UseActiveDrone();
         /*!
         *   \brief Metoda rysujaca plaszczyzne
         */

@@ -27,12 +27,12 @@
 int main() {
     PzG::LaczeDoGNUPlota Link;
     unsigned int number_of_drones = 0;
-    Vector3D Layout1 = {20,30,0}, Layout2 = {130,130,0}, Layout3 = {90,180,0};
-    double   Orient1 = 0, Orient2 = 25, Orient3 = 90, Angle = 0;
+    Vector3D Layout1 = {20,30,0}, Layout2 = {130,130,0};
+    double   Orient1 = 0, Orient2 = 25, Angle = 0;
     double   FlightLen;
-    Drone FirstDrone, SecondDrone, ThirdDrone;
+    Drone FirstDrone, SecondDrone;
     std::vector<Vector3D> TracePoints;
-    std::vector<Drone>    Drones;
+    std::vector<Drone*>    Drones;
     Scene Scene(Drones,SURFACE,Link);
     char option[1] = {'m'};
 
@@ -42,20 +42,17 @@ int main() {
     SecondDrone.MakeDrone(Layout2,Orient2,number_of_drones);
     SecondDrone.Count_Save_GlobalCoor();
 
-    ThirdDrone.MakeDrone(Layout3,Orient3,number_of_drones);
-    ThirdDrone.Count_Save_GlobalCoor();
-
     Scene.CreateSurface();
     Scene.AddDrone(FirstDrone);
     Scene.AddDrone(SecondDrone);
-    Scene.AddDrone(ThirdDrone);
+
 
 
     while(option[0] != 'k'){
         switch(option[0]){
             case 'a':
                 Scene.SwitchActiveDrone();
-                std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone().TakeLayout()[0]<< "  " << Scene.TakeActiveDrone().TakeLayout()[1] << std::endl << std::endl;
+                std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone()->TakeLayout()[0]<< "  " << Scene.TakeActiveDrone()->TakeLayout()[1] << std::endl << std::endl;
                 std::cout << "Aktualna ilosc obiektow Vector: " << Layout1.show_active_vectors() << std::endl;
                 std::cout << "  Laczna ilosc obiektow Vector: " << Layout1.show_all_vectors() << std::endl << std::endl;
                 break;
@@ -80,7 +77,7 @@ int main() {
                 std::cout << "Nacisnij ENTER, aby pokazac sciezke przelotu drona " << std::flush;
                 std::cin.ignore(10000,'\n');
 
-                Scene.UseActiveDrone().MakeTrack(Angle,FlightLen,TracePoints);
+                Scene.UseActiveDrone()->MakeTrack(Angle,FlightLen,TracePoints);
                 Link.DodajNazwePliku(FLIGHT_TRACK);
                 Link.Rysuj();
                 
@@ -88,13 +85,13 @@ int main() {
                 std::cin.ignore(10000,'\n');
 
 
-                if(!Scene.UseActiveDrone().MakeVerticalFlight(FLIGHTHEIHGT,Link)) return 1;
+                if(!Scene.UseActiveDrone()->MakeVerticalFlight(FLIGHTHEIHGT,Link)) return 1;
 
-                if(!Scene.UseActiveDrone().Change_Orientation(Angle,Link)) return 1;
+                if(!Scene.UseActiveDrone()->Change_Orientation(Angle,Link)) return 1;
 
-                if(!Scene.UseActiveDrone().MakeHorizontalFlight(FlightLen,Link)) return 1;
+                if(!Scene.UseActiveDrone()->MakeHorizontalFlight(FlightLen,Link)) return 1;
 
-                if(!Scene.UseActiveDrone().MakeVerticalFlight(-FLIGHTHEIHGT,Link)) return 1;
+                if(!Scene.UseActiveDrone()->MakeVerticalFlight(-FLIGHTHEIHGT,Link)) return 1;
 
                 std::cout << std::endl << "Nacisnij ENTER, aby usunac sciezke ... " << std::flush;
                 std::cin.ignore(10000,'\n');
@@ -106,13 +103,13 @@ int main() {
                 std::cin.ignore(10000,'\n');
                 std::cout << std::endl;
                 
-                std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone().TakeLayout()[0]<< "  " << Scene.TakeActiveDrone().TakeLayout()[1] << std::endl <<std::endl;
+                std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone()->TakeLayout()[0]<< "  " << Scene.TakeActiveDrone()->TakeLayout()[1] << std::endl <<std::endl;
                 std::cout << "Aktualna ilosc obiektow Vector: " << Layout1.show_active_vectors() << std::endl;
                 std::cout << "  Laczna ilosc obiektow Vector: " << Layout1.show_all_vectors() << std::endl << std::endl;
 
                 break;
             case 'm':
-                std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone().TakeLayout()[0] << "  "<<Scene.TakeActiveDrone().TakeLayout()[1] << std::endl;
+                std::cout << "Polozenie Drona aktywnego (x,y): " << Scene.TakeActiveDrone()->TakeLayout()[0] << "  "<<Scene.TakeActiveDrone()->TakeLayout()[1] << std::endl;
                 std::cout << "a - wybierz aktywnego drona\n";
                 std::cout << "p - zadaj parametry przelotu\n";
                 std::cout << "m - wyswietl menu\n\n";

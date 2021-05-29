@@ -15,7 +15,7 @@ Scene::Scene(){
  *   \param [in]  Link_2             - lacze do modulu z programem GNUPlot
  *   \retval  Tworzy obiekt klasy Scene z polami wypelnionymi przez podane wartosci
  */
-Scene::Scene(std::vector<Drone> &DroneContener,std::string Filename, PzG::LaczeDoGNUPlota &Link_2 ){
+Scene::Scene(std::vector<Drone*> &DroneContener,std::string Filename, PzG::LaczeDoGNUPlota &Link_2 ){
     Drones = DroneContener;
     Filename_Surface = Filename;
     Link = Link_2;
@@ -29,8 +29,8 @@ Scene::Scene(std::vector<Drone> &DroneContener,std::string Filename, PzG::LaczeD
  *   \param [in] NewDrone - dodawnay dron 
  *   \retval  Dodanie zadanego drona do pola konteneru w scenie
  */
-void Scene::AddDrone(const Drone &NewDrone){
-    Drones.push_back(NewDrone);
+void Scene::AddDrone(Drone &NewDrone){
+    Drones.push_back(&NewDrone);
     std::string Filename;
 
     Filename = NewDrone.TakeFilename_Body();
@@ -73,7 +73,7 @@ void Scene::SwitchActiveDrone(){
     std::cout << "Wybor aktywnego drona" << std::endl << std::endl;
     unsigned int option;
     for(unsigned int i=0; i < Drones.size(); ++i){
-        std::cout << i << " - Polozenie (x,y): " << Drones.at(i).TakeLayout()[0]<< "  " << Drones.at(i).TakeLayout()[1];
+        std::cout << i << " - Polozenie (x,y): " << Drones.at(i)->TakeLayout()[0]<< "  " << Drones.at(i)->TakeLayout()[1];
         if( i == Active)
             std::cout << " <--- Dron aktywny";
         std::cout << std::endl << std::endl;
@@ -90,7 +90,7 @@ void Scene::SwitchActiveDrone(){
  *   \brief Metoda Metoda pozwalajaca na dostep do aktywnego drona z mozliwoscia modyfikacji
  *   \retval Dron z kontenera wskazywany przez parametr Actve
  */
-Drone& Scene::UseActiveDrone(){
+Drone* Scene::UseActiveDrone(){
     return Drones.at(Active);
 }
 
@@ -98,6 +98,6 @@ Drone& Scene::UseActiveDrone(){
  *   \brief Metoda Metoda pozwalajaca na dostep do aktywnego drona w trybie tylko do odczytu
  *   \retval Dron z kontenera wskazywany przez parametr Actve
  */
-const Drone& Scene::TakeActiveDrone() const{
+const Drone* Scene::TakeActiveDrone() const{
     return Drones.at(Active);
 }

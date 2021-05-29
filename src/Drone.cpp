@@ -339,6 +339,7 @@ void Drone::MakeTrack(double rotation_angle, double FlightLen, std::vector<Vecto
 
 
   OutFile.close();
+  TracePoints.clear();
 
 
 }
