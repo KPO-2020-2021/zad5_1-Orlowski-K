@@ -27,7 +27,7 @@
 int main() {
     PzG::LaczeDoGNUPlota Link;
     unsigned int number_of_drones = 0;
-    Vector3D Layout1 = {20,30,0}, Layout2 = {130,130,0};
+    Vector3D Layout1 = {30,30,0}, Layout2 = {130,130,0};
     double   Orient1 = 0, Orient2 = 25, Angle = 0;
     double   FlightLen;
     Drone FirstDrone, SecondDrone;

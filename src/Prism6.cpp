@@ -1,7 +1,10 @@
 #include "Prism6.hh"
 
 
-Prism::Prism(){
+Prism::Prism():
+    Solid(){
+    Layout = {0,0,0};
+    OrientAngle = 0;
 }
 
 

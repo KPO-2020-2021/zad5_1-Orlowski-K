@@ -3,6 +3,14 @@
 
 
 Drone::Drone(){
+
+  
+  OrientAngle = 0;
+  Layout = {0,0,0};
+  Series = 0;
+  Body = Cuboid();
+  for(unsigned int Ind = 0; Ind < 4; ++Ind) Rotor[Ind] = Prism();
+
 }
 
 

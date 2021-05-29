@@ -2,7 +2,10 @@
 
 
 
-Cuboid::Cuboid(){
+Cuboid::Cuboid():
+    Solid(){
+    Layout = {0,0,0};
+    OrientAngle = 0;
 }
 
 

@@ -2,6 +2,9 @@
 
 
 Solid::Solid(){
+    Filename_TemplateSolid = "";
+    Filename_FinalSolid = "";
+    scale = {0,0,0};
 }
 
 
