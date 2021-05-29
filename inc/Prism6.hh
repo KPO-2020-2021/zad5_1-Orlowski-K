@@ -2,6 +2,9 @@
 
 #include "GeometricSolid.hh"
 
+#define PRISM_TEMPLETE      "../datasets/templates/prism6.dat"
+#define BASIC_ROTOR_FILE    "../datasets/dat/rotor_"
+
 /*!
  * \file
  * \brief Klasa opisujaca graniastoslup o podstawie szesciokatnej

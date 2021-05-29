@@ -82,7 +82,13 @@ void Scene::SwitchActiveDrone(){
     std::cin >> option;
     std::cout << std::endl << std::endl;
 
-    Active = option;
+    if(option >= Drones.size()){
+        std::cerr << std::endl << "Podany numer nie istnieje!!!" << std::endl;
+        std::cout << "Powrot do menu. Brak zmiany !!!" << std::endl << std::endl;
+    }
+    else{
+        Active = option;
+    }
 
 }
 

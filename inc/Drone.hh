@@ -8,10 +8,8 @@
 #include <iostream>
 #include <unistd.h>
 
-#define PRISM_TEMPLETE      "../datasets/templates/prism6.dat"
-#define CUBOID_TEMPLETE     "../datasets/templates/cuboid.dat"
-#define BASIC_ROTOR_FILE    "../datasets/dat/rotor_"
-#define BASIC_BODY_FILE     "../datasets/dat/body_"
+
+
 #define  FLIGHT_TRACK       "../datasets/dat/flight_track.dat"
 
 

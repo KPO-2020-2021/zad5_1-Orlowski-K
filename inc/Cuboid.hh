@@ -2,7 +2,9 @@
 
 #include "GeometricSolid.hh"
 
+#define CUBOID_TEMPLETE     "../datasets/templates/cuboid.dat"
 
+#define BASIC_BODY_FILE     "../datasets/dat/body_"
 
 /*!
  * \file
