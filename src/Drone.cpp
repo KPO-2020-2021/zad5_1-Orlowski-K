@@ -396,6 +396,16 @@ const Vector3D Drone::TakeLayout() const{
 }
 
 
+/*!
+ *   \brief Metoda zwracajaca orientacje drona
+ *
+ *   \retval Orientacja drona
+ */
+double Drone::TakeOrient() const{
+  return OrientAngle;
+}
+
+
 
 
 

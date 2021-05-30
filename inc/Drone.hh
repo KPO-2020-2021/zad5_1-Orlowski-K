@@ -112,6 +112,10 @@ class Drone{
         */
         const Vector3D TakeLayout() const;
         /*!
+        *   \brief Metoda udostepniajaca orientacje
+        */
+        double TakeOrient() const;
+        /*!
         *   \brief Operator indeksujacy udostepniajaca wybrany rotor
         */
         const Prism& operator [] (unsigned int Ind) const;

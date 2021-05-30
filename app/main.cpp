@@ -46,6 +46,18 @@ int main() {
     Scene.AddDrone(FirstDrone);
     Scene.AddDrone(SecondDrone);
 
+    Link.ZmienTrybRys(PzG::TR_3D);
+    Link.Inicjalizuj();
+
+    Link.UstawZakresX(0, 200);
+    Link.UstawZakresY(0, 200);
+    Link.UstawZakresZ(0, 120);
+
+
+    Link.UstawRotacjeXZ(64,65);
+
+    Link.Rysuj();
+
 
 
     while(option[0] != 'k'){

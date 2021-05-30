@@ -49,5 +49,15 @@ class Cuboid: public Solid{
         */
         Vector3D TranformToParentialCoordinate(const Vector3D& Vertex) const;
 
+        /*!
+        *   \brief Metoda odpowiadajaca za dostep do wektora polozenia
+        */
+        const Vector3D& Take_Layout() const {return Layout;}; 
+
+        /*!
+        *   \brief Metoda odpowiadajaca za dostep do orientacji
+        */
+        double Take_OrientAngle() const {return OrientAngle;};
+
 
 };
