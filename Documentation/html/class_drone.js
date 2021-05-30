@@ -13,6 +13,7 @@ var class_drone =
     [ "TakeFilename_Body", "class_drone.html#af3224e3b7b4884460738fe192f2dac32", null ],
     [ "TakeFilename_Rotor", "class_drone.html#ae3a363fd39a546dda3742b28427565cd", null ],
     [ "TakeLayout", "class_drone.html#a1ab7730fbaa3885224e0989851a549cb", null ],
+    [ "TakeOrient", "class_drone.html#a04e3e7a5e261758da510d87a1aea637c", null ],
     [ "TransformToParentialCoordinate", "class_drone.html#a98f21bc702ee3a5612cfc2597d0ddc06", null ],
     [ "Body", "class_drone.html#a39c9de76c097f460d41a70ba8337081e", null ],
     [ "Layout", "class_drone.html#a67635ab91c2b01d836a290f45873ee0f", null ],

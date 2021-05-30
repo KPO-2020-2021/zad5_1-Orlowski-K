@@ -29,16 +29,18 @@ var NAVTREE =
       [ "Diagram podstawowych klas", "index.html#class-diagram", null ],
       [ "Diagramy czynności dla wybranych metod", "index.html#activity-diagram", null ]
     ] ],
-    [ "Wsepna faza ( Przygotowanie tydz 1)", "md__r_e_a_d_m_e.html", [
-      [ "Building", "md__r_e_a_d_m_e.html#autotoc_md1", null ]
+    [ "Faza 1", "md__r_e_a_d_m_e.html", [
+      [ "Uruchamianie programu i testy", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "Dokumentacja", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "Building", "md__r_e_a_d_m_e.html#autotoc_md3", null ]
     ] ],
     [ "README", "md_tests_bin_queue_8pyi_models_piston_rod_part_ariac__r_e_a_d_m_e.html", null ],
     [ "Gazebo Experiment Rooms", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html", [
-      [ "Test Example", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md3", [
-        [ "Room1", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md4", null ],
-        [ "Room2", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md5", null ],
-        [ "Room3", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md6", null ],
-        [ "Room4", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md7", null ]
+      [ "Test Example", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md5", [
+        [ "Room1", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md6", null ],
+        [ "Room2", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md7", null ],
+        [ "Room3", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md8", null ],
+        [ "Room4", "md_tests_doctest_extensions_synchronize_8pyi__r_e_a_d_m_e.html#autotoc_md9", null ]
       ] ]
     ] ],
     [ "Instrukcje oraz pomoce naukowe", "md_tests_doctest_translation_8pyi_social-tracking-protection-linkedin-digest256_8vlpset__r_e_a_d_m_e.html", null ],
@@ -81,14 +83,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_8__doctest_8cpp.html",
-"class_vector.html#a6c353ceee6813ea6af1276c41a7e26d4",
-"doctest_8h.html#a08be8a1f0d74ce1eb588e46a6b89b170",
-"doctest_8h.html#a8722d97b6087d098bbd796801a347767",
-"doctest_8h.html#ae1bb5bed722f34f1c38b83cb19d326d3acc1ab55f3c7428ba73b791002d52297d",
-"doctest__fwd_8h.html#a41e14871f960ec76113197ad929d18c8",
-"doctest__fwd_8h.html#ad75b722f83eb3f81662af7fccae74732",
-"functions.html",
-"structdoctest_1_1_i_reporter.html#a7f4a4b654726d4b266c91cc0e1569f96"
+"class_vector.html",
+"doctest_8h.html#a04b10595f3fac969e7682a48fd3ad0c6",
+"doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f",
+"doctest_8h.html#ae1bb5bed722f34f1c38b83cb19d326d3ac12e9aaa7d2158a39f3b3e574419bc84",
+"doctest__fwd_8h.html#a3e4fea4166b5decb632d30f6160baef3",
+"doctest__fwd_8h.html#ad17ac1cc3242c45a461b1364c13cde55",
+"foo_8cpp.html#a14bcd2d544b22300bba3863251393e0f",
+"structdoctest_1_1_i_reporter.html#a5bb54923eab233bb02f2fcfc178fa12a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

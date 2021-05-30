@@ -17,7 +17,7 @@ var files_dup =
     [ "doctest_util.h", "doctest__util_8h.html", "doctest__util_8h" ],
     [ "Drone.cpp", "_drone_8cpp.html", null ],
     [ "Drone.hh", "_drone_8hh.html", "_drone_8hh" ],
-    [ "dummy.cpp", "dummy_8cpp.html", "dummy_8cpp" ],
+    [ "dummy.cpp", "dummy_8cpp.html", null ],
     [ "example.cpp", "example_8cpp.html", null ],
     [ "example.h", "example_8h.html", [
       [ "Dummy", "class_dummy.html", "class_dummy" ]

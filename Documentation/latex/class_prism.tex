@@ -37,7 +37,11 @@ Diagram współpracy dla Prism\+:\nopagebreak
 \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \mbox{\hyperlink{class_prism_a86fb5c667a39ad8f0321cfabf81cdb21}{Tranform\+To\+Parential\+Coordinate}} (const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&Vertex) const
 \begin{DoxyCompactList}\small\item\em Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_prism_a6d449146f3102b350c658e088ea8fe69}{Rotate}} (double angle)
-\begin{DoxyCompactList}\small\item\em Metoda odpowiadajaca za obracanie w ukladzie lokalnym bryly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadajaca za obracanie w ukladzie lokalnym bryly. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \& \mbox{\hyperlink{class_prism_a7ef29266c542eb5b79f799cef6e04ed1}{Take\+\_\+\+Layout}} () const
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadajaca za dostep do wektora polozenia. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_prism_ac6b2552fb5c4579072abdb3804b3673a}{Take\+\_\+\+Orient\+Angle}} () const
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadajaca za dostep do orientacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Atrybuty prywatne}
 \begin{DoxyCompactItemize}
 \item 
@@ -95,7 +99,7 @@ Wykorzystuje wywolanie konstruktora klasy \mbox{\hyperlink{class_solid}{Solid}}
 \end{DoxyRetVals}
 
 
-Definicja w linii 20 pliku Prism6.\+cpp.
+Definicja w linii 23 pliku Prism6.\+cpp.
 
 
 
@@ -118,13 +122,50 @@ Definicja w linii 20 pliku Prism6.\+cpp.
 \end{DoxyRetVals}
 
 
-Definicja w linii 50 pliku Prism6.\+cpp.
+Definicja w linii 53 pliku Prism6.\+cpp.
 
-Oto graf wywoływań tej funkcji\+:\nopagebreak
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_prism_a6d449146f3102b350c658e088ea8fe69_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_prism_a7ef29266c542eb5b79f799cef6e04ed1}\label{class_prism_a7ef29266c542eb5b79f799cef6e04ed1}} 
+\index{Prism@{Prism}!Take\_Layout@{Take\_Layout}}
+\index{Take\_Layout@{Take\_Layout}!Prism@{Prism}}
+\doxysubsubsection{\texorpdfstring{Take\_Layout()}{Take\_Layout()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}}\& Prism\+::\+Take\+\_\+\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definicja w linii 58 pliku Prism6.\+hh.
+
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{class_prism_a7ef29266c542eb5b79f799cef6e04ed1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_prism_ac6b2552fb5c4579072abdb3804b3673a}\label{class_prism_ac6b2552fb5c4579072abdb3804b3673a}} 
+\index{Prism@{Prism}!Take\_OrientAngle@{Take\_OrientAngle}}
+\index{Take\_OrientAngle@{Take\_OrientAngle}!Prism@{Prism}}
+\doxysubsubsection{\texorpdfstring{Take\_OrientAngle()}{Take\_OrientAngle()}}
+{\footnotesize\ttfamily double Prism\+::\+Take\+\_\+\+Orient\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definicja w linii 63 pliku Prism6.\+hh.
+
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_prism_ac6b2552fb5c4579072abdb3804b3673a_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_prism_a86fb5c667a39ad8f0321cfabf81cdb21}\label{class_prism_a86fb5c667a39ad8f0321cfabf81cdb21}} 
@@ -147,7 +188,7 @@ Metoda zmieniajaca uklad Transformuje wektory do ukladu wyzszego.
 \end{DoxyRetVals}
 
 
-Definicja w linii 34 pliku Prism6.\+cpp.
+Definicja w linii 37 pliku Prism6.\+cpp.
 
 Oto graf wywołań dla tej funkcji\+:\nopagebreak
 \begin{figure}[H]
@@ -156,7 +197,8 @@ Oto graf wywołań dla tej funkcji\+:\nopagebreak
 \includegraphics[width=350pt]{class_prism_a86fb5c667a39ad8f0321cfabf81cdb21_cgraph}
 \end{center}
 \end{figure}
-Oto graf wywoływań tej funkcji\+:\nopagebreak
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

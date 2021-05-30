@@ -35,7 +35,11 @@ Diagram współpracy dla Cuboid\+:\nopagebreak
 \mbox{\hyperlink{class_cuboid_aa3e097003f1f7d1f0550d53a0b95ed8f}{Cuboid}} (std\+::string File1, std\+::string File2, const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&V\+\_\+scale, const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&V, double angle)
 \begin{DoxyCompactList}\small\item\em Konstruktor parametryczny klasy. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \mbox{\hyperlink{class_cuboid_a08bc443badc04b38cb947ee573c534b9}{Tranform\+To\+Parential\+Coordinate}} (const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \&Vertex) const
-\begin{DoxyCompactList}\small\item\em Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Metoda przechodzaca z ukladu lokalnego bryly do ukladu lokalnego zespolu (drona) \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}} \& \mbox{\hyperlink{class_cuboid_a04aad074432622b86b484c33c572bd8d}{Take\+\_\+\+Layout}} () const
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadajaca za dostep do wektora polozenia. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_cuboid_ae5f669b81e44284cd3b9ba0212feccc9}{Take\+\_\+\+Orient\+Angle}} () const
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadajaca za dostep do orientacji. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Atrybuty prywatne}
 \begin{DoxyCompactItemize}
 \item 
@@ -93,11 +97,47 @@ Wykorzystuje wywolanie konstruktora klasy \mbox{\hyperlink{class_solid}{Solid}}
 \end{DoxyRetVals}
 
 
-Definicja w linii 39 pliku Cuboid.\+cpp.
+Definicja w linii 42 pliku Cuboid.\+cpp.
 
 
 
 \doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_cuboid_a04aad074432622b86b484c33c572bd8d}\label{class_cuboid_a04aad074432622b86b484c33c572bd8d}} 
+\index{Cuboid@{Cuboid}!Take\_Layout@{Take\_Layout}}
+\index{Take\_Layout@{Take\_Layout}!Cuboid@{Cuboid}}
+\doxysubsubsection{\texorpdfstring{Take\_Layout()}{Take\_Layout()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8hh_a501c8db7ae46c0471ea825f0c8ed9698}{Vector3D}}\& Cuboid\+::\+Take\+\_\+\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definicja w linii 55 pliku Cuboid.\+hh.
+
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{class_cuboid_a04aad074432622b86b484c33c572bd8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cuboid_ae5f669b81e44284cd3b9ba0212feccc9}\label{class_cuboid_ae5f669b81e44284cd3b9ba0212feccc9}} 
+\index{Cuboid@{Cuboid}!Take\_OrientAngle@{Take\_OrientAngle}}
+\index{Take\_OrientAngle@{Take\_OrientAngle}!Cuboid@{Cuboid}}
+\doxysubsubsection{\texorpdfstring{Take\_OrientAngle()}{Take\_OrientAngle()}}
+{\footnotesize\ttfamily double Cuboid\+::\+Take\+\_\+\+Orient\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definicja w linii 60 pliku Cuboid.\+hh.
+
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_cuboid_ae5f669b81e44284cd3b9ba0212feccc9_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_cuboid_a08bc443badc04b38cb947ee573c534b9}\label{class_cuboid_a08bc443badc04b38cb947ee573c534b9}} 
 \index{Cuboid@{Cuboid}!TranformToParentialCoordinate@{TranformToParentialCoordinate}}
 \index{TranformToParentialCoordinate@{TranformToParentialCoordinate}!Cuboid@{Cuboid}}
@@ -118,7 +158,7 @@ Metoda zmieniajaca uklad Transformuje wektory do ukladu wyzszego.
 \end{DoxyRetVals}
 
 
-Definicja w linii 17 pliku Cuboid.\+cpp.
+Definicja w linii 20 pliku Cuboid.\+cpp.
 
 Oto graf wywołań dla tej funkcji\+:\nopagebreak
 \begin{figure}[H]
@@ -127,7 +167,8 @@ Oto graf wywołań dla tej funkcji\+:\nopagebreak
 \includegraphics[width=350pt]{class_cuboid_a08bc443badc04b38cb947ee573c534b9_cgraph}
 \end{center}
 \end{figure}
-Oto graf wywoływań tej funkcji\+:\nopagebreak
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

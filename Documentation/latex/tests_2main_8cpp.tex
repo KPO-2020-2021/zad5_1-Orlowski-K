@@ -1,18 +1,56 @@
 \hypertarget{tests_2main_8cpp}{}\doxysection{Dokumentacja pliku main.\+cpp}
 \label{tests_2main_8cpp}\index{main.cpp@{main.cpp}}
 {\ttfamily \#include \char`\"{}../tests/doctest/doctest.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}dummy.\+cpp\char`\"{}}\newline
-Wykres zależności załączania dla tests/main.cpp\+:\nopagebreak
+{\ttfamily \#include \char`\"{}example.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Vector3\+D.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Matrix3x3.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Drone.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Scene.\+hh\char`\"{}}\newline
+Wykres zależności załączania dla tests/main.cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=304pt]{tests_2main_8cpp__incl}
+\includegraphics[width=350pt]{tests_2main_8cpp__incl}
 \end{center}
 \end{figure}
 \doxysubsection*{Definicje}
 \begin{DoxyCompactItemize}
 \item 
 \#define \mbox{\hyperlink{tests_2main_8cpp_a623b8690a262536536a43eab2d7df03d}{D\+O\+C\+T\+E\+S\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+W\+I\+T\+H\+\_\+\+M\+A\+IN}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_afeb6d6974e0f5edfcf69abdc4a7149d0}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Test zliczania wektorow\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_af6fdfb2487172858945f18fe39a6b169}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Test konstruktora dla klasy \mbox{\hyperlink{class_solid}{Solid}}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_a1f6da33d9db2969008ebfb2c8c9ae502}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Test konstruktora parametrycznego dla klasy \mbox{\hyperlink{class_solid}{Solid}}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_a591889041b90a2f1affa31bee3d0a777}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Test konstruktora dla klasy \mbox{\hyperlink{class_cuboid}{Cuboid}} (dziedziczenie)\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_af12e8cc75dc13761f84715b062c9f1d2}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Test konstruktora  dla klasy \mbox{\hyperlink{class_cuboid}{Cuboid}}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_a2ab04991646a0ca8812f68488b905d5f}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Test konstruktora parametrycznego dla klasy \mbox{\hyperlink{class_cuboid}{Cuboid}} (dziedziczenie)\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_a8dae52092f00933462d9d3ff1269bd66}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Test konstruktora dla klasy \mbox{\hyperlink{class_prism}{Prism}} (dziedziczenie)\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_a42720d19762db60cda1dc33c1e237a6d}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Test konstruktora parametrycznego dla klasy \mbox{\hyperlink{class_cuboid}{Cuboid}}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_acd732baab7947d6d609f0e2b12536064}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Test konstruktora  dla klasy \mbox{\hyperlink{class_prism}{Prism}}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_ad299b3bb1e0dffe2f65c7372b1d7cc54}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Test konstruktora parametrycznego dla klasy \mbox{\hyperlink{class_prism}{Prism}} (dziedziczenie)\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_af4dd5a2d5d476cdd9008dedd32dde80a}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Test konstruktora klasy \mbox{\hyperlink{class_drone}{Drone}}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_aee7202efeb22e9e6e0890ce0fb2f21d3}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Test tworzenia drona\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_a39b5b5604ab614bb93b9471aac987fed}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Transforamcja miedzy ukladem prostokata a drona\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_a43e394cb3b5cdd6d9e90e487a93f038a}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Transforamcja miedzy ukladem graniastoslupa a drona\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2main_8cpp_af192767930d8613962fbca9c24275098}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Zmiana orientacji graniastoslupa w ukladzie lokalnym (obrot wokol wlasnej osi)\char`\"{})
 \end{DoxyCompactItemize}
 
 
@@ -27,3 +65,276 @@ Wykres zależności załączania dla tests/main.cpp\+:\nopagebreak
 
 Definicja w linii 1 pliku tests/main.\+cpp.
 
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{tests_2main_8cpp_af12e8cc75dc13761f84715b062c9f1d2}\label{tests_2main_8cpp_af12e8cc75dc13761f84715b062c9f1d2}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Test konstruktora dla klasy \mbox{\hyperlink{class_cuboid}{Cuboid}}\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 139 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{tests_2main_8cpp_af12e8cc75dc13761f84715b062c9f1d2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_acd732baab7947d6d609f0e2b12536064}\label{tests_2main_8cpp_acd732baab7947d6d609f0e2b12536064}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Test konstruktora dla klasy \mbox{\hyperlink{class_prism}{Prism}}\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 216 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{tests_2main_8cpp_acd732baab7947d6d609f0e2b12536064_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_a591889041b90a2f1affa31bee3d0a777}\label{tests_2main_8cpp_a591889041b90a2f1affa31bee3d0a777}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Test konstruktora dla klasy \mbox{\hyperlink{class_cuboid}{Cuboid}} (dziedziczenie)\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 120 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{tests_2main_8cpp_a591889041b90a2f1affa31bee3d0a777_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_a8dae52092f00933462d9d3ff1269bd66}\label{tests_2main_8cpp_a8dae52092f00933462d9d3ff1269bd66}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Test konstruktora dla klasy \mbox{\hyperlink{class_prism}{Prism}} (dziedziczenie)\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 172 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{tests_2main_8cpp_a8dae52092f00933462d9d3ff1269bd66_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_af6fdfb2487172858945f18fe39a6b169}\label{tests_2main_8cpp_af6fdfb2487172858945f18fe39a6b169}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [5/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Test konstruktora dla klasy \mbox{\hyperlink{class_solid}{Solid}}\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 77 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{tests_2main_8cpp_af6fdfb2487172858945f18fe39a6b169_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_af4dd5a2d5d476cdd9008dedd32dde80a}\label{tests_2main_8cpp_af4dd5a2d5d476cdd9008dedd32dde80a}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [6/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Test konstruktora klasy \mbox{\hyperlink{class_drone}{Drone}}\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 264 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{tests_2main_8cpp_af4dd5a2d5d476cdd9008dedd32dde80a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_a2ab04991646a0ca8812f68488b905d5f}\label{tests_2main_8cpp_a2ab04991646a0ca8812f68488b905d5f}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [7/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Test konstruktora parametrycznego dla klasy \mbox{\hyperlink{class_cuboid}{Cuboid}} (dziedziczenie)\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 152 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{tests_2main_8cpp_a2ab04991646a0ca8812f68488b905d5f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_a42720d19762db60cda1dc33c1e237a6d}\label{tests_2main_8cpp_a42720d19762db60cda1dc33c1e237a6d}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [8/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Test konstruktora parametrycznego dla klasy \mbox{\hyperlink{class_cuboid}{Cuboid}}\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 184 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{tests_2main_8cpp_a42720d19762db60cda1dc33c1e237a6d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_ad299b3bb1e0dffe2f65c7372b1d7cc54}\label{tests_2main_8cpp_ad299b3bb1e0dffe2f65c7372b1d7cc54}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [9/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Test konstruktora parametrycznego dla klasy \mbox{\hyperlink{class_prism}{Prism}} (dziedziczenie)\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 229 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{tests_2main_8cpp_ad299b3bb1e0dffe2f65c7372b1d7cc54_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_a1f6da33d9db2969008ebfb2c8c9ae502}\label{tests_2main_8cpp_a1f6da33d9db2969008ebfb2c8c9ae502}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [10/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Test konstruktora parametrycznego dla klasy \mbox{\hyperlink{class_solid}{Solid}}\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 98 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{tests_2main_8cpp_a1f6da33d9db2969008ebfb2c8c9ae502_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_aee7202efeb22e9e6e0890ce0fb2f21d3}\label{tests_2main_8cpp_aee7202efeb22e9e6e0890ce0fb2f21d3}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [11/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Test tworzenia drona\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 278 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{tests_2main_8cpp_aee7202efeb22e9e6e0890ce0fb2f21d3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_afeb6d6974e0f5edfcf69abdc4a7149d0}\label{tests_2main_8cpp_afeb6d6974e0f5edfcf69abdc4a7149d0}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [12/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Test zliczania wektorow\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 12 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{tests_2main_8cpp_afeb6d6974e0f5edfcf69abdc4a7149d0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_a43e394cb3b5cdd6d9e90e487a93f038a}\label{tests_2main_8cpp_a43e394cb3b5cdd6d9e90e487a93f038a}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [13/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Transforamcja miedzy ukladem graniastoslupa a drona\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 316 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_2main_8cpp_a43e394cb3b5cdd6d9e90e487a93f038a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_a39b5b5604ab614bb93b9471aac987fed}\label{tests_2main_8cpp_a39b5b5604ab614bb93b9471aac987fed}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [14/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Transforamcja miedzy ukladem prostokata a drona\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 295 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_2main_8cpp_a39b5b5604ab614bb93b9471aac987fed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tests_2main_8cpp_af192767930d8613962fbca9c24275098}\label{tests_2main_8cpp_af192767930d8613962fbca9c24275098}} 
+\index{tests/main.cpp@{tests/main.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!tests/main.cpp@{tests/main.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [15/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Zmiana orientacji graniastoslupa w ukladzie lokalnym (obrot wokol wlasnej osi)\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 338 pliku tests/main.\+cpp.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{tests_2main_8cpp_af192767930d8613962fbca9c24275098_cgraph}
+\end{center}
+\end{figure}

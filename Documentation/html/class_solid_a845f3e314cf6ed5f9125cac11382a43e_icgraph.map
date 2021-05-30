@@ -1,7 +1,8 @@
 <map id="Solid::TakeFilename_TemplateSolid" name="Solid::TakeFilename_TemplateSolid">
-<area shape="rect" id="node1" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="917,74,1068,115"/>
+<area shape="rect" id="node1" title="Metoda zwracajaca sciezke do pliku wzorcowego." alt="" coords="917,99,1068,141"/>
 <area shape="rect" id="node2" href="$class_drone.html#a38f5a59e9a65ea51521ba0f4cf5d4ff8" title="Prywatna metoda zapisu wspolrzednych ciala." alt="" coords="638,56,869,83"/>
 <area shape="rect" id="node8" href="$class_drone.html#a787e9a83676fe66dcaf5eab166dc4967" title="Prywatna metoda zapisu wspolrzednych rotorow." alt="" coords="637,107,869,133"/>
+<area shape="rect" id="node9" href="$tests_2main_8cpp.html#af6fdfb2487172858945f18fe39a6b169" title=" " alt="" coords="706,157,801,184"/>
 <area shape="rect" id="node3" href="$class_drone.html#ae6d167f193ac2966cd640522a8357b53" title="Metoda publiczna zapisujaca wspolrzedne drona." alt="" coords="364,81,589,108"/>
 <area shape="rect" id="node4" href="$class_drone.html#a35c092a7a13bb3b7369b351c4b5389f6" title="Metoda animujaca obrot drona." alt="" coords="113,5,311,32"/>
 <area shape="rect" id="node5" href="$app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,60,108"/>

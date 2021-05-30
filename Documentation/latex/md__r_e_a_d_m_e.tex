@@ -1,14 +1,16 @@
-Program poprawnie rysuje scene i drony. Mozna dodawac dowolna ilosc dronow do sceny (w miare rozsadku).
+Program poprawnie rysuje scene i drony.
 
-Wykonanie w pelni obiektowe.
+Wykonanie obiektowe z dziedziczeniem.
 
-Czesc danych jest nadal wpisywana \char`\"{}na sztywno\char`\"{} w celach testowych. Finalna wersja bedzie bardziej zautomatyzowana.
+Animacja lotu jednego z dronow. Mozliwy lot po oktagonie (modyfikacja). Program zlicza uzywane i usuwane wektory. Pliki tekstowe wzorcowe i robocze znajduja sie w katalogu datasets w odpowiedznich lokalizacjach.
 
-Animacja lotu jednego z dronow.
+Kazdy dron jest opisany 12 wektorami (polozenie w ukladach lokalnych i globalnych bryl i drona, wektor skalowania w klasie bazowej).\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Uruchamianie programu i testy}\label{md__r_e_a_d_m_e_autotoc_md1}
+W celu uruchomienia programu nalezy wejsc w katalog build i uruchomimc program ./main W tym samym katalogu polecenie make kompiluje program.
 
-Wybieranie drona do uzycia jeszcze nie zaimplementowane.
+Testy mozna przeprowadzic za pomoca polecen\+: -\/make test (Testy ogolne) ./unit\+\_\+tests -\/s (Testy jednostkowe)\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{Dokumentacja}\label{md__r_e_a_d_m_e_autotoc_md2}
+Dokumentacja wygenerowana przy pomocy Doxygen\textquotesingle{}a znajduje sie w katalogu /\+Documentation. W katalogu znajduje sie skrot do strony H\+T\+ML o nazwie index.\+html W celu otworzenia dokumentacji nalezy uruchomic skrot lub przeszukac katalog /html.
 
-Dokumentacja w trakcie tworzenia.\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Building}\label{md__r_e_a_d_m_e_autotoc_md1}
+W razie problemow pliki graficzne diagramow znajduja sie w folderze images. Pliki z diagramami w programie Dia znajduja sie w /\+Documentation/dia/.\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{Building}\label{md__r_e_a_d_m_e_autotoc_md3}
 Build by making a build directory (i.\+e. {\ttfamily build/}), run {\ttfamily cmake} in that dir, and then use {\ttfamily make} to build the desired target.
 
 Requirements\+: cmake, gnuplot, doxygen + dot (in graphviz library)

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dragonfly: Wsepna faza ( Przygotowanie tydz 1)</title>
+<title>Dragonfly: Faza 1</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,16 +84,22 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizab
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Wsepna faza ( Przygotowanie tydz 1) </div>  </div>
+<div class="title">Faza 1 </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Program poprawnie rysuje scene i drony. Mozna dodawac dowolna ilosc dronow do sceny (w miare rozsadku).</p>
-<p>Wykonanie w pelni obiektowe.</p>
-<p>Czesc danych jest nadal wpisywana "na sztywno" w celach testowych. Finalna wersja bedzie bardziej zautomatyzowana.</p>
-<p>Animacja lotu jednego z dronow.</p>
-<p>Wybieranie drona do uzycia jeszcze nie zaimplementowane.</p>
-<p>Dokumentacja w trakcie tworzenia.</p>
+<div class="textblock"><p>Program poprawnie rysuje scene i drony.</p>
+<p>Wykonanie obiektowe z dziedziczeniem.</p>
+<p>Animacja lotu jednego z dronow. Mozliwy lot po oktagonie (modyfikacja). Program zlicza uzywane i usuwane wektory. Pliki tekstowe wzorcowe i robocze znajduja sie w katalogu datasets w odpowiedznich lokalizacjach.</p>
+<p>Kazdy dron jest opisany 12 wektorami (polozenie w ukladach lokalnych i globalnych bryl i drona, wektor skalowania w klasie bazowej).</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
+Uruchamianie programu i testy</h1>
+<p>W celu uruchomienia programu nalezy wejsc w katalog build i uruchomimc program ./main W tym samym katalogu polecenie make kompiluje program.</p>
+<p>Testy mozna przeprowadzic za pomoca polecen: -make test (Testy ogolne) ./unit_tests -s (Testy jednostkowe)</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Dokumentacja</h1>
+<p>Dokumentacja wygenerowana przy pomocy Doxygen'a znajduje sie w katalogu /Documentation. W katalogu znajduje sie skrot do strony HTML o nazwie index.html W celu otworzenia dokumentacji nalezy uruchomic skrot lub przeszukac katalog /html.</p>
+<p>W razie problemow pliki graficzne diagramow znajduja sie w folderze images. Pliki z diagramami w programie Dia znajduja sie w /Documentation/dia/.</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Building</h1>
 <p>Build by making a build directory (i.e. <code>build/</code>), run <code>cmake</code> in that dir, and then use <code>make</code> to build the desired target.</p>
 <p>Requirements: cmake, gnuplot, doxygen + dot (in graphviz library)</p>
